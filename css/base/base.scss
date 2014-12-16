@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+
+//导入方法
+@import "var";
+
+//导入方法
+@import "fun";
+
+
+
+/*
+ *  字体导入
+ */
+
+// thex
+@font-face {
+  font-family: 'HelveticaNeueLTPro-ThEx';
+  src: url('../../font/HelveticaNeueLTPro-ThEx.otf');
+}
+
+// roman
+@font-face {
+  font-family: 'HelveticaInseratLTStd-Roman';
+  src: url('../../font/HelveticaInseratLTStd-Roman.otf');
+}
+
+
+// medium
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Md';
+  src: url('../../font/HelveticaNeueLTPro-Md.otf');
+}
+
+// mediumCond
+@font-face {
+  font-family: 'HelveticaNeueLTPro-MdCn';
+  src: url('../../font/HelveticaNeueLTPro-MdCn.otf');
+}
+
+
+//lt
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Lt';
+  src: url('../../font/HelveticaNeueLTPro-Lt.otf');
+}
+
+
+.fm-roman{
+  font-family: 'HelveticaInseratLTStd-Roman';
+}
+
+.fm-medium{
+  font-family: 'HelveticaNeueLTPro-Md';
+}
+
+.fm-medium-cond{
+  font-family: 'HelveticaNeueLTPro-MdCn';
+}
+
+.fm-thex{
+  font-family: 'HelveticaNeueLTPro-ThEx';
+}
+
+
+
+
+
+// 设置全局字体
+html,body{
+  font-family: 'HelveticaNeueLTPro-Lt';
+  font-size: $defaultFontSize;
+
+
+  color: #ffffff;
+
+  width: 100%;
+
+  /** height 100% **/
+  height: 100%;
+
+  background: #ffffff;
+
+
+}
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container{
+  height: inherit;
+}
+
+
+//导航条
+nav.navbar{
+
+  .navbar-item{
+    overflow: hidden;
+
+    //设置底部间距
+    padding-top: rem(40px);
+
+    li{
+      float: left;
+      margin-left: rem(20px);
+
+      a{
+        display: block;
+        font-size: rem(18px);
+        padding: 6px 12px;
+        background: transparent;
+
+        &:hover{
+           text-decoration: none;
+        }
+
+        &:hover,&.active{
+
+          background: $color-pink;
+          color: #ffffff;
+        }
+      }
+
+    }
+  }
+}
+
+.logo{
+  background-image: url("../../img/logo.png");
+  width: rem(299px);
+  height: rem(36px);
+}
+
+.ib{
+  display: inline-block;
+}
+
+
+.top-padding{
+  padding-top: 75px;
+}
+
+.top-padding-no{
+  padding-top: 0;
+}
+
+/** 透明背景 **/
+.navbar-tran{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+//缩放比例
+$scale: 2px;
+
+
+
+//px
+@function rem($px){
+//  @return  $px / $scale * 1px ;
+  @return  $px;
+}
+
+////px转rem
+//@function rem($px) {
+//  @return $px / ($default-font-size ) * 1rem;
+//}

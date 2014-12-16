@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+//导入方法
+@import "../base/var";
+
+//导入方法
+@import "../base/fun";
+
+
+
+
+/** index 首页 **/
+.content{
+  width: 100%;
+  height: inherit;
+
+
+  //描述部分
+  .home-desc{
+    h4{
+      font-size: rem(36px);
+      color: $color-black;
+
+      margin-bottom: rem(26px);
+      margin-top: rem(0px);
+    }
+
+    span{
+      font-size: rem(18px);
+      color: $color-pink-light;
+    }
+
+.dot-sq{
+  width: rem(17px);
+  height: rem(3px);
+  background-color: #e0e0e0;
+}
+
+    .dot-sq-bt{
+      margin-top: 28px;
+      margin-bottom: 14px;
+      border-radius: 10px;
+    }
+
+    .dot-sq-tp{
+      margin-top: 14px;
+      margin-bottom: 28px;
+      border-radius: 10px;
+    }
+  }
+
+
+  //banner展示图
+  .bg-banner{
+    background-image: url("../../img/banner/index-banner.jpg");
+    width: 100%;
+    height: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container{
+
+      position: relative;
+
+
+      .banner-content{
+
+        position: absolute;
+        right: 0px;
+        bottom: rem(70px);
+
+
+        //banner 字体
+        .banner-title{
+          font-size: rem(68px);
+          margin-bottom: rem(10px);
+        }
+
+        .banner-desc{
+          font-size: rem(30px);
+        }
+
+      }
+
+
+    }
+
+
+  }
+
+
+
+  //列表
+  .home-list{
+
+    background-color: $bg;
+
+    .home-list-ul{
+
+      .row{
+        margin-left: -10px;
+        margin-right: -10px;
+        .col-md-4,.col-md-8,.col-md-6{
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      li{
+        height:  $home-list-height;
+        margin-bottom: rem(38px);
+
+        .head{
+
+          border: 10px solid $default-head;
+          border-radius: rem(80px);
+        }
+
+        .username{
+          margin-top: rem(18px);
+
+            font-size: rem(36px);
+            color: $username-color;
+        }
+
+        .desc-bg{
+          background-color: #ffffff;
+
+          a{
+            width: 100%;
+            height: inherit;
+          }
+          //内容图片
+          .desc-img{
+            position: relative;
+            overflow: hidden;
+
+            .desc-title{
+              position: absolute;
+              right: 15px;
+              font-size: rem(24px);
+              bottom: 8px;
+            }
+
+          }
+        }
+
+        .head-bg{
+          position: relative;
+          background: $head-bg;
+
+        }
+      }
+
+      div{
+        height: inherit;
+      }
+
+
+    }
+
+
+
+
+
+  }
+
+
+  //more
+  .more-load{
+    .more-font{
+      font-size: rem(36px);
+      color: $more;
+    }
+
+    .dot:nth-child(1){
+      margin-left: rem(24px);
+    }
+    .dot{
+      background-color: #b5c4d2;
+      width: 17px;
+      height: 17px;
+      border-radius: 60px;
+      margin-right: rem(16px);
+    }
+  }
+
+
+  //verification
+  .verification{
+    font-size: rem(30px);
+    color: #2d2e36;
+
+    margin: rem(35px) 0;
+  }
+
+}
+
+

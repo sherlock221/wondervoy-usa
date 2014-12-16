@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/** 瀵煎叆鍙橀噺 **/
+/*
+ *  字体导入
+ */
+@font-face {
+  font-family: 'HelveticaNeueLTPro-ThEx';
+  src: url("../../font/HelveticaNeueLTPro-ThEx.otf"); }
+@font-face {
+  font-family: 'HelveticaInseratLTStd-Roman';
+  src: url("../../font/HelveticaInseratLTStd-Roman.otf"); }
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Md';
+  src: url("../../font/HelveticaNeueLTPro-Md.otf"); }
+@font-face {
+  font-family: 'HelveticaNeueLTPro-MdCn';
+  src: url("../../font/HelveticaNeueLTPro-MdCn.otf"); }
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Lt';
+  src: url("../../font/HelveticaNeueLTPro-Lt.otf"); }
+.fm-roman {
+  font-family: 'HelveticaInseratLTStd-Roman'; }
+
+.fm-medium {
+  font-family: 'HelveticaNeueLTPro-Md'; }
+
+.fm-medium-cond {
+  font-family: 'HelveticaNeueLTPro-MdCn'; }
+
+.fm-thex {
+  font-family: 'HelveticaNeueLTPro-ThEx'; }
+
+html, body {
+  font-family: 'HelveticaNeueLTPro-Lt';
+  font-size: 14px;
+  color: #ffffff;
+  width: 100%;
+  /** height 100% **/
+  height: 100%;
+  background: #ffffff; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.container {
+  height: inherit; }
+
+nav.navbar .navbar-item {
+  overflow: hidden;
+  padding-top: 40px; }
+  nav.navbar .navbar-item li {
+    float: left;
+    margin-left: 20px; }
+    nav.navbar .navbar-item li a {
+      display: block;
+      font-size: 18px;
+      padding: 6px 12px;
+      background: transparent; }
+      nav.navbar .navbar-item li a:hover {
+        text-decoration: none; }
+      nav.navbar .navbar-item li a:hover, nav.navbar .navbar-item li a.active {
+        background: #d32271;
+        color: #ffffff; }
+
+.logo {
+  background-image: url("../../img/logo.png");
+  width: 299px;
+  height: 36px; }
+
+.ib {
+  display: inline-block; }
+
+.top-padding {
+  padding-top: 75px; }
+
+.top-padding-no {
+  padding-top: 0; }
+
+/** 透明背景 **/
+.navbar-tran {
+  background-color: transparent;
+  border-color: transparent; }
+
+/*# sourceMappingURL=base.css.map */
