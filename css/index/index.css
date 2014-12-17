@@ -1,9 +1,13 @@
 @charset "UTF-8";
-/** 瀵煎叆鍙橀噺 **/
+/** 导入变量 **/
 /** index 首页 **/
 .content {
   width: 100%;
-  height: inherit; }
+  height: inherit;
+  margin-bottom: 98px;
+  position: relative; }
+  .content .share-icon span {
+    margin: 0 50px; }
   .content .home-desc h4 {
     font-size: 36px;
     color: #040404;
@@ -24,12 +28,15 @@
     margin-top: 14px;
     margin-bottom: 28px;
     border-radius: 10px; }
+  .content .bg {
+    width: inherit;
+    height: inherit;
+    position: relative; }
   .content .bg-banner {
     background-image: url("../../img/banner/index-banner.jpg");
+    position: relative;
     width: 100%;
-    height: inherit;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-size: cover; }
     .content .bg-banner .container {
       position: relative; }
       .content .bg-banner .container .banner-content {

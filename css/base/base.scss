@@ -76,8 +76,8 @@ html,body{
 
   width: 100%;
 
-  /** height 100% **/
-  height: 100%;
+//  height: 100%;
+  height: inherit;
 
   background: #ffffff;
 
@@ -93,6 +93,8 @@ ul,li{
 .container{
   height: inherit;
 }
+
+
 
 
 //导航条
@@ -129,6 +131,76 @@ nav.navbar{
   }
 }
 
+
+/** 底部 **/
+footer{
+
+  background: #2d2e36;
+  width: 100%;
+
+  padding-top: rem(84px);
+  padding-bottom: rem(70px);
+
+
+  .footer-end-main{
+
+    border-top: 1px solid #ffffff;
+
+    .footer-end{
+      font-size: rem(24px);
+      line-height: 90px;
+    }
+  }
+
+  .footer-icon{
+
+    margin-bottom: 49px;
+    margin-top: 97px;
+
+
+
+    span{
+      margin:  0 67px;
+      cursor: pointer;
+    }
+  }
+
+  .ib{
+    vertical-align: top;
+  }
+
+  .footer-main{
+    padding:  rem(5px) rem(12px);
+  }
+
+  .left-ft{
+    margin-right: rem(142px);
+  }
+
+  .right-ft{
+
+    .discover{
+      margin-top: 47px;
+      margin-bottom: 21px;
+    }
+
+    .right-ft-info{
+      margin-right: rem(68px);
+    }
+
+
+    .right-title{
+      margin-bottom: rem(45px);
+    }
+    .right-desc{
+
+      li{
+        margin-bottom: rem(15px);
+      }
+    }
+  }
+}
+
 .logo{
   background-image: url("../../img/logo.png");
   width: rem(299px);
@@ -161,6 +233,89 @@ nav.navbar{
 
 
 
+//button
+
+.changeLag{
+  width: 250px;
+  height: 56px;
+  background: #ffffff;
+  border: 0 none;
+  border-radius: 4px;
+
+  color: #9f9f9f;
+  font-size: rem(24px);
+}
 
 
+
+
+//img
+.ui-widget{
+  background-image: url("../../img/ui-widget.png");
+}
+
+$footer-icon-width : 55px;
+$footer-icon-height : 54px;
+
+.facebook{
+  background-position:  0px  0;
+  width: $footer-icon-width;
+  height: $footer-icon-height;
+}
+
+.twitter{
+  background-position:  -55px 0;
+  width: $footer-icon-width;
+  height: $footer-icon-height;
+}
+
+.linkedin{
+  background-position: -165px 0;
+  width: $footer-icon-width;
+  height: $footer-icon-height;
+}
+
+.signweibo{
+  background-position: -110px 0;
+  width: $footer-icon-width;
+  height: $footer-icon-height;
+}
+
+
+
+.photo-icon{
+  background-position: 0 -186px;
+  width: 62px;
+  height: 51px;
+}
+.facebook-icon{
+  background-position: 0 -285px;
+  width: 62px;
+  height: 51px;
+
+}
+
+.linkedin-icon{
+  background-position: 0 -336px;
+  width: 62px;
+  height: 66px;
+}
+
+.twitter-icon{
+  background-position: 0 -233px;
+  width: 62px;
+  height: 51px;
+}
+
+.email-icon{
+  background-position: 0 -453px;
+  width: 62px;
+  height: 51px;
+}
+
+.weibo-icon{
+  background-position: 0 -402px;
+  width: 62px;
+  height: 51px;
+}
 

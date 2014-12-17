@@ -34,240 +34,31 @@
     <script type="text/javascript" src="lib/angular-ui/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="lib/angular/angular-animate.min.js"></script>
 
+    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-custom-0.12.0.min.js"></script>
+    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-custom-tpls-0.12.0.min.js"></script>
 
 
-</head>	
-<body>
+    <!-- app.js -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- controller -->
+    <script type="text/javascript" src="js/controllers/footer.ctrl.js"></script>
+    <script type="text/javascript" src="js/controllers/main.ctrl.js"></script>
+
+</head>
+<body ng-app="wondervoy" >
 
 
-        <!-- 顶部 -->
-        <header class="">
-            <!--<nav class="navbar navbar-fixed-top  navbar-tran" role="navigation">-->
-            <nav class="navbar navbar-fixed-top  navbar-tran" role="navigation" style="position: absolute;">
-                <div class="container">
-
-                    <div class="navbar-header">
-                        <a class="navbar-brand ib" href="#">
-                            <i class="ib logo"></i>
-                        </a>
-                    </div>
-
-                    <ul class="pull-right navbar-item ">
-                        <li>
-                            <a href="javascript:void(0);">Sign up</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Login</a>
-                        </li>
-                        <li>
-                            <a  href="javascript:void(0);">Show Your Stories</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-
-        </header>
+        <!-- header -->
+        <ng-include src="'templates/header.html'" ></ng-include>
 
 
-
-        <!-- 内容区域 -->
-        <div class="content">
+        <div class="content" ui-view  ng-controller="MainCtrl"></div>
 
 
-                <!-- banner -->
-                <div class="bg-banner">
+        <!-- footer -->
+        <ng-include src="'templates/footer.html'" ></ng-include>
 
-                    <div class="container top-padding">
-
-                        <section class="banner-content">
-                            <h1 class="fm-medium banner-title">Enjoy locally</h1>
-                            <h3 class="fm-medium-cond banner-desc">Travel with local who you prefer</h3>
-                        </section>
-                    </div>
-
-                </div>
-
-
-                <!-- content -->
-                <section class="home-desc text-center">
-
-                    <div class="text-center">
-                        <i class="ib dot-sq dot-sq-tp"></i>
-                    </div>
-                        <div>
-                            <h4 class="ib">Explore Xi'an</h4>
-                        </div>
-                        <div>
-                            <span class="ib">See Interesting Locals And Stories Around Xi'an</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="ib dot-sq dot-sq-bt"></i>
-                        </div>
-                </section>
-
-
-                <section class="home-list ">
-
-                    <div class="container">
-                            <!-- 图文列表 -->
-                            <ul class="text-center home-list-ul">
-                                <li>
-                                    <div class="row ">
-                                        <div class="col-md-4">
-                                            <div class="head-bg">
-
-                                                <section class="transform-center ">
-                                                    <a href="javascript:void(0)" class="ib head">
-                                                        <img src="img/head.png"    />
-                                                    </a>
-                                                    <span class=" fm-thex block username">MISS Lin</span>
-                                                </section>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="desc-bg">
-                                                <a href="javascript:void(0)" class="ib desc">
-                                                    <div class="desc-img">
-                                                        <img src="img/list-01.jpg" class="full-img" />
-                                                        <span class="ib desc-title">Explore Xi'an</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-
-                                <li>
-                                    <div class="row ">
-                                        <div class="col-md-4">
-                                            <div class="head-bg">
-
-                                                <section class="transform-center ">
-                                                    <a href="javascript:void(0)" class="ib head">
-                                                        <img src="img/head-03.png"    />
-                                                    </a>
-                                                    <span class=" fm-thex block username">Mr Dvie</span>
-                                                </section>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="desc-bg">
-                                                        <a href="javascript:void(0)" class="ib desc">
-                                                            <div class="desc-img">
-                                                                <img src="img/list-03.jpg" class="full-img" />
-                                                                <span class="ib desc-title">Explore Xi'an</span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="desc-bg">
-                                                        <a href="javascript:void(0)" class="ib desc">
-                                                            <div class="desc-img">
-                                                                <img src="img/list-04.jpg" class="full-img" />
-                                                                <span class="ib desc-title">Explore Xi'an</span>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </li>
-
-
-
-                                <li>
-                                    <div class="row ">
-                                        <div class="col-md-4">
-                                            <div class="head-bg">
-
-                                                <section class="transform-center ">
-                                                    <a href="javascript:void(0)" class="ib head">
-                                                        <img src="img/head-02.png"    />
-                                                    </a>
-                                                    <span class=" fm-thex block username">Mr Dvie</span>
-                                                </section>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="desc-bg">
-                                                <a href="javascript:void(0)" class="ib desc">
-                                                    <div class="desc-img">
-                                                        <img src="img/list-02.jpg" class="full-img" />
-                                                        <span class="ib desc-title">Explore Xi'an</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-
-
-                                <li>
-                                    <div class="row ">
-                                        <div class="col-md-4">
-                                            <div class="head-bg">
-
-                                                <section class="transform-center ">
-                                                    <a href="javascript:void(0)" class="ib head">
-                                                        <img src="img/head.png"    />
-                                                    </a>
-                                                    <span class=" fm-thex block username">MISS Lin</span>
-                                                </section>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="desc-bg">
-                                                <a href="javascript:void(0)" class="ib desc">
-                                                    <div class="desc-img">
-                                                        <img src="img/list-01.jpg" class="full-img" />
-                                                        <span class="ib desc-title">Explore Xi'an</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                    </div>
-
-                </section>
-
-
-            <section>
-                <div class="container">
-                    <!-- 加载更多 -->
-                    <section class="more-load text-center">
-                        <span class="ib more-font  fm-thex">MORE&nbsp;&nbsp;<i class="ib dot"></i><i class="ib dot"></i><i class="ib dot"></i></span>
-                    </section>
-                </div>
-            </section>
-
-            <section>
-                <div class="container">
-                    <section class="text-center">
-                        <span class="ib fm-thex verification ">Multi-verification</span>
-                    </section>
-                </div>
-            </section>
-
-        </div>
-
-
-        <!-- 底部 -->
-        <footer>
-
-
-
-        </footer>
 
 </body>
 </html>

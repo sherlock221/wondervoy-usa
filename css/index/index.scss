@@ -13,7 +13,17 @@
 .content{
   width: 100%;
   height: inherit;
+  margin-bottom: 98px;
+  position: relative;
 
+
+
+  //分享
+  .share-icon{
+    span{
+      margin:  0 50px;
+    }
+  }
 
   //描述部分
   .home-desc{
@@ -50,18 +60,23 @@
   }
 
 
+  .bg{
+    width: inherit;
+    height: inherit;
+    position: relative;
+  }
+
   //banner展示图
   .bg-banner{
     background-image: url("../../img/banner/index-banner.jpg");
+    position: relative;
     width: 100%;
-    height: inherit;
     background-size: cover;
-    background-repeat: no-repeat;
+
+
 
     .container{
-
       position: relative;
-
 
       .banner-content{
 
@@ -195,5 +210,9 @@
   }
 
 }
+
+
+
+
 
 
