@@ -17,6 +17,32 @@
   position: relative;
 
 
+  //底部百块
+  .blank-bg{
+    background-color: $bg;
+    height: 115px;
+    width: 100%;
+
+    .blank-bg-seq-black{
+      width: 35px;
+      height: 4px;
+      background: #2d2e36;
+      border-radius: 5px;
+
+      margin-top: 100px;
+    }
+
+    .blank-bg-seq-gray{
+      width: 35px;
+      height: 4px;
+      background: #dedede;
+      border-radius: 5px;
+
+      position: relative;
+      top: 14px;
+    }
+  }
+
 
   //分享
   .share-icon{
@@ -93,6 +119,7 @@
 
         .banner-desc{
           font-size: rem(30px);
+          text-shadow: 1px 1.732px 2px rgb( 6, 0, 1 );
         }
 
       }
@@ -186,6 +213,7 @@
     .more-font{
       font-size: rem(36px);
       color: $more;
+      margin: 15px 0;
     }
 
     .dot:nth-child(1){
@@ -206,7 +234,7 @@
     font-size: rem(30px);
     color: #2d2e36;
 
-    margin: rem(35px) 0;
+    margin: rem(48px) 0;
   }
 
 }

@@ -1,11 +1,28 @@
 @charset "UTF-8";
-/** 导入变量 **/
+/** 瀵煎叆鍙橀噺 **/
 /** index 首页 **/
 .content {
   width: 100%;
   height: inherit;
   margin-bottom: 98px;
   position: relative; }
+  .content .blank-bg {
+    background-color: #fcfcfc;
+    height: 115px;
+    width: 100%; }
+    .content .blank-bg .blank-bg-seq-black {
+      width: 35px;
+      height: 4px;
+      background: #2d2e36;
+      border-radius: 5px;
+      margin-top: 100px; }
+    .content .blank-bg .blank-bg-seq-gray {
+      width: 35px;
+      height: 4px;
+      background: #dedede;
+      border-radius: 5px;
+      position: relative;
+      top: 14px; }
   .content .share-icon span {
     margin: 0 50px; }
   .content .home-desc h4 {
@@ -47,7 +64,8 @@
           font-size: 68px;
           margin-bottom: 10px; }
         .content .bg-banner .container .banner-content .banner-desc {
-          font-size: 30px; }
+          font-size: 30px;
+          text-shadow: 1px 1.732px 2px #060001; }
   .content .home-list {
     background-color: #fcfcfc; }
     .content .home-list .home-list-ul .row {
@@ -86,7 +104,8 @@
       height: inherit; }
   .content .more-load .more-font {
     font-size: 36px;
-    color: #b5c4d2; }
+    color: #b5c4d2;
+    margin: 15px 0; }
   .content .more-load .dot:nth-child(1) {
     margin-left: 24px; }
   .content .more-load .dot {
@@ -98,6 +117,6 @@
   .content .verification {
     font-size: 30px;
     color: #2d2e36;
-    margin: 35px 0; }
+    margin: 48px 0; }
 
 /*# sourceMappingURL=index.css.map */

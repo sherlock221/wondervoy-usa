@@ -1,23 +1,30 @@
 @charset "UTF-8";
-/** 导入变量 **/
+/** 瀵煎叆鍙橀噺 **/
 /*
  *  字体导入
  */
 @font-face {
   font-family: 'HelveticaNeueLTPro-ThEx';
-  src: url("../../font/HelveticaNeueLTPro-ThEx.otf"); }
+  src: url("../../font/HelveticaNeueLTPro-ThEx.eot");
+  src: url("../../font/HelveticaNeueLTPro-ThEx.eot?#iefix") format("embedded-opentype"), url("../../font/HelveticaNeueLTPro-ThEx.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: 'HelveticaInseratLTStd-Roman';
-  src: url("../../font/HelveticaInseratLTStd-Roman.otf"); }
+  src: url("../../font/HelveticaInseratLTStd-Roman.otf");
+  src: url("../../font/HelveticaInseratLTStd-Roman.ttf") format("embedded-truetype"); }
 @font-face {
   font-family: 'HelveticaNeueLTPro-Md';
-  src: url("../../font/HelveticaNeueLTPro-Md.otf"); }
+  src: url("../../font/HelveticaNeueLTPro-Md.otf");
+  src: url("../../font/HelveticaNeueLTPro-Md.ttf") format("embedded-truetype"); }
 @font-face {
   font-family: 'HelveticaNeueLTPro-MdCn';
-  src: url("../../font/HelveticaNeueLTPro-MdCn.otf"); }
+  src: url("../../font/HelveticaNeueLTPro-MdCn.otf");
+  src: url("../../font/HelveticaNeueLTPro-MdCn.otf") format("embedded-truetype"); }
 @font-face {
   font-family: 'HelveticaNeueLTPro-Lt';
-  src: url("../../font/HelveticaNeueLTPro-Lt.otf"); }
+  src: url("../../font/HelveticaNeueLTPro-Lt.otf");
+  src: url("../../font/HelveticaNeueLTPro-Lt.ttf") format("embedded-truetype"); }
 .fm-roman {
   font-family: 'HelveticaInseratLTStd-Roman'; }
 
@@ -92,9 +99,11 @@ footer {
   footer .right-ft .right-ft-info {
     margin-right: 68px; }
   footer .right-ft .right-title {
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    font-size: 24px; }
   footer .right-ft .right-desc li {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-size: 16px; }
 
 .logo {
   background-image: url("../../img/logo.png");

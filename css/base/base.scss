@@ -14,15 +14,31 @@
  */
 
 // thex
+//@font-face {
+//  font-family: 'HelveticaNeueLTPro-ThEx';
+//
+//  src:url('../../font/HelveticaNeueLTPro.eot');
+//  src: url('../../font/HelveticaNeueLTPro.eot?#iefix') format("embedded-opentype");
+////  url('../../font/HelveticaNeueLTPro-ThEx.ttf') format('truetype');
+//
+//}
+
 @font-face {
   font-family: 'HelveticaNeueLTPro-ThEx';
-  src: url('../../font/HelveticaNeueLTPro-ThEx.otf');
+  src: url("../../font/HelveticaNeueLTPro-ThEx.eot");
+  src: url("../../font/HelveticaNeueLTPro-ThEx.eot?#iefix") format("embedded-opentype"),
+       url("../../font/HelveticaNeueLTPro-ThEx.ttf") format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
 }
+ 
 
 // roman
 @font-face {
   font-family: 'HelveticaInseratLTStd-Roman';
   src: url('../../font/HelveticaInseratLTStd-Roman.otf');
+  src: url('../../font/HelveticaInseratLTStd-Roman.ttf') format('embedded-truetype');
 }
 
 
@@ -30,12 +46,14 @@
 @font-face {
   font-family: 'HelveticaNeueLTPro-Md';
   src: url('../../font/HelveticaNeueLTPro-Md.otf');
+  src: url('../../font/HelveticaNeueLTPro-Md.ttf') format('embedded-truetype');
 }
 
 // mediumCond
 @font-face {
   font-family: 'HelveticaNeueLTPro-MdCn';
   src: url('../../font/HelveticaNeueLTPro-MdCn.otf');
+  src: url('../../font/HelveticaNeueLTPro-MdCn.otf') format('embedded-truetype');
 }
 
 
@@ -43,6 +61,7 @@
 @font-face {
   font-family: 'HelveticaNeueLTPro-Lt';
   src: url('../../font/HelveticaNeueLTPro-Lt.otf');
+  src: url('../../font/HelveticaNeueLTPro-Lt.ttf') format('embedded-truetype');
 }
 
 
@@ -191,11 +210,13 @@ footer{
 
     .right-title{
       margin-bottom: rem(45px);
+      font-size: rem(24px);
     }
     .right-desc{
 
       li{
         margin-bottom: rem(15px);
+        font-size: rem(16px);
       }
     }
   }
