@@ -20,9 +20,16 @@ wondervoy
                 MessageService.getList()
                     .then(function(result){
 
-                        $scope.posts = $scope.posts.concat(result);
-                        $scope.isShow = false;
-                        console.log($scope.posts);
+
+                        $timeout(function(){
+
+                            $scope.posts = $scope.posts.concat(result);
+                            $scope.isShow = false;
+                            console.log($scope.posts);
+
+                        },2000);
+
+
 
                     },function(err){
                         $scope.isShow = false;
@@ -34,8 +41,5 @@ wondervoy
 
         //自动加载
         this.loadMore();
-
-
-
 
     });
