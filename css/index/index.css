@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 瀵煎叆鍙橀噺 **/
+/** 导入变量 **/
 /** index 首页 **/
 .content {
   width: 100%;
@@ -102,18 +102,20 @@
         background: #f3f5f7; }
     .content .home-list .home-list-ul div {
       height: inherit; }
-  .content .more-load .more-font {
-    font-size: 36px;
-    color: #b5c4d2;
+  .content .more-load {
     margin: 15px 0; }
-  .content .more-load .dot:nth-child(1) {
-    margin-left: 24px; }
-  .content .more-load .dot {
-    background-color: #b5c4d2;
-    width: 17px;
-    height: 17px;
-    border-radius: 60px;
-    margin-right: 16px; }
+    .content .more-load .more-font {
+      cursor: pointer;
+      font-size: 36px;
+      color: #b5c4d2; }
+    .content .more-load .dot:nth-child(1) {
+      margin-left: 24px; }
+    .content .more-load .dot {
+      background-color: #b5c4d2;
+      width: 17px;
+      height: 17px;
+      border-radius: 60px;
+      margin-right: 16px; }
   .content .verification {
     font-size: 30px;
     color: #2d2e36;

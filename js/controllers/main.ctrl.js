@@ -8,6 +8,4 @@ wondervoy
         console.log( $scope.win_height);
 
 
-
-
     });

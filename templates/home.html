@@ -37,65 +37,46 @@
 
     <div class="container">
         <!-- 图文列表 -->
-        <ul class="text-center home-list-ul">
-            <li>
-                <div class="row ">
+        <ul class="text-center home-list-ul" style="color: #000;">
+
+
+            <li ng-repeat=" item in posts">
+                <div class="row " >
+
                     <div class="col-md-4">
                         <div class="head-bg">
-
                             <section class="transform-center ">
                                 <a href="javascript:void(0)" class="ib head">
-                                    <img src="img/head.png"    />
+                                    <img src="{{item.userHead}}"    />
                                 </a>
-                                <span class=" fm-thex block username">MISS Lin</span>
+                                <span class=" fm-thex block username">{{item.userName}}</span>
                             </section>
+
                         </div>
                     </div>
+
                     <div class="col-md-8">
-                        <div class="desc-bg">
-                            <a href="javascript:void(0)" class="ib desc">
+
+
+                        <!--单图排列-->
+                        <div class="desc-bg" ng-if="item.list.length == 1">
+                            <a href="javascript:void(0)" class="ib desc" ng-repeat="obj  in item.list" >
                                 <div class="desc-img">
-                                    <img src="img/list-01.jpg" class="full-img" />
-                                    <span class="ib desc-title">Explore Xi'an</span>
+                                    <img src="{{obj.listImg}}" class="full-img" />
+                                    <span class="ib desc-title">{{obj.listDesc}}</span>
                                 </div>
                             </a>
                         </div>
-                    </div>
-                </div>
-            </li>
 
 
-            <li>
-                <div class="row ">
-                    <div class="col-md-4">
-                        <div class="head-bg">
-
-                            <section class="transform-center ">
-                                <a href="javascript:void(0)" class="ib head">
-                                    <img src="img/head-03.png"    />
-                                </a>
-                                <span class=" fm-thex block username">Mr Dvie</span>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-6">
+                        <!--2图排列-->
+                        <div class="row"  ng-if="item.list.length == 2" >
+                            <div class="col-md-6"  ng-repeat="obj  in item.list"  >
                                 <div class="desc-bg">
                                     <a href="javascript:void(0)" class="ib desc">
                                         <div class="desc-img">
-                                            <img src="img/list-03.jpg" class="full-img" />
-                                            <span class="ib desc-title">Explore Xi'an</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="desc-bg">
-                                    <a href="javascript:void(0)" class="ib desc">
-                                        <div class="desc-img">
-                                            <img src="img/list-04.jpg" class="full-img" />
-                                            <span class="ib desc-title">Explore Xi'an</span>
+                                            <img src="{{obj.listImg}}" class="full-img" />
+                                            <span class="ib desc-title">{{obj.listDesc}}</span>
                                         </div>
                                     </a>
                                 </div>
@@ -107,61 +88,6 @@
                 </div>
             </li>
 
-
-
-            <li>
-                <div class="row ">
-                    <div class="col-md-4">
-                        <div class="head-bg">
-
-                            <section class="transform-center ">
-                                <a href="javascript:void(0)" class="ib head">
-                                    <img src="img/head-02.png"    />
-                                </a>
-                                <span class=" fm-thex block username">Mr Dvie</span>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="desc-bg">
-                            <a href="javascript:void(0)" class="ib desc">
-                                <div class="desc-img">
-                                    <img src="img/list-02.jpg" class="full-img" />
-                                    <span class="ib desc-title">Explore Xi'an</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-
-
-            <li>
-                <div class="row ">
-                    <div class="col-md-4">
-                        <div class="head-bg">
-
-                            <section class="transform-center ">
-                                <a href="javascript:void(0)" class="ib head">
-                                    <img src="img/head.png"    />
-                                </a>
-                                <span class=" fm-thex block username">MISS Lin</span>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="desc-bg">
-                            <a href="javascript:void(0)" class="ib desc">
-                                <div class="desc-img">
-                                    <img src="img/list-01.jpg" class="full-img" />
-                                    <span class="ib desc-title">Explore Xi'an</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </li>
         </ul>
     </div>
 
@@ -171,8 +97,10 @@
 <section>
     <div class="container">
         <!-- 加载更多 -->
-        <section class="more-load text-center">
-            <span class="ib more-font  fm-thex">MORE&nbsp;&nbsp;<i class="ib dot"></i><i class="ib dot"></i><i class="ib dot"></i></span>
+        <section class="more-load text-center" style="margin: 15px 0;">
+            <loading-bar  is-show="isShow">
+                    <span  ng-click="home.loadMore();"  class="ib more-font  fm-thex">MORE&nbsp;&nbsp;<i class="ib dot"></i><i class="ib dot"></i><i class="ib dot"></i></span>
+            </loading-bar>
         </section>
     </div>
 </section>
@@ -193,15 +121,16 @@
         </section>
 
         <section class="text-center share-icon">
-
             <span class="ib ui-widget email-icon"></span>
             <span class="ib ui-widget photo-icon"></span>
             <span class="ib ui-widget twitter-icon"></span>
             <span class="ib ui-widget facebook-icon"></span>
             <span class="ib ui-widget linkedin-icon"></span>
             <span class="ib ui-widget weibo-icon"></span>
-
         </section>
+
+
+
     </div>
 
 

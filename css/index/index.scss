@@ -100,7 +100,6 @@
     background-size: cover;
 
 
-
     .container{
       position: relative;
 
@@ -210,10 +209,14 @@
 
   //more
   .more-load{
+    margin: 15px 0;
+
+
     .more-font{
+      cursor: pointer;
       font-size: rem(36px);
       color: $more;
-      margin: 15px 0;
+
     }
 
     .dot:nth-child(1){

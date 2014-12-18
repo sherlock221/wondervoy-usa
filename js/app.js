@@ -22,7 +22,8 @@ wondervoy.config(function($stateProvider,$urlRouterProvider){
      */
     $stateProvider.state("home",{
         url : "/home",
-        templateUrl : "templates/home.html"
+        templateUrl : "templates/home.html",
+        controller : "HomeCtrl as home"
     });
 
 
@@ -30,4 +31,9 @@ wondervoy.config(function($stateProvider,$urlRouterProvider){
     //默认情况
     $urlRouterProvider.otherwise("/home");
 
+});
+
+//常量配置
+wondervoy.constant("SERVER",{
+    url : "/wondervoy/data"
 });
