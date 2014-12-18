@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 导入变量 **/
+/** 瀵煎叆鍙橀噺 **/
 /** index 首页 **/
 .content {
   width: 100%;
@@ -50,10 +50,15 @@
     height: inherit;
     position: relative; }
   .content .bg-banner {
-    background-image: url("../../img/banner/index-banner.jpg");
+    background: url("../../img/banner/index-banner.jpg") no-repeat;
     position: relative;
-    width: 100%;
     background-size: cover; }
+    .content .bg-banner .bg-banner:after {
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      visibility: hidden; }
     .content .bg-banner .container {
       position: relative; }
       .content .bg-banner .container .banner-content {

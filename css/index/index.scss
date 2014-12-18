@@ -92,12 +92,22 @@
     position: relative;
   }
 
+
   //banner展示图
   .bg-banner{
-    background-image: url("../../img/banner/index-banner.jpg");
+    background:url("../../img/banner/index-banner.jpg" )  no-repeat;
     position: relative;
-    width: 100%;
     background-size: cover;
+
+    .bg-banner:after {
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+
+
 
 
     .container{

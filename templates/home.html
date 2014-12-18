@@ -2,12 +2,13 @@
 
 <section class="bg">
     <!-- banner -->
-    <div class="bg-banner"  ng-style='{"height":banner_height+"px"}'>
+    <div class="bg-banner"  ng-style="style">
+    <!--<div class="bg-banner"  >-->
 
         <div class="container top-padding">
-            <section class="banner-content">
-                <h1 class="fm-medium banner-title">Enjoy locally</h1>
-                <h3 class="fm-medium-cond banner-desc">Travel with local who you prefer</h3>
+            <section class="banner-content" >
+                <h1 class="fm-medium banner-title" >Enjoy locally</h1>
+                <h3 class="fm-medium-cond banner-desc" >Travel with local who you prefer</h3>
             </section>
         </div>
 
@@ -22,7 +23,7 @@
         <i class="ib dot-sq dot-sq-tp"></i>
     </div>
     <div>
-        <h4 class="ib">Explore Xi'an</h4>
+        <h4 class="ib" ng-click="change();">Explore Xi'an</h4>
     </div>
     <div>
         <span class="ib">See Interesting Locals And Stories Around Xi'an</span>
@@ -47,7 +48,7 @@
                         <div class="head-bg">
                             <section class="transform-center ">
                                 <a href="javascript:void(0)" class="ib head">
-                                    <img src="{{item.userHead}}"    />
+                                    <img ng-src="{{item.userHead}}"    />
                                 </a>
                                 <span class=" fm-thex block username">{{item.userName}}</span>
                             </section>
@@ -62,7 +63,7 @@
                         <div class="desc-bg" ng-if="item.list.length == 1">
                             <a href="javascript:void(0)" class="ib desc" ng-repeat="obj  in item.list" >
                                 <div class="desc-img">
-                                    <img src="{{obj.listImg}}" class="full-img" />
+                                    <img ng-src="{{obj.listImg}}" class="full-img" />
                                     <span class="ib desc-title">{{obj.listDesc}}</span>
                                 </div>
                             </a>
@@ -75,7 +76,7 @@
                                 <div class="desc-bg">
                                     <a href="javascript:void(0)" class="ib desc">
                                         <div class="desc-img">
-                                            <img src="{{obj.listImg}}" class="full-img" />
+                                            <img ng-src="{{obj.listImg}}" class="full-img" />
                                             <span class="ib desc-title">{{obj.listDesc}}</span>
                                         </div>
                                     </a>
