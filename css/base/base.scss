@@ -27,43 +27,44 @@
 
 @font-face {
   font-family: 'HelveticaNeueLTPro-ThEx';
-  src: url("../../font/HelveticaNeueLTPro-ThEx.eot");
-  src: url("../../font/HelveticaNeueLTPro-ThEx.eot?#iefix") format("embedded-opentype"),
-       url("../../font/HelveticaNeueLTPro-ThEx.ttf") format('truetype');
+  src:  url("../../font/HelveticaNeueLTPro-ThEx.ttf") format('truetype'),
+       url("../../font/HelveticaNeueLTPro-ThEx.woff") format('woff');
 
   font-weight: normal;
   font-style: normal;
+
 }
  
 
 // roman
 @font-face {
   font-family: 'HelveticaInseratLTStd-Roman';
-  src: url('../../font/HelveticaInseratLTStd-Roman.otf');
-  src: url('../../font/HelveticaInseratLTStd-Roman.ttf') format('embedded-truetype');
+  src: url('../../font/HelveticaInseratLTStd-Roman.ttf') format('truetype'),
+       url('../../font/HelveticaInseratLTStd-Roman.woff') format('woff');
 }
 
 
 // medium
 @font-face {
   font-family: 'HelveticaNeueLTPro-Md';
-  src: url('../../font/HelveticaNeueLTPro-Md.otf');
-  src: url('../../font/HelveticaNeueLTPro-Md.ttf') format('embedded-truetype');
+  src: url('../../font/HelveticaNeueLTPro-Md.ttf') format('truetype'),
+       url('../../font/HelveticaNeueLTPro-Md.woff') format('woff');
 }
 
 // mediumCond
 @font-face {
   font-family: 'HelveticaNeueLTPro-MdCn';
-  src: url('../../font/HelveticaNeueLTPro-MdCn.otf');
-  src: url('../../font/HelveticaNeueLTPro-MdCn.otf') format('embedded-truetype');
+  src: url('../../font/HelveticaNeueLTPro-MdCn.ttf') format('truetype'),
+       url('../../font/HelveticaNeueLTPro-MdCn.woff') format('woff');
 }
 
 
 //lt
 @font-face {
   font-family: 'HelveticaNeueLTPro-Lt';
-  src: url('../../font/HelveticaNeueLTPro-Lt.otf');
-  src: url('../../font/HelveticaNeueLTPro-Lt.ttf') format('embedded-truetype');
+
+  src: url('../../font/HelveticaNeueLTPro-Lt.ttf') format('truetype'),
+       url('../../font/HelveticaNeueLTPro-Lt.woff') format('woff')
 }
 
 
@@ -267,6 +268,7 @@ footer{
 
   color: #9f9f9f;
   font-size: rem(24px);
+  line-height: 56px;
 }
 
 
