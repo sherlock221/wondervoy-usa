@@ -218,4 +218,13 @@ footer {
   width: 62px;
   height: 51px; }
 
+/** auth  **/
+.auth {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #c0c0c0;
+  background: #ffffff;
+  z-index: 999; }
+
 /*# sourceMappingURL=base.css.map */
