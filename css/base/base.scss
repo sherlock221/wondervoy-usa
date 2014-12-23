@@ -116,6 +116,14 @@ ul,li{
   height: inherit;
 }
 
+.pos-rel{
+  position: relative;
+}
+
+.btn{
+  border-radius: 0;
+}
+
 
 
 
@@ -187,9 +195,7 @@ footer{
     }
   }
 
-  .ib{
-    vertical-align: top;
-  }
+
 
   .footer-main{
     padding:  rem(5px) rem(12px);
@@ -233,6 +239,7 @@ footer{
 
 .ib{
   display: inline-block;
+  vertical-align: middle;
 }
 
 
@@ -257,6 +264,8 @@ footer{
 
 
 
+
+
 //button
 
 .changeLag{
@@ -271,7 +280,14 @@ footer{
   line-height: 56px;
 }
 
-
+/** 基本href **/
+.href-base{
+  color: #d32271;
+  font-size: 14px;
+  &:hover{
+    color: #d32271;
+  }
+}
 
 
 //img

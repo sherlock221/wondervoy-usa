@@ -9,6 +9,25 @@ $scale: 2px;
   @return  $px;
 }
 
+
+//transform
+@mixin px-transform ($value){
+    -webkit-transform : $value;
+    transform  : $value;
+   -moz-transform : $value;
+   -ms-transform : $value;
+}
+
+//transition
+@mixin px-transition ($value){
+
+  -webkit-transition : $value;
+  transition  : $value;
+  -moz-transition : $value;
+  -ms-transition : $value;
+}
+
+
 ////px转rem
 //@function rem($px) {
 //  @return $px / ($default-font-size ) * 1rem;

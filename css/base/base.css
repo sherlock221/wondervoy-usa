@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 导入变量 **/
+/** 瀵煎叆鍙橀噺 **/
 .spinner {
   width: 150px;
   text-align: center; }
@@ -84,6 +84,12 @@ ul, li {
 .container {
   height: inherit; }
 
+.pos-rel {
+  position: relative; }
+
+.btn {
+  border-radius: 0; }
+
 nav.navbar .navbar-item {
   overflow: hidden;
   padding-top: 40px; }
@@ -118,8 +124,6 @@ footer {
     footer .footer-icon span {
       margin: 0 67px;
       cursor: pointer; }
-  footer .ib {
-    vertical-align: top; }
   footer .footer-main {
     padding: 5px 12px; }
   footer .left-ft {
@@ -142,7 +146,8 @@ footer {
   height: 36px; }
 
 .ib {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle; }
 
 .top-padding {
   padding-top: 75px; }
@@ -164,6 +169,13 @@ footer {
   color: #9f9f9f;
   font-size: 24px;
   line-height: 56px; }
+
+/** 基本href **/
+.href-base {
+  color: #d32271;
+  font-size: 14px; }
+  .href-base:hover {
+    color: #d32271; }
 
 .ui-widget {
   background-image: url("../../img/ui-widget.png"); }

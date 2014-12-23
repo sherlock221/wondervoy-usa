@@ -4,5 +4,16 @@
     <div class="mask"></div>
 
     <!-- login/register/xx -->
-    <div ui-view></div>
+    <div class="auth-layer">
+
+        <a href="javascript:void(0);" class="ib all-img auth-close"><i class="auth-close-core ib all-img"></i> </a>
+
+        <div class="auth-content" ui-view> </div>
+
+        <div class="auth-footer">
+            <span class="ib">Don’T have an account?&nbsp;&nbsp;&nbsp;</span>
+            <a href="javascript:void(0);" class="ib href-base">Sign up</a>
+        </div>
+    </div>
+
 </section>
