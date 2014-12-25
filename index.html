@@ -60,6 +60,8 @@
     <!-- service -->
     <script type="text/javascript" src="js/services/message.sev.js"></script>
 
+    <script type="text/javascript" src="js/filters/filters.js"></script>
+
 </head>
 <body ng-app="wondervoy" >
 
@@ -67,15 +69,15 @@
         <ng-include src="'templates/header.html'" ></ng-include>
 
 
-
         <div class="content" ui-view  ng-controller="MainCtrl"></div>
-
 
         <!-- footer -->
         <ng-include src="'templates/footer.html'" ></ng-include>
 
 
 
+        <!-- auth 验证 -->
+        <ui-view name="auth"></ui-view>
 
 </body>
 </html>

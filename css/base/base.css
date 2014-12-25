@@ -68,6 +68,9 @@
 .fm-thex {
   font-family: 'HelveticaNeueLTPro-ThEx'; }
 
+.color-01 {
+  color: #d32271; }
+
 html, body {
   font-family: 'HelveticaNeueLTPro-Lt';
   font-size: 14px;
@@ -229,14 +232,5 @@ footer {
   background-position: 0 -402px;
   width: 62px;
   height: 51px; }
-
-/** auth  **/
-.auth {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #c0c0c0;
-  background: #ffffff;
-  z-index: 999; }
 
 /*# sourceMappingURL=base.css.map */

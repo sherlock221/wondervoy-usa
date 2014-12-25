@@ -1,7 +1,7 @@
 <!-- register -->
 
 <div class="text-center pos-rel">
-    <button class="auth-btn btn ib light">Sign up with Weibo</button>
+    <button class="auth-btn btn ib light"  >Sign up with Weibo</button>
     <div class=" auth-shadow all-img"></div>
 </div>
 
@@ -11,31 +11,19 @@
     <span class="ib side-line"></span>
 </div>
 
-<div class="">
-    <form  method="post" novalidate name="loginForm" class="auth-form">
-
-        <div class="form-group">
-            <input type="text" placeholder="Email"   class="form-control auth-text"  name="email"    />
-        </div>
-
-        <div class="form-group">
-            <input type="text" placeholder="Password"   class="form-control auth-text"  name="password"   />
-        </div>
-
-        <div class="form-group clearfix checkbox-ly">
-            <div class="checkbox ib">
-                <label>
-                    <input type="checkbox"> Remember me
-                </label>
-            </div>
-
-            <div class="ib">
-                <a href="" class="href-base">Forgot password?</a>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <button type="submit" class="auth-btn  btn">Log In</button>
-        </div>
-    </form>
+<div class="text-center">
+    <button type="submit" class="auth-btn  btn" ng-click="auth.jumpRegisterEmail();" >Sign up with Email</button>
 </div>
+
+<div class="text-center side-line-main light">
+    <span class="ib side-line"></span>
+    <h4 class="ib"><i class="ib circle"></i></h4>
+    <span class="ib side-line"></span>
+</div>
+
+
+<section class="auth-desc">
+    <p class="text-left">
+        By signing up, I agree to Wondervoy's Terms of <br/>Service,and Privacy Policy.
+    </p>
+</section>

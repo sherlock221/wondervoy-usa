@@ -14,6 +14,39 @@ wondervoy.run(function () {
 //设置路由
 wondervoy.config(function ($stateProvider, $urlRouterProvider) {
 
+
+
+    var auth = {
+        url: "/auth",
+        abstract: true,
+        views: {
+            'auth@': {
+                templateUrl: "templates/auth/auth.html",
+                controller: "AuthCtrl as auth"
+            }
+        }
+    }
+
+    var login ={
+        url: "/login",
+        templateUrl: "templates/auth/login.html",
+        controller: "LoginCtrl as login"
+    }
+
+    var register = {
+        url: "/register",
+        templateUrl: "templates/auth/register.html",
+        controller: "RegisterCtrl as register"
+    }
+
+    var registerEmail = {
+        url: "/registerEmail",
+
+        templateUrl: "templates/auth/register-email.html",
+        controller: "RegisterCtrl as register"
+
+    }
+
     /**
      * 首页
      * url  /home
@@ -24,47 +57,20 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
         controller: "HomeCtrl as home"
     });
 
-
     /**
      * 验证
      */
-    $stateProvider.state("home.auth", {
-        url: "/auth",
-        abstract: true,
-        views: {
-            'auth': {
-                templateUrl: "templates/auth/auth.html",
-                controller: "AuthCtrl as auth"
-            }
-        }
-    });
-
-
-    /**
-     * 登录
-     */
-    $stateProvider.state("home.auth.login", {
-        url: "/login",
-        templateUrl: "templates/auth/login.html",
-        controller: "LoginCtrl as login"
-    });
-
-    /**
-     * 注册
-     */
-    $stateProvider.state("home.auth.register", {
-        url: "/register",
-        templateUrl: "templates/auth/register.html",
-        controller: "RegisterCtrl as register"
-
-    });
+    $stateProvider.state("home.auth",auth);
+    $stateProvider.state("home.auth.login",login);
+    $stateProvider.state("home.auth.register",register);
+    $stateProvider.state("home.auth.registerEmail",registerEmail);
 
 
     /**
      * 个人信息
      */
-    $stateProvider.state("user",{
-        url : "/user",
+    $stateProvider.state("user", {
+        url: "/user",
         templateUrl: "templates/user/user.html",
         controller: "UserCtrl as user"
     });
@@ -73,14 +79,11 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     /**
      * 发表故事
      */
-    $stateProvider.state("user.sendStory",{
-        url : "/sendStory",
+    $stateProvider.state("user.sendStory", {
+        url: "/sendStory",
         templateUrl: "templates/user/sendStory.html",
         controller: "SendStoryCtrl as sendStory"
     });
-
-
-
 
 
     //默认情况

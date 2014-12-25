@@ -6,13 +6,23 @@
     <!-- login/register/xx -->
     <div class="auth-layer">
 
-        <a href="javascript:void(0);" class="ib all-img auth-close"><i class="auth-close-core ib all-img"></i> </a>
+        <a href="javascript:void(0);" ng-click="auth.close();" class="ib all-img auth-close"><i
+                class="auth-close-core ib all-img"></i> </a>
 
-        <div class="auth-content" ui-view> </div>
-         
+        <div class="auth-content" ui-view></div>
+
         <div class="auth-footer">
-            <span class="ib">Don’T have an account?&nbsp;&nbsp;&nbsp;</span>
-            <a href="javascript:void(0);" class="ib href-base">Sign up</a>
+            <span class="ib" ng-bind-html="$root.authMsg.msg | to_trusted"></span>
+
+            <!-- login registe 判断 -->
+            <a href="javascript:void(0);" ng-if="$root.authMsg.urlName == 'Login'" ng-click="auth.jumpLogin();"
+               class="ib href-base">
+                {{$root.authMsg.urlName}}
+            </a>
+            <a href="javascript:void(0);" ng-if="$root.authMsg.urlName == 'Sign up'" ng-click="auth.jumpRegister();"
+               class="ib href-base">
+                {{$root.authMsg.urlName}}
+            </a>
         </div>
     </div>
 
