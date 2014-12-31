@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 瀵煎叆鍙橀噺 **/
+/** 导入变量 **/
 .spinner {
   width: 150px;
   text-align: center; }
@@ -232,5 +232,9 @@ footer {
   background-position: 0 -402px;
   width: 62px;
   height: 51px; }
+
+/** 去掉focus的边框 **/
+*:focus, * {
+  outline: none; }
 
 /*# sourceMappingURL=base.css.map */

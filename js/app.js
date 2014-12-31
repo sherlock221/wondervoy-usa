@@ -14,8 +14,6 @@ wondervoy.run(function () {
 //设置路由
 wondervoy.config(function ($stateProvider, $urlRouterProvider) {
 
-
-
     var auth = {
         url: "/auth",
         abstract: true,
@@ -41,10 +39,8 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
 
     var registerEmail = {
         url: "/registerEmail",
-
         templateUrl: "templates/auth/register-email.html",
         controller: "RegisterCtrl as register"
-
     }
 
     /**
@@ -89,6 +85,13 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     //默认情况
     $urlRouterProvider.otherwise("/home");
 });
+
+
+//配置http 拦截器
+wondervoy.config(function($httpProvider){
+    $httpProvider.interceptors.push("AjaxInterceptors");
+});
+
 
 //常量配置
 wondervoy.constant("SERVER", {
