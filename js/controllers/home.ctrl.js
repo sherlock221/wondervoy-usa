@@ -1,6 +1,12 @@
 wondervoy
 
-    .controller("HomeCtrl", function ($rootScope,$scope,$window,$log,$q,$timeout,MessageService) {
+    .controller("HomeCtrl", function ($rootScope,$scope,$window,$log,$q,$timeout,MessageService,$alert) {
+
+
+
+
+
+
 
         //控制 loading
        $scope.isShow = false;
@@ -11,6 +17,10 @@ wondervoy
         $scope.style= {height: $window.innerWidth  / 2+'px'};
 
 
+//        $scope.alert = {
+//            "title": "dadas",
+//            "content": "ceshi"
+//        };
 
 
         //加载更多

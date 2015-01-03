@@ -15,20 +15,10 @@
 
 
 
-
 /*
  *  字体导入
  */
 
-// thex
-//@font-face {
-//  font-family: 'HelveticaNeueLTPro-ThEx';
-//
-//  src:url('../../font/HelveticaNeueLTPro.eot');
-//  src: url('../../font/HelveticaNeueLTPro.eot?#iefix') format("embedded-opentype");
-////  url('../../font/HelveticaNeueLTPro-ThEx.ttf') format('truetype');
-//
-//}
 
 @font-face {
   font-family: 'HelveticaNeueLTPro-ThEx';
@@ -39,7 +29,7 @@
   font-style: normal;
 
 }
- 
+
 
 // roman
 @font-face {
@@ -92,6 +82,10 @@
 
 .color-01{
    color: $color-pink;
+}
+
+.color-01:hover{
+  color: $color-pink;
 }
 
 
@@ -371,3 +365,8 @@ $footer-icon-height : 54px;
 
 /** 去掉focus的边框 **/
 *:focus,*{outline: none;}
+.form-control:focus{
+  border-color : transparent;
+  -webkit-box-shadow : none;
+  box-shadow : none;
+}

@@ -1,4 +1,4 @@
-<!-- --->
+
 <!DOCTYPE html>
 <html >
 <head lang="zh_cn">
@@ -22,6 +22,8 @@
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.css"  type="text/css"/>
+    <link rel="stylesheet" href="lib/angular-strap/angular-strap.css"  type="text/css"/>
+
 
     <!-- base css -->
     <link rel="stylesheet" href="css/base/base.css"  type="text/css"/>
@@ -37,8 +39,9 @@
     <script type="text/javascript" src="lib/angular-ui/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="lib/angular/angular-animate.min.js"></script>
 
-    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-custom-0.12.0.min.js"></script>
-    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-custom-tpls-0.12.0.min.js"></script>
+    <!-- angular strap-->
+    <script type="text/javascript" src="lib/angular-strap/angular-strap.min.js"></script>
+    <script type="text/javascript" src="lib/angular-strap/angular-strap.tpl.min.js"></script>
 
 
     <!-- app.js -->
@@ -65,19 +68,23 @@
     <script type="text/javascript" src="js/filters/filters.js"></script>
 
 </head>
-<body ng-app="wondervoy" >
+<body ng-app="wondervoy"  ng-controller="MainCtrl">
 
         <!-- header -->
         <ng-include src="'templates/header.html'" ></ng-include>
 
-
-        <div class="content" ui-view  ng-controller="MainCtrl"></div>
+        <div class="content" ui-view ></div>
 
         <!-- footer -->
         <ng-include src="'templates/footer.html'" ></ng-include>
 
         <!-- auth 验证 -->
         <ui-view name="auth"></ui-view>
+
+
+        <!-- 全局提示 -->
+
+
 
 </body>
 </html>

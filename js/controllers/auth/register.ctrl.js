@@ -1,9 +1,10 @@
 wondervoy
 
-    .controller("RegisterCtrl", function ($rootScope,$scope,$state,$window,$log,$q,$timeout) {
+    .controller("RegisterCtrl", function ($rootScope,$scope,$state,$window,$log,$q,$timeout,AccountService) {
         console.log("register..");
         var baseHome = $scope.currentStateName;
-        $scope.post = {
+
+        $scope.fm = {
             lastName : "",
             firstName :"",
             email : "",
@@ -17,8 +18,19 @@ wondervoy
             url  : "jumpLogin();"
         }
 
-        $scope.register = function(){
-            alert("register email");
+
+        this.registerUser = function(){
+            AccountService.register($scope.fm.firstName,$scope.fm.lastName,$scope.fm.email,$scope.fm.password).then(function(res){
+                if(res.state == 0){
+                    $rootScope.alertSuccess(res.message);
+                    $state.go("home.auth.login");
+                }
+                else{
+                    $rootScope.alertError(res.message);
+                }
+            });
+
+
         }
 
     });

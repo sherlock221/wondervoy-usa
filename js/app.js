@@ -1,12 +1,14 @@
 var wondervoy = angular.module("wondervoy", [
     'ui.router',
-    'ui.bootstrap'
+    'ngAnimate',
+    'mgcrea.ngStrap'
 ]);
+
+
 
 
 //启动配置
 wondervoy.run(function () {
-
     console.log("run....");
 });
 

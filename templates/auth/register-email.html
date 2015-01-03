@@ -10,3 +10,53 @@
 </div>
 
 
+
+<div class="">
+    <form  method="post" novalidate name="registerForm" class="auth-form" ng-submit="register.registerUser();">
+
+        <div class="form-group">
+            <input type="text" placeholder="First Name"   class="form-control auth-text"  name="firstName"   ng-model="fm.firstName"  required/>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Last Name"   class="form-control auth-text"  name="lastName"   ng-model="fm.lastName"  required/>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Email Address"   class="form-control auth-text"  name="email"   ng-model="fm.email"  required/>
+        </div>
+
+        <div class="form-group">
+            <input type="password" placeholder="Password"   class="form-control auth-text"  name="password"  ng-model="fm.password" required/>
+        </div>
+
+        <div class="form-group">
+            <input type="password" placeholder="Confirm Password"   class="form-control auth-text"  name="passwordAgain"  ng-model="fm.passwordAgain"  required/>
+        </div>
+
+        <div class="form-group clearfix checkbox-ly">
+            <div class="checkbox ib">
+                <label>
+                    <input type="checkbox"> Tell me about Wondervoy news.
+                </label>
+            </div>
+        </div>
+
+        <div class="text-center side-line-main light">
+            <span class="ib side-line"></span>
+            <h4 class="ib"><i class="ib circle"></i></h4>
+            <span class="ib side-line"></span>
+        </div>
+
+
+        <section class="auth-desc" style="margin-bottom: 30px;">
+            <p class="text-left">
+                By signing up, I agree to Wondervoy's <a href="javascript:void(0);" class="color-01"> Terms of <br/>Service</a>,and <a href="javascript:void(0);" class="color-01">Privacy Policy</a>.
+            </p>
+        </section>
+
+        <div class="form-group">
+            <button type="submit" class="auth-btn  btn" ng-disabled="registerForm.$invalid">Sign up with Email</button>
+        </div>
+    </form>
+</div>
+

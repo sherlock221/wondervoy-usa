@@ -1,30 +1,42 @@
 wondervoy
 
-    .factory("AccountService",function($http,$q,SERVER){
+    .factory("AccountService", function ($http, $q, SERVER) {
 
 
         var AccountService = {};
 
-        AccountService.login = function(email,password,source){
+        AccountService.login = function (email, password, source) {
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/account/signin", {
+                    email: email,
+                    password: password,
+                    source: "web"
+            })
+            .success(function (res) {
+                defer.resolve(res);
+            })
 
-                $http.post(SERVER.url+"/account/signin",{
-                    params : {
-                        email : email,
-                        password : password,
-                        source  : "web"
-                     }
+            return defer.promise;
+        }
+
+        AccountService.register = function (firstName,lastName,email,password, source) {
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/account/signup", {
+                    firstName : firstName,
+                    lastName : lastName,
+                    email: email,
+                    password: password,
+                    source: "web"
+
+            })
+                .success(function (res) {
+                    defer.resolve(res);
                 })
-                    .success(function(res){
-                       alert(res);
-                    })
 
-                    .error(function(err){
-                        alert("网络错误!");
-                    });
-
+            return defer.promise;
         }
 
 
-            return  AccountService;
+        return  AccountService;
 
     });

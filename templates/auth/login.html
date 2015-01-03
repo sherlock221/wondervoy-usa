@@ -10,14 +10,14 @@
 </div>
 
 <div class="">
-        <form  method="post" novalidate name="loginForm" class="auth-form">
+        <form  method="post" novalidate name="loginForm" class="auth-form" ng-submit="login.loginUser();">
 
             <div class="form-group">
-                <input type="text" placeholder="Email"   class="form-control auth-text"  name="email"    />
+                <input type="text" placeholder="Email"   class="form-control auth-text"  name="email"   ng-model="email"  required/>
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Password"   class="form-control auth-text"  name="password"   />
+                <input type="password" placeholder="Password"   class="form-control auth-text"  name="password"  ng-model="password" required/>
             </div>
 
             <div class="form-group clearfix checkbox-ly">
@@ -33,7 +33,7 @@
             </div>
 
             <div class="form-group">
-                <button type="submit" class="auth-btn  btn">Log In</button>
+                <button type="submit" class="auth-btn  btn" ng-disabled="loginForm.$invalid">Log In</button>
             </div>
         </form>
 </div>
