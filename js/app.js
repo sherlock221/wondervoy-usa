@@ -6,7 +6,6 @@ var wondervoy = angular.module("wondervoy", [
 
 
 
-
 //启动配置
 wondervoy.run(function () {
     console.log("run....");
@@ -91,7 +90,11 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
 
 //配置http 拦截器
 wondervoy.config(function($httpProvider){
-    $httpProvider.interceptors.push("AjaxInterceptors");
+   $httpProvider.interceptors.push("AjaxInterceptors");
+
+
+    //设置跨域
+    $httpProvider.defaults.withCredentials = true;
 });
 
 

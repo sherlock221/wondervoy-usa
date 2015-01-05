@@ -1,6 +1,11 @@
 wondervoy
 
-    .controller("MainCtrl", function ($rootScope, $scope, $alert,$sce) {
+    .controller("MainCtrl", function ($rootScope, $scope, $alert,$sce,Util) {
+
+
+        //全局用户
+        $rootScope.user =  Util.getSgObj("user");
+
 
         //全局提示框
         $rootScope.$watch("httpError",function(temp){

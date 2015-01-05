@@ -23,6 +23,14 @@ wondervoy
 //        };
 
 
+        MessageService.mock().then(function(res){
+            alert(res.msg);
+        })
+            .then(function(err){
+                alert("err");
+            });
+
+
         //加载更多
         this.loadMore = function(){
 
@@ -55,5 +63,7 @@ wondervoy
 
         //自动加载
         this.loadMore();
+
+
 
     });

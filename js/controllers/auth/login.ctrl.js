@@ -1,6 +1,6 @@
 wondervoy
 
-    .controller("LoginCtrl", function ($rootScope,$scope,$state,$window,$log,$q,$timeout,AccountService) {
+    .controller("LoginCtrl", function ($rootScope,$scope,$state,$window,$log,$q,$timeout,AccountService,Util) {
 
         console.log("login ...");
 
@@ -23,6 +23,18 @@ wondervoy
                     if(res.state == 0){
                         //设置 token
                         $window.sessionStorage.token = res.data.session;
+
+                       var user = {
+                            userName : res.data.userName,
+                            userHead : res.data.userHead
+                        }
+
+                        Util.setSgObj("user",user);
+
+                        //设置user
+                        $rootScope.user = user;
+
+
                         $rootScope.alertSuccess(res.message);
                         $state.go("home");
                     }

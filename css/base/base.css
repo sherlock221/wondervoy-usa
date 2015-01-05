@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 瀵煎叆鍙橀噺 **/
+/** 导入变量 **/
 .spinner {
   width: 150px;
   text-align: center; }
@@ -81,6 +81,65 @@ html, body {
   width: 100%;
   height: inherit;
   background: #ffffff; }
+
+/** 登录后界面 **/
+.navbar-login.navbar-fixed-top {
+  height: 60px;
+  background: #000000;
+  min-height: 60px; }
+  .navbar-login.navbar-fixed-top .navbar-brand {
+    height: 60px;
+    line-height: 60px;
+    padding: 0; }
+  .navbar-login.navbar-fixed-top .item-login {
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+    top: 11px;
+    /** 用户头像 **/
+    /** 按钮 **/ }
+    .navbar-login.navbar-fixed-top .item-login li {
+      display: inline-block;
+      vertical-align: middle; }
+      .navbar-login.navbar-fixed-top .item-login li a {
+        vertical-align: middle; }
+    .navbar-login.navbar-fixed-top .item-login .userInfo-head {
+      width: 42px;
+      height: 42px;
+      border-radius: 65px;
+      overflow: hidden;
+      display: inline-block; }
+    .navbar-login.navbar-fixed-top .item-login .userInfo-name {
+      font-size: 18px;
+      color: #ffde00;
+      margin-left: 20px; }
+      .navbar-login.navbar-fixed-top .item-login .userInfo-name:after {
+        margin-left: 20px;
+        content: "";
+        background-image: url("../../img/ui-widget.png");
+        width: 19px;
+        height: 11px;
+        background-position: 0 -514px;
+        -webkit-transition: 1s;
+        transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        display: inline-block;
+        vertical-align: middle; }
+      .navbar-login.navbar-fixed-top .item-login .userInfo-name:hover:after {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg); }
+    .navbar-login.navbar-fixed-top .item-login .showStories {
+      height: 30px;
+      width: 190px;
+      background: #d32271;
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center;
+      line-height: 30px;
+      margin-left: 60px; }
 
 ul, li {
   margin: 0;
@@ -185,6 +244,68 @@ footer {
 
 .ui-widget {
   background-image: url("../../img/ui-widget.png"); }
+  .ui-widget.arrow-down {
+    width: 19px;
+    height: 11px;
+    background-position: 0 -514px; }
+  .ui-widget.star {
+    width: 38px;
+    height: 36px;
+    background-position: 0 -549px; }
+  .ui-widget.star-self {
+    background-position: -38px -549px; }
+  .ui-widget.man {
+    width: 31px;
+    height: 30px;
+    background-position: -106px -549px; }
+  .ui-widget.woman {
+    background-position: -76px -549px;
+    width: 30px;
+    height: 30px; }
+  .ui-widget.car {
+    width: 50px;
+    height: 34px;
+    background-position: 0 -592px; }
+  .ui-widget.card {
+    width: 50px;
+    background-position: -50px -592px; }
+  .ui-widget.weibo02 {
+    width: 38px;
+    height: 40px;
+    background-position: 0 -630px; }
+  .ui-widget.facebook02 {
+    width: 38px;
+    height: 40px;
+    background-position: 0 -670px; }
+  .ui-widget.twitter02 {
+    width: 38px;
+    height: 40px;
+    background-position: 0 -710px; }
+  .ui-widget.message02 {
+    width: 38px;
+    height: 30px;
+    background-position: 0 -750px; }
+  .ui-widget.book {
+    width: 42px;
+    height: 40px;
+    background-position: -50px -630px; }
+  .ui-widget.phone {
+    width: 42px;
+    height: 40px;
+    background-position: -50px -670px; }
+  .ui-widget.cookie {
+    width: 42px;
+    height: 53px;
+    background-position: -50px -710px; }
+  .ui-widget.close {
+    width: 54px;
+    height: 53px; }
+  .ui-widget.arrow-right {
+    width: 38px;
+    height: 35px; }
+  .ui-widget.add {
+    width: 37px;
+    height: 35px; }
 
 .facebook {
   background-position: 0px  0;

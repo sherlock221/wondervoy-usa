@@ -1,15 +1,14 @@
 <!-- 顶部 -->
 <header class="" >
-    <!--<nav class="navbar navbar-fixed-top  navbar-tran" role="navigation">-->
-    <nav class="navbar navbar-fixed-top  navbar-tran" role="navigation" style="position: absolute;">
-        <div class="container">
 
+    <!-- 未登录界面 -->
+    <nav class="navbar navbar-fixed-top   navbar-tran" role="navigation" style="position: absolute;"  ng-hide="$root.user.userName">
+        <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand ib" href="#">
                     <i class="ib logo"></i>
                 </a>
             </div>
-
             <ul class="pull-right navbar-item ">
                 <li>
                     <a href="#/home/auth/register">Sign up</a>
@@ -17,6 +16,17 @@
                 <li>
                     <a href="#/home/auth/login">Login</a>
                 </li>
+
+                <li class="userInfo" ng-show="$root.user.userName">
+                    <a href="javascript:void(0);" class="userInfo-head">
+                        <img src="{{$root.user.userHead}}"  class="res-img"/>
+                    </a>
+                    <a href="javascript:void(0)"  class="userInfo-name">
+                        {{$root.user.userName}}
+                    </a>
+                </li>
+
+
                 <li>
                     <a  href="#/user">Show Your Stories</a>
                 </li>
@@ -24,5 +34,43 @@
 
         </div>
     </nav>
+
+    <!-- 登录界面 -->
+    <nav class="navbar navbar-fixed-top  navbar-login navbar-tran" role="navigation" style="position: absolute;"  ng-show="$root.user.userName">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand ib" href="#">
+                    <i class="ib logo"></i>
+                </a>
+            </div>
+
+            <ul class="pull-right  item-login ">
+
+                <li class="" ng-show="$root.user.userName">
+                    <a href="javascript:void(0);" class="ib userInfo-head">
+                        <img src="{{$root.user.userHead}}"  class="res-img"/>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)"  class="ib userInfo-name">
+                        {{$root.user.userName}}
+                    </a>
+
+                    <div>
+
+
+                    </div>
+
+
+                </li>
+
+                <li>
+                    <a  class="showStories ib">Show Your Stories</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
 
 </header>
