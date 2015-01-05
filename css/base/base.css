@@ -145,6 +145,8 @@ a:hover {
         right: 27px;
         top: -16px; }
       .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li {
+        display: block; }
+      .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li > a {
         padding: 14px 11px 6px 0px;
         margin: 8px 5px;
         color: #ffffff;

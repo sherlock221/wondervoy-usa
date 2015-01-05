@@ -194,6 +194,9 @@ a:hover{
       }
       .userInfoNav{
         li{
+          display: block;
+        }
+        li >a{
           padding: 14px 11px 6px 0px;
           margin: 8px 5px;
           color: #ffffff;
