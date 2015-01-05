@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 导入变量 **/
+/** 瀵煎叆鍙橀噺 **/
 .spinner {
   width: 150px;
   text-align: center; }
@@ -82,6 +82,9 @@ html, body {
   height: inherit;
   background: #ffffff; }
 
+a:hover {
+  text-decoration: none; }
+
 /** 登录后界面 **/
 .navbar-login.navbar-fixed-top {
   height: 60px;
@@ -92,7 +95,6 @@ html, body {
     line-height: 60px;
     padding: 0; }
   .navbar-login.navbar-fixed-top .item-login {
-    overflow: hidden;
     vertical-align: middle;
     position: relative;
     top: 11px;
@@ -120,17 +122,49 @@ html, body {
         width: 19px;
         height: 11px;
         background-position: 0 -514px;
-        -webkit-transition: 1s;
-        transition: 1s;
-        -moz-transition: 1s;
-        -ms-transition: 1s;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
         display: inline-block;
         vertical-align: middle; }
-      .navbar-login.navbar-fixed-top .item-login .userInfo-name:hover:after {
+      .navbar-login.navbar-fixed-top .item-login .userInfo-name.hov:after {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg); }
+    .navbar-login.navbar-fixed-top .item-login .userInfoLayer {
+      position: absolute;
+      top: 59px;
+      left: -88px;
+      width: 197px;
+      z-index: 3;
+      border: 1px solid #ffde00; }
+      .navbar-login.navbar-fixed-top .item-login .userInfoLayer .trans {
+        position: absolute;
+        right: 27px;
+        top: -16px; }
+      .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li {
+        padding: 14px 11px 6px 0px;
+        margin: 8px 5px;
+        color: #ffffff;
+        font-size: 14px;
+        display: block;
+        text-align: right;
+        cursor: pointer; }
+      .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li:hover {
+        background: #6b6b6b; }
+    .navbar-login.navbar-fixed-top .item-login .opacityBg {
+      opacity: 0.9;
+      background: #141414;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1; }
     .navbar-login.navbar-fixed-top .item-login .showStories {
       height: 30px;
       width: 190px;
@@ -306,6 +340,10 @@ footer {
   .ui-widget.add {
     width: 37px;
     height: 35px; }
+  .ui-widget.trans {
+    width: 28px;
+    height: 16px;
+    background-position: 0 -980px; }
 
 .facebook {
   background-position: 0px  0;

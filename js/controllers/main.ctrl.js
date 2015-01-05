@@ -1,11 +1,17 @@
 wondervoy
 
-    .controller("MainCtrl", function ($rootScope, $scope, $alert,$sce,Util) {
+    .controller("MainCtrl", function ($rootScope, $state,$window,$scope, $alert,$sce,Util) {
+
 
 
         //全局用户
         $rootScope.user =  Util.getSgObj("user");
 
+
+//        this.showUserInfo = function(){
+//            $scope.isShowUserInfo = true;
+//            console.log("mosue enter");
+//        }
 
         //全局提示框
         $rootScope.$watch("httpError",function(temp){
@@ -71,5 +77,13 @@ wondervoy
 //        $scope.banner_height = $window.innerWidth  / 2;
 //        console.log( $scope.win_height);
 
+        //登出
+        $rootScope.loginOut = function(){
+            Util.remove("user");
+            $rootScope.user = null;
+
+            //发送登出链接
+            $state.go("home");
+        }
 
     });

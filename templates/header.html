@@ -1,8 +1,9 @@
 <!-- 顶部 -->
-<header class="" >
+<header class="">
 
     <!-- 未登录界面 -->
-    <nav class="navbar navbar-fixed-top   navbar-tran" role="navigation" style="position: absolute;"  ng-hide="$root.user.userName">
+    <nav class="navbar navbar-fixed-top   navbar-tran" role="navigation" style="position: absolute;"
+         ng-hide="$root.user.userName">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand ib" href="#">
@@ -19,16 +20,16 @@
 
                 <li class="userInfo" ng-show="$root.user.userName">
                     <a href="javascript:void(0);" class="userInfo-head">
-                        <img src="{{$root.user.userHead}}"  class="res-img"/>
+                        <img src="{{$root.user.userHead}}" class="res-img"/>
                     </a>
-                    <a href="javascript:void(0)"  class="userInfo-name">
+                    <a href="javascript:void(0)" class="userInfo-name">
                         {{$root.user.userName}}
                     </a>
                 </li>
 
 
                 <li>
-                    <a  href="#/user">Show Your Stories</a>
+                    <a href="#/user">Show Your Stories</a>
                 </li>
             </ul>
 
@@ -36,7 +37,8 @@
     </nav>
 
     <!-- 登录界面 -->
-    <nav class="navbar navbar-fixed-top  navbar-login navbar-tran" role="navigation" style="position: absolute;"  ng-show="$root.user.userName">
+    <nav class="navbar navbar-fixed-top  navbar-login navbar-tran" role="navigation" style="position: absolute;"
+         ng-show="$root.user.userName">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand ib" href="#">
@@ -48,25 +50,44 @@
 
                 <li class="" ng-show="$root.user.userName">
                     <a href="javascript:void(0);" class="ib userInfo-head">
-                        <img src="{{$root.user.userHead}}"  class="res-img"/>
+                        <img src="{{$root.user.userHead}}" class="res-img"/>
                     </a>
                 </li>
 
-                <li>
-                    <a href="javascript:void(0)"  class="ib userInfo-name">
-                        {{$root.user.userName}}
-                    </a>
+                <li  class="pos-rel">
 
-                    <div>
-
+                    <div ng-mouseenter="showDiv=!showDiv;hov=true;"  ng-init="showDiv=false;hov=false;" class="userMouse">
+                        <a href="javascript:void(0)" class="ib userInfo-name " ng-class="{'hov':hov}"  >
+                            {{$root.user.userName}}
+                        </a>
+                    </div>
+                    <div class="userInfoLayer" ng-show="showDiv"    ng-mouseleave="showDiv=!showDiv;hov=false;">
+                        <div class="opacityBg"></div>
+                        <span class="ib  trans ui-widget"></span>
+                        <ul class="userInfoNav">
+                            <li>
+                                <a class="ib">Your&nbsp;story</a>
+                            </li>
+                            <li>
+                                <a class="ib">Edit&nbsp;profile</a>
+                            </li>
+                            <li>
+                                <a class="ib">Account</a>
+                            </li>
+                            <li>
+                                <a class="ib" ng-click="loginOut();">Logout</a>
+                            </li>
+                        </ul>
 
                     </div>
 
 
+
+
                 </li>
 
                 <li>
-                    <a  class="showStories ib">Show Your Stories</a>
+                    <a class="showStories ib">Show Your Stories</a>
                 </li>
             </ul>
         </div>

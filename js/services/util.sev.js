@@ -18,6 +18,9 @@ wondervoy
 
             setSg: function (key, value) {
                 $window.sessionStorage.setItem(key, value);
+            },
+            remove : function(key){
+                $window.sessionStorage.removeItem(key);
             }
 
         }
