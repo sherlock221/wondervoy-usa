@@ -46,9 +46,9 @@
                 </a>
             </div>
 
-            <ul class="pull-right  item-login ">
+            <ul class="pull-right  item-login " ng-init="showDiv=false;hov=false;">
 
-                <li class="" ng-show="$root.user.userName">
+                <li class="" ng-show="$root.user.userName" ng-mouseenter="showDiv=true;hov=true;">
                     <a href="javascript:void(0);" class="ib userInfo-head">
                         <img src="{{$root.user.userHead}}" class="res-img"/>
                     </a>
@@ -56,7 +56,7 @@
 
                 <li  class="pos-rel">
 
-                    <div ng-mouseenter="showDiv=true;hov=true;"  ng-init="showDiv=false;hov=false;" class="userMouse">
+                    <div ng-mouseenter="showDiv=true;hov=true;"   class="userMouse">
                         <a href="javascript:void(0)" class="ib userInfo-name " ng-class="{'hov':hov}"  >
                             {{$root.user.userName}}
                         </a>

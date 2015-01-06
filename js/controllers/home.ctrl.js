@@ -17,18 +17,9 @@ wondervoy
         $scope.style= {height: $window.innerWidth  / 2+'px'};
 
 
-//        $scope.alert = {
-//            "title": "dadas",
-//            "content": "ceshi"
-//        };
 
 
-        MessageService.mock().then(function(res){
-            alert(res.msg);
-        })
-            .then(function(err){
-                alert("err");
-            });
+
 
 
         //加载更多

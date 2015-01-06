@@ -29,6 +29,8 @@ wondervoy
                             userHead : res.data.userHead
                         }
 
+
+
                         Util.setSgObj("user",user);
 
                         //设置user

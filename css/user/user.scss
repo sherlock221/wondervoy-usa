@@ -1,18 +1,17 @@
-$navmg  : 32px;
+$navmg: 32px;
 
-
-.pdhack{
+.pdhack {
   padding-top: 60px;
 }
 
-.bg{
+.bg {
   width: inherit;
   height: inherit;
   position: relative;
   background: #ffffff;
 }
 
-.line{
+.line {
 
   background: #333333;
   height: 2px;
@@ -23,8 +22,7 @@ $navmg  : 32px;
 
 }
 
-
-.breadcrumb{
+.breadcrumb {
   border-bottom: 1px solid #ededed;
   color: #131313;
 
@@ -37,25 +35,21 @@ $navmg  : 32px;
   margin-bottom: 0;
   font-weight: bold;
 
-  & > li + li:before{
+  & > li + li:before {
     content: "> ";
     color: inherit;
   }
 
-  a{
+  a {
     color: #131313;
   }
 }
 
-
-
-
-.breadcrumb  .active{
+.breadcrumb .active {
   color: #d32271;
 }
 
-
-.userTitle{
+.userTitle {
   font-size: 68px;
   color: #131313;
   letter-spacing: 1px;
@@ -63,25 +57,22 @@ $navmg  : 32px;
   margin-bottom: 16px;
 }
 
-.userTitleDesc{
+.userTitleDesc {
   font-size: 30px;
   color: #131313;
   letter-spacing: 0.7px;
 }
 
-.user-content{
+.user-content {
   color: salmon;
 
   background: #fcfcfc;
   padding-top: 40px;
 }
 
+$leftHeight: 256px;
 
-$leftHeight : 256px;
-
-
-
-.info-head{
+.info-head {
   width: $leftHeight;
   height: 256px;
   margin-right: 8px;
@@ -89,45 +80,43 @@ $leftHeight : 256px;
   margin-left: $navmg;
 }
 
-
-.user-black-layer{
+.user-black-layer {
 
   background: #131313;
   width: 335px;
 
-
-  $mgLayerLeft : 33px;
-  $mgLayerRight :55px;
+  $mgLayerLeft: 33px;
+  $mgLayerRight: 55px;
 
   position: absolute;
   right: -137px;
   top: -40px;
 
-.usercard{
+  .usercard {
 
-  margin-left : $mgLayerLeft;
-  margin-right:  $mgLayerRight;
+    margin-left: $mgLayerLeft;
+    margin-right: $mgLayerRight;
 
-  font-size: 18px;
+    font-size: 18px;
 
-  color: #ffde00;
+    color: #ffde00;
 
-  li{
-    padding-bottom: 10px;
+    li {
+      padding-bottom: 10px;
+    }
   }
-}
 
- & > h4{
-   color: #ffde00;
-   font-size: 24px;
+  & > h4 {
+    color: #ffde00;
+    font-size: 24px;
 
-   margin-left: $mgLayerLeft;
-   margin-right: $mgLayerRight;
+    margin-left: $mgLayerLeft;
+    margin-right: $mgLayerRight;
 
-   padding-top: 24px;
- }
+    padding-top: 24px;
+  }
 
-  & > p{
+  & > p {
     color: #ffffff;
     font-size: 14px;
 
@@ -135,25 +124,22 @@ $leftHeight : 256px;
     margin-right: $mgLayerRight;
   }
 
-  & .lineyellow{
+  & .lineyellow {
 
     width: 87%;
     height: 1px;
     background: #ffde00;
 
-
-
     margin-top: 23px;
     margin-bottom: 22px;
   }
 
-
-  .block-bottom{
+  .block-bottom {
     position: absolute;
     bottom: -34px;
   }
 
-  .block-top{
+  .block-top {
     position: absolute;
     top: -10px;
     width: 100%;
@@ -162,33 +148,31 @@ $leftHeight : 256px;
   }
 }
 
-
-.user-middle{
+.user-middle {
   color: #131313;
 
-  & > h4{
+  & > h4 {
     font-size: 30px;
     margin-top: 29px;
     margin-bottom: 31px;
   }
 
-
-  .woman, .man{
+  .woman, .man {
     position: relative;
     top: -5px;
   }
 
-  .user-star li{
+  .user-star li {
     float: left;
     margin-right: 5px;
   }
 
-  .user-star,.popularity{
+  .user-star, .popularity {
     vertical-align: middle;
 
   }
 
-  .popularity{
+  .popularity {
     position: relative;
     top: 12px;
     margin-left: 30px;
@@ -196,24 +180,23 @@ $leftHeight : 256px;
     font-size: 18px;
   }
 
-  .user-local,.user-base-info{
+  .user-local, .user-base-info {
     font-size: 18px;
     margin-top: 33px;
   }
 
-  .user-base-info{
-    span:after{
+  .user-base-info {
+    span:after {
       content: "/";
       margin: 0 10px;
     }
-    span:last-child:after{
+    span:last-child:after {
       content: "";
     }
   }
 }
 
-
-.user-nav{
+.user-nav {
   margin-bottom: 31px;
 
   color: #131313;
@@ -224,8 +207,7 @@ $leftHeight : 256px;
 
   margin-left: $navmg;
 
-
-  .user-nav-title{
+  .user-nav-title {
     font-size: 18px;
     height: 49px;
     border-bottom: 1px solid #e7e7e7;
@@ -236,51 +218,49 @@ $leftHeight : 256px;
     margin-top: 0;
     margin-bottom: 0;
 
-
   }
 
-  .user-nav-list{
+  .user-nav-list {
     vertical-align: top;
-      .title-base{
-        font-size: 18px;
+    .title-base {
+      font-size: 18px;
 
-        margin-bottom: 4px;
-      }
-
-    .icon{
-        vertical-align: top;
-        margin-right: 12px;
+      margin-bottom: 4px;
     }
 
-    .title-content{
+    .icon {
+      vertical-align: top;
+      margin-right: 12px;
+    }
+
+    .title-content {
       font-size: 18px;
       color: #d6d6d6;
       margin-bottom: 12px;
     }
 
-    .br-line{
+    .br-line {
       background: #e7e7e7;
       width: 100%;
       height: 2px;
     }
 
-      a{
-        color: inherit;
-      }
-      li{
-        display: block;
-        padding-top: 24px;
-        padding-left: 17px;
-      }
+    a {
+      color: inherit;
+    }
+    li {
+      display: block;
+      padding-top: 24px;
+      padding-left: 17px;
+    }
   }
 }
 
-
-.user-desc{
+.user-desc {
 
   padding-right: 10px;
 
-  .user-title{
+  .user-title {
     color: #FFF;
     background: #131313;
     font-size: 30px;
@@ -289,7 +269,7 @@ $leftHeight : 256px;
     margin-bottom: 34px;
   }
 
-  .user-p{
+  .user-p {
     color: #131313;
     line-height: 28px;
     font-size: 18px;
@@ -297,20 +277,28 @@ $leftHeight : 256px;
     margin-bottom: 40px;
   }
 
-  .showMore{
+  .showMore {
     color: #f787b9;
     font-size: 18px;
     margin-bottom: 53px;
   }
 
-  .list-story{
-     li{
-       margin-bottom: 10px;
-     }
+  .list-story {
+    li {
+      position: relative;
+      margin-bottom: 10px;
+
+      .list-font {
+        position: absolute;
+        right: 15px;
+        font-size: 24px;
+        bottom: 8px;
+      }
+    }
   }
 }
 
-.bg-more{
+.bg-more {
   background: #ffffff;
   margin: 20px 0;
 }
