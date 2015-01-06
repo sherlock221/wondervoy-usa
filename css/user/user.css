@@ -1,0 +1,147 @@
+.bg {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  background: #ffffff; }
+
+.line {
+  background: #333333;
+  height: 2px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 38px; }
+
+.breadcrumb {
+  border-bottom: 1px solid #ededed;
+  color: #131313;
+  background: transparent;
+  font-size: 18px;
+  padding: 0;
+  padding-left: 13px;
+  margin-bottom: 0; }
+  .breadcrumb a {
+    color: #131313; }
+
+.breadcrumb .active {
+  color: #d32271; }
+
+.userTitle {
+  font-size: 68px;
+  font-weight: bold; }
+
+.userTitleDesc {
+  font-size: 30px; }
+
+.user-content {
+  color: salmon;
+  background: #fcfcfc;
+  padding-top: 40px; }
+
+.info-head {
+  width: 256px;
+  height: 256px;
+  margin-right: 8px; }
+
+.user-black-layer {
+  background: #131313;
+  position: relative;
+  width: 335px; }
+  .user-black-layer .usercard {
+    margin-left: 33px;
+    margin-right: 55px;
+    font-size: 18px;
+    color: #ffde00; }
+    .user-black-layer .usercard li {
+      padding-bottom: 10px; }
+  .user-black-layer > h4 {
+    color: #ffde00;
+    font-size: 24px;
+    margin-left: 33px;
+    margin-right: 55px;
+    padding-top: 24px; }
+  .user-black-layer > p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 33px;
+    margin-right: 55px; }
+  .user-black-layer .lineyellow {
+    width: 87%;
+    height: 1px;
+    background: #ffde00;
+    margin-top: 23px;
+    margin-bottom: 22px; }
+  .user-black-layer .block-bottom {
+    position: absolute;
+    bottom: -34px; }
+  .user-black-layer .block-top {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    background: #ffde00;
+    height: 9px; }
+
+.user-middle {
+  color: #131313; }
+  .user-middle > h4 {
+    font-size: 30px;
+    margin-top: 29px;
+    margin-bottom: 31px; }
+  .user-middle .woman, .user-middle .man {
+    position: relative;
+    top: -5px; }
+  .user-middle .user-star li {
+    float: left;
+    margin-right: 5px; }
+  .user-middle .user-star, .user-middle .popularity {
+    vertical-align: middle; }
+  .user-middle .popularity {
+    position: relative;
+    top: 12px;
+    margin-left: 30px;
+    color: #e9e9e9;
+    font-size: 18px; }
+  .user-middle .user-local, .user-middle .user-base-info {
+    font-size: 18px;
+    margin-top: 33px; }
+  .user-middle .user-base-info span:after {
+    content: "/";
+    margin: 0 10px; }
+  .user-middle .user-base-info span:last-child:after {
+    content: ""; }
+
+.user-nav {
+  color: #131313;
+  border: 1px solid #e7e7e7;
+  display: inline-block;
+  width: 256px; }
+  .user-nav .user-nav-title {
+    font-size: 18px;
+    height: 48px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold; }
+  .user-nav .user-nav-list {
+    vertical-align: top; }
+    .user-nav .user-nav-list .title-base {
+      font-size: 18px;
+      margin-bottom: 4px; }
+    .user-nav .user-nav-list .icon {
+      vertical-align: top;
+      margin-right: 12px; }
+    .user-nav .user-nav-list .title-content {
+      font-size: 18px;
+      color: #d6d6d6; }
+    .user-nav .user-nav-list .br-line {
+      background: #e7e7e7;
+      width: 100%;
+      height: 2px; }
+    .user-nav .user-nav-list a {
+      color: inherit; }
+    .user-nav .user-nav-list li {
+      display: block;
+      padding-top: 24px;
+      padding-left: 17px; }
+
+/*# sourceMappingURL=user.css.map */

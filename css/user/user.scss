@@ -1,0 +1,246 @@
+
+.bg{
+  width: inherit;
+  height: inherit;
+  position: relative;
+  background: #ffffff;
+}
+
+.line{
+
+  background: #333333;
+  height: 2px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 38px;
+
+}
+
+
+.breadcrumb{
+  border-bottom: 1px solid #ededed;
+  color: #131313;
+
+  background: transparent;
+
+  font-size: 18px;
+  padding: 0;
+  padding-left: 13px;
+
+  margin-bottom: 0;
+
+
+  a{
+    color: #131313;
+  }
+}
+
+
+
+
+.breadcrumb  .active{
+  color: #d32271;
+}
+
+
+.userTitle{
+  font-size: 68px;
+  font-weight: bold;
+}
+
+.userTitleDesc{
+  font-size: 30px;
+}
+
+.user-content{
+  color: salmon;
+
+  background: #fcfcfc;
+  padding-top: 40px;
+}
+
+
+$leftHeight : 256px;
+
+.info-head{
+  width: $leftHeight;
+  height: 256px;
+
+  margin-right: 8px;
+}
+
+
+.user-black-layer{
+
+  background: #131313;
+  position: relative;
+  width: 335px;
+
+
+  $mgLayerLeft : 33px;
+  $mgLayerRight :55px;
+
+
+.usercard{
+
+  margin-left : $mgLayerLeft;
+  margin-right:  $mgLayerRight;
+
+  font-size: 18px;
+
+  color: #ffde00;
+
+  li{
+    padding-bottom: 10px;
+  }
+}
+
+ & > h4{
+   color: #ffde00;
+   font-size: 24px;
+
+   margin-left: $mgLayerLeft;
+   margin-right: $mgLayerRight;
+
+   padding-top: 24px;
+ }
+
+  & > p{
+    color: #ffffff;
+    font-size: 14px;
+
+    margin-left: $mgLayerLeft;
+    margin-right: $mgLayerRight;
+  }
+
+  & .lineyellow{
+
+    width: 87%;
+    height: 1px;
+    background: #ffde00;
+
+
+
+    margin-top: 23px;
+    margin-bottom: 22px;
+  }
+
+
+  .block-bottom{
+    position: absolute;
+    bottom: -34px;
+  }
+
+  .block-top{
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    background: #ffde00;
+    height: 9px;
+  }
+}
+
+
+.user-middle{
+  color: #131313;
+
+  & > h4{
+    font-size: 30px;
+    margin-top: 29px;
+    margin-bottom: 31px;
+  }
+
+
+  .woman, .man{
+    position: relative;
+    top: -5px;
+  }
+
+  .user-star li{
+    float: left;
+    margin-right: 5px;
+  }
+
+  .user-star,.popularity{
+    vertical-align: middle;
+
+  }
+
+  .popularity{
+    position: relative;
+    top: 12px;
+    margin-left: 30px;
+    color: #e9e9e9;
+    font-size: 18px;
+  }
+
+  .user-local,.user-base-info{
+    font-size: 18px;
+    margin-top: 33px;
+  }
+
+  .user-base-info{
+    span:after{
+      content: "/";
+      margin: 0 10px;
+    }
+    span:last-child:after{
+      content: "";
+    }
+  }
+}
+
+
+.user-nav{
+
+  color: #131313;
+  border: 1px solid #e7e7e7;
+
+  display: inline-block;
+
+  width: $leftHeight;
+
+  .user-nav-title{
+    font-size: 18px;
+    height: 48px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .user-nav-list{
+    vertical-align: top;
+      .title-base{
+        font-size: 18px;
+
+        margin-bottom: 4px;
+      }
+
+    .icon{
+        vertical-align: top;
+        margin-right: 12px;
+    }
+
+    .title-content{
+      font-size: 18px;
+      color: #d6d6d6;
+    }
+
+    .br-line{
+      background: #e7e7e7;
+      width: 100%;
+      height: 2px;
+    }
+
+      a{
+        color: inherit;
+      }
+      li{
+        display: block;
+        padding-top: 24px;
+        padding-left: 17px;
+      }
+  }
+}
