@@ -176,6 +176,7 @@
 
         .desc-bg{
           background-color: #ffffff;
+          padding-left: 10px;
 
           a{
             width: 100%;
@@ -196,9 +197,11 @@
           }
         }
 
+        .head-bg-main{
+          background: $head-bg;
+        }
         .head-bg{
           position: relative;
-          background: $head-bg;
 
         }
       }

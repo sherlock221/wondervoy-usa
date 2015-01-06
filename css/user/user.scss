@@ -1,3 +1,9 @@
+$navmg  : 32px;
+
+
+.pdhack{
+  padding-top: 60px;
+}
 
 .bg{
   width: inherit;
@@ -13,7 +19,7 @@
   width: 100%;
   margin-top: 25px;
   margin-bottom: 25px;
-  margin-left: 38px;
+  margin-left: $navmg;
 
 }
 
@@ -29,7 +35,12 @@
   padding-left: 13px;
 
   margin-bottom: 0;
+  font-weight: bold;
 
+  & > li + li:before{
+    content: "> ";
+    color: inherit;
+  }
 
   a{
     color: #131313;
@@ -46,11 +57,16 @@
 
 .userTitle{
   font-size: 68px;
-  font-weight: bold;
+  color: #131313;
+  letter-spacing: 1px;
+  margin-top: 48px;
+  margin-bottom: 16px;
 }
 
 .userTitleDesc{
   font-size: 30px;
+  color: #131313;
+  letter-spacing: 0.7px;
 }
 
 .user-content{
@@ -63,24 +79,29 @@
 
 $leftHeight : 256px;
 
+
+
 .info-head{
   width: $leftHeight;
   height: 256px;
-
   margin-right: 8px;
+
+  margin-left: $navmg;
 }
 
 
 .user-black-layer{
 
   background: #131313;
-  position: relative;
   width: 335px;
 
 
   $mgLayerLeft : 33px;
   $mgLayerRight :55px;
 
+  position: absolute;
+  right: -137px;
+  top: -40px;
 
 .usercard{
 
@@ -193,21 +214,29 @@ $leftHeight : 256px;
 
 
 .user-nav{
+  margin-bottom: 31px;
 
   color: #131313;
   border: 1px solid #e7e7e7;
 
   display: inline-block;
-
   width: $leftHeight;
+
+  margin-left: $navmg;
+
 
   .user-nav-title{
     font-size: 18px;
-    height: 48px;
+    height: 49px;
     border-bottom: 1px solid #e7e7e7;
     line-height: 48px;
     text-align: center;
     font-weight: bold;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+
   }
 
   .user-nav-list{
@@ -226,6 +255,7 @@ $leftHeight : 256px;
     .title-content{
       font-size: 18px;
       color: #d6d6d6;
+      margin-bottom: 12px;
     }
 
     .br-line{
@@ -243,4 +273,44 @@ $leftHeight : 256px;
         padding-left: 17px;
       }
   }
+}
+
+
+.user-desc{
+
+  padding-right: 10px;
+
+  .user-title{
+    color: #FFF;
+    background: #131313;
+    font-size: 30px;
+    margin: 0;
+    padding: 7px;
+    margin-bottom: 34px;
+  }
+
+  .user-p{
+    color: #131313;
+    line-height: 28px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+  }
+
+  .showMore{
+    color: #f787b9;
+    font-size: 18px;
+    margin-bottom: 53px;
+  }
+
+  .list-story{
+     li{
+       margin-bottom: 10px;
+     }
+  }
+}
+
+.bg-more{
+  background: #ffffff;
+  margin: 20px 0;
 }

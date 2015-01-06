@@ -1,3 +1,6 @@
+.pdhack {
+  padding-top: 60px; }
+
 .bg {
   width: inherit;
   height: inherit;
@@ -10,7 +13,7 @@
   width: 100%;
   margin-top: 25px;
   margin-bottom: 25px;
-  margin-left: 38px; }
+  margin-left: 32px; }
 
 .breadcrumb {
   border-bottom: 1px solid #ededed;
@@ -19,7 +22,11 @@
   font-size: 18px;
   padding: 0;
   padding-left: 13px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-weight: bold; }
+  .breadcrumb > li + li:before {
+    content: "> ";
+    color: inherit; }
   .breadcrumb a {
     color: #131313; }
 
@@ -28,10 +35,15 @@
 
 .userTitle {
   font-size: 68px;
-  font-weight: bold; }
+  color: #131313;
+  letter-spacing: 1px;
+  margin-top: 48px;
+  margin-bottom: 16px; }
 
 .userTitleDesc {
-  font-size: 30px; }
+  font-size: 30px;
+  color: #131313;
+  letter-spacing: 0.7px; }
 
 .user-content {
   color: salmon;
@@ -41,12 +53,15 @@
 .info-head {
   width: 256px;
   height: 256px;
-  margin-right: 8px; }
+  margin-right: 8px;
+  margin-left: 32px; }
 
 .user-black-layer {
   background: #131313;
-  position: relative;
-  width: 335px; }
+  width: 335px;
+  position: absolute;
+  right: -137px;
+  top: -40px; }
   .user-black-layer .usercard {
     margin-left: 33px;
     margin-right: 55px;
@@ -111,17 +126,21 @@
     content: ""; }
 
 .user-nav {
+  margin-bottom: 31px;
   color: #131313;
   border: 1px solid #e7e7e7;
   display: inline-block;
-  width: 256px; }
+  width: 256px;
+  margin-left: 32px; }
   .user-nav .user-nav-title {
     font-size: 18px;
-    height: 48px;
+    height: 49px;
     border-bottom: 1px solid #e7e7e7;
     line-height: 48px;
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0; }
   .user-nav .user-nav-list {
     vertical-align: top; }
     .user-nav .user-nav-list .title-base {
@@ -132,7 +151,8 @@
       margin-right: 12px; }
     .user-nav .user-nav-list .title-content {
       font-size: 18px;
-      color: #d6d6d6; }
+      color: #d6d6d6;
+      margin-bottom: 12px; }
     .user-nav .user-nav-list .br-line {
       background: #e7e7e7;
       width: 100%;
@@ -143,5 +163,31 @@
       display: block;
       padding-top: 24px;
       padding-left: 17px; }
+
+.user-desc {
+  padding-right: 10px; }
+  .user-desc .user-title {
+    color: #FFF;
+    background: #131313;
+    font-size: 30px;
+    margin: 0;
+    padding: 7px;
+    margin-bottom: 34px; }
+  .user-desc .user-p {
+    color: #131313;
+    line-height: 28px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px; }
+  .user-desc .showMore {
+    color: #f787b9;
+    font-size: 18px;
+    margin-bottom: 53px; }
+  .user-desc .list-story li {
+    margin-bottom: 10px; }
+
+.bg-more {
+  background: #ffffff;
+  margin: 20px 0; }
 
 /*# sourceMappingURL=user.css.map */

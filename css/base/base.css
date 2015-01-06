@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 导入变量 **/
+/** 瀵煎叆鍙橀噺 **/
 .spinner {
   width: 150px;
   text-align: center; }
@@ -191,9 +191,13 @@ ul, li {
 .btn {
   border-radius: 0; }
 
+/* 设置下响应点 */
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px; } }
 nav.navbar .navbar-item {
   overflow: hidden;
-  padding-top: 40px; }
+  padding-top: 31px; }
   nav.navbar .navbar-item li {
     float: left;
     margin-left: 20px; }
@@ -228,12 +232,14 @@ footer {
   footer .footer-main {
     padding: 5px 12px; }
   footer .left-ft {
-    margin-right: 142px; }
+    margin-right: 142px;
+    vertical-align: top; }
   footer .right-ft .discover {
     margin-top: 47px;
     margin-bottom: 21px; }
   footer .right-ft .right-ft-info {
-    margin-right: 68px; }
+    margin-right: 68px;
+    vertical-align: top; }
   footer .right-ft .right-title {
     margin-bottom: 45px;
     font-size: 24px; }

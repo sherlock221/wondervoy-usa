@@ -44,61 +44,63 @@
 
     <div class="container">
 
+        <div class="row">
+
+            <!-- 图文列表 -->
+            <ul class="text-center home-list-ul" style="color: #000;">
 
 
-        <!-- 图文列表 -->
-        <ul class="text-center home-list-ul" style="color: #000;">
+                <li ng-repeat=" item in posts">
+                    <div class="row " >
 
-
-            <li ng-repeat=" item in posts">
-                <div class="row " >
-
-                    <div class="col-md-4">
-                        <div class="head-bg">
-                            <section class="transform-center ">
-                                <a href="javascript:void(0)" class="ib head">
-                                    <img ng-src="{{item.userHead}}"    />
-                                </a>
-                                <span class=" fm-thex block username">{{item.userName}}</span>
-                            </section>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-8">
-
-
-                        <!--单图排列-->
-                        <div class="desc-bg" ng-if="item.list.length == 1">
-                            <a href="javascript:void(0)" class="ib desc" ng-repeat="obj  in item.list" >
-                                <div class="desc-img">
-                                    <img ng-src="{{obj.listImg}}" class="full-img" />
-                                    <span class="ib desc-title">{{obj.listDesc}}</span>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <!--2图排列-->
-                        <div class="row"  ng-if="item.list.length == 2" >
-                            <div class="col-md-6"  ng-repeat="obj  in item.list"  >
-                                <div class="desc-bg">
-                                    <a href="javascript:void(0)" class="ib desc">
-                                        <div class="desc-img">
-                                            <img ng-src="{{obj.listImg}}" class="full-img" />
-                                            <span class="ib desc-title">{{obj.listDesc}}</span>
-                                        </div>
+                        <div class="col-md-4 head-bg-main">
+                            <div class="head-bg">
+                                <section class="transform-center ">
+                                    <a href="javascript:void(0)" class="ib head">
+                                        <img ng-src="{{item.userHead}}"    />
                                     </a>
-                                </div>
+                                    <span class=" fm-thex block username">{{item.userName}}</span>
+                                </section>
+
                             </div>
                         </div>
 
+                        <div class="col-md-8">
 
+
+                            <!--单图排列-->
+                            <div class="desc-bg" ng-if="item.list.length == 1">
+                                <a href="javascript:void(0)" class="ib desc" ng-repeat="obj  in item.list" >
+                                    <div class="desc-img">
+                                        <img ng-src="{{obj.listImg}}" class="full-img" />
+                                        <span class="ib desc-title">{{obj.listDesc}}</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <!--2图排列-->
+                            <div class="row"  ng-if="item.list.length == 2" >
+                                <div class="col-md-6"  ng-repeat="obj  in item.list"  >
+                                    <div class="desc-bg">
+                                        <a href="javascript:void(0)" class="ib desc">
+                                            <div class="desc-img">
+                                                <img ng-src="{{obj.listImg}}" class="full-img" />
+                                                <span class="ib desc-title">{{obj.listDesc}}</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-        </ul>
+            </ul>
+
+        </div>
     </div>
 
 </section>
@@ -106,7 +108,6 @@
 
 <section>
     <div class="container">
-
 
 
 
@@ -122,14 +123,13 @@
 
 <section>
 
-
     <section class="blank-bg text-center">
 
         <span class="ib blank-bg-seq-black"></span><br/>
         <span class="ib blank-bg-seq-gray"></span>
     </section>
 
-    <div class="container">
+    <div class="">
 
         <section class="text-center">
             <span class="ib fm-thex verification ">Multi-verification</span>

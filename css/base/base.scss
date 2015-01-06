@@ -119,7 +119,6 @@ a:hover{
     height: 60px;
     line-height: 60px;
     padding: 0;
-
   }
 
   .item-login{
@@ -255,6 +254,7 @@ ul,li{
   height: inherit;
 }
 
+
 .pos-rel{
   position: relative;
 }
@@ -264,16 +264,25 @@ ul,li{
 }
 
 
+/* 设置下响应点 */
+@media (min-width: 1200px){
+  .container{
+    width: 1000px;
+  }
+}
+
+
 
 
 //导航条
 nav.navbar{
 
   .navbar-item{
+
     overflow: hidden;
 
     //设置底部间距
-    padding-top: rem(40px);
+    padding-top: rem(31px);
 
     li{
       float: left;
@@ -342,6 +351,7 @@ footer{
 
   .left-ft{
     margin-right: rem(142px);
+    vertical-align: top;
   }
 
   .right-ft{
@@ -353,6 +363,7 @@ footer{
 
     .right-ft-info{
       margin-right: rem(68px);
+      vertical-align: top;
     }
 
 

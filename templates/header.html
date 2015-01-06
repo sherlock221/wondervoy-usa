@@ -29,7 +29,7 @@
 
 
                 <li>
-                    <a href="#/user">Show Your Stories</a>
+                    <a href="javascript:void(0);">Show Your Stories</a>
                 </li>
             </ul>
 
@@ -41,8 +41,8 @@
          ng-show="$root.user.userName">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand ib" href="#">
-                    <i class="ib logo"></i>
+                <a class="navbar-brand ib" href="#/home">
+                        <i class="ib logo" ></i>
                 </a>
             </div>
 
@@ -56,26 +56,26 @@
 
                 <li  class="pos-rel">
 
-                    <div ng-mouseenter="showDiv=!showDiv;hov=true;"  ng-init="showDiv=false;hov=false;" class="userMouse">
+                    <div ng-mouseenter="showDiv=true;hov=true;"  ng-init="showDiv=false;hov=false;" class="userMouse">
                         <a href="javascript:void(0)" class="ib userInfo-name " ng-class="{'hov':hov}"  >
                             {{$root.user.userName}}
                         </a>
                     </div>
-                    <div class="userInfoLayer" ng-show="showDiv"    ng-mouseleave="showDiv=!showDiv;hov=false;">
+                    <div class="userInfoLayer" ng-show="showDiv"    ng-mouseleave="showDiv=false;hov=false;">
                         <div class="opacityBg"></div>
                         <span class="ib  trans ui-widget"></span>
-                        <ul class="userInfoNav">
+                        <ul class="userInfoNav" >
                             <li>
-                                <a class="ib">Your&nbsp;story</a>
+                                <a class="ib"  href="#/user" ng-click="showDiv=false;">Your&nbsp;story</a>
                             </li>
                             <li>
-                                <a class="ib">Edit&nbsp;profile</a>
+                                <a class="ib" href="#/user" ng-click="showDiv=false;">Edit&nbsp;profile</a>
                             </li>
                             <li>
-                                <a class="ib">Account</a>
+                                <a class="ib" href="#/user"  ng-click="showDiv=false;">Account</a>
                             </li>
                             <li>
-                                <a class="ib" ng-click="loginOut();">Logout</a>
+                                <a class="ib" ng-click="loginOut();showDiv=false;">Logout</a>
                             </li>
                         </ul>
 
@@ -87,7 +87,7 @@
                 </li>
 
                 <li>
-                    <a class="showStories ib">Show Your Stories</a>
+                    <a class="showStories ib" href="#/user">Show Your Stories</a>
                 </li>
             </ul>
         </div>
