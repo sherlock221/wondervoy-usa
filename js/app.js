@@ -76,11 +76,22 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     /**
      * 发表故事
      */
-    $stateProvider.state("user.sendStory", {
-        url: "/sendStory",
-        templateUrl: "templates/user/sendStory.html",
-        controller: "SendStoryCtrl as sendStory"
+    $stateProvider.state("user.addStory", {
+        url: "/addStory",
+        templateUrl: "templates/user/addStory.html",
+        controller: "AddStoryCtrl"
+    })
+
+    /**
+     * 显示故事
+     */
+    $stateProvider.state("user.showStory", {
+        url: "/showStory",
+        templateUrl: "templates/user/showStory.html",
+        controller: "ShowStoryCtrl"
     });
+
+
 
 
     //默认情况

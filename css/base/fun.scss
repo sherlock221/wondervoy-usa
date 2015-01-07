@@ -28,6 +28,16 @@ $scale: 2px;
 }
 
 
+@mixin  transCenter(){
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform  : translate(-50%,-50%);
+  -moz-transform : translate(-50%,-50%);
+  -ms-transform :translate(-50%,-50%);
+}
+
 ////px转rem
 //@function rem($px) {
 //  @return $px / ($default-font-size ) * 1rem;

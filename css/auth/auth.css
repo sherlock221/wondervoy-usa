@@ -9,13 +9,6 @@
   color: #c0c0c0;
   background: #ffffff; }
 
-.auth .mask {
-  background: url("../../img/xx.png") repeat;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 998; }
-
 .auth-form .auth-text {
   background: #f6f6f6;
   width: 342px;
