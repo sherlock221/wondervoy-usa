@@ -33,15 +33,17 @@
   }
 
 
+  $line-w  : 3px;
+  $line-mg : 66px;
+  $line-mg-r : 61px;
+
   .story-body{
 
 
 
     .add-left-story{
 
-        $line-w  : 3px;
-        $line-mg : 66px;
-        $line-mg-r : 61px;
+
 
         //左侧短边
         .add-left-short{
@@ -50,6 +52,11 @@
             margin-left: $line-mg;
             margin-right: $line-mg-r;
             background: #403e3e;
+
+
+           &.tips{
+              height: 225px;
+           }
         }
         //左侧长边
         .add-left-long{
@@ -101,6 +108,30 @@
       position: relative;
       width: 698px;
       height: 360px;
+
+      //上部分提示
+      &.tips{
+        height: 156px;
+        background: #000000;
+        color: #FFFFFF;
+        position: relative;
+        text-align: left;
+
+        margin-top: 44px;
+        margin-left:  129px;
+
+        h4{
+          margin: 0;
+          font-size: 18px;
+          margin-bottom: 22px;
+          padding-left: 50px;
+
+          &:first-child{
+            padding-top: 25px;
+
+          }
+        }
+      }
 
       .add-story-black{
         background: #000000;
@@ -209,3 +240,30 @@
   padding: 0;
 }
 
+.publishBtn{
+
+
+  width: 235px;
+  height: 40px;
+  color: #ffffff;
+  text-align: right;
+  background: #d32271;
+  font-size: 24px;
+  clear: both;
+  position: absolute;
+  bottom: -66px;
+  right: 0px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  padding-right: 20px;
+  line-height: 45px;
+
+  .arrow-right{
+    position: absolute;
+    left: 0;
+    top: 3px;
+
+  }
+}

@@ -2,24 +2,24 @@ wondervoy
 
     .controller("HomeCtrl", function ($rootScope,$scope,$window,$log,$q,$timeout,MessageService,$alert) {
 
-
-
-
-
-
-
         //控制 loading
        $scope.isShow = false;
 
         //列表
         $scope.posts = [];
+
+
+
+
+
+        var scale = 720/1440;
+
+
+        var w = $window.innerWidth;
+        console.log(w);
+
         //height
-        $scope.style= {height: $window.innerWidth  / 2+'px'};
-
-
-
-
-
+        $scope.style= {height: $window.innerWidth  * scale+'px'};
 
 
         //加载更多

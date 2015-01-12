@@ -111,5 +111,5 @@ wondervoy.config(function($httpProvider){
 
 //常量配置
 wondervoy.constant("SERVER", {
-    url: "/wondervoy/data"
+    url: "/wondervoy-usa/data"
 });
