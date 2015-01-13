@@ -1,0 +1,36 @@
+{
+    "data": {
+        "info": {
+            "address": "xi'an",
+            "firstName": "chongkai",
+            "icon": "img/userinfo.png",
+            "intro": "Hey,&emsp;I'm&emsp;stephenie!&emsp;&emsp;&emsp;",
+            "lastName": "zhang",
+            "sex": "M"
+        },
+        "skills": {
+            "address": "Xi'an, Shaanxi, China",
+            "car": "HAVAL 2",
+            "driverAge": 2,
+            "job": "Software En",
+            "language": "English, Mandarin,French, Japanese"
+        },
+        "userId": 123,
+        "verifications": [
+            {
+                "account": "skghimt@126.com",
+                "verificationInfo": "",
+                "verificationTerrace": "email",
+                "verificationTime": 1419765630497
+            },
+            {
+                "account": "skghimt@126.com",
+                "verificationInfo": "凯_SkgHimT",
+                "verificationTerrace": "weibo",
+                "verificationTime": 1419765630497
+            }
+        ]
+    },
+    "message": "获取个人信息成功",
+    "state": 0
+}

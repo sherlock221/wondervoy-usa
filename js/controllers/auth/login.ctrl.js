@@ -26,9 +26,8 @@ wondervoy
 
                        var user = {
                             userName : res.data.userName,
-                            userHead : res.data.userHead
+                            userHead : res.data.icon
                         }
-
 
 
                         Util.setSgObj("user",user);

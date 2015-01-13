@@ -10,7 +10,7 @@ wondervoy
                 //设置请求头token
                 config.headers = config.headers || {};
                 if ($window.sessionStorage.token) {
-                    config.headers['x-session-token'] = $window.sessionStorage.token;
+                    config.headers['voySession'] = $window.sessionStorage.token;
                 }
                 return config ;
             },

@@ -27,7 +27,6 @@
 
 
 
-
             </div>
             <ul class="pull-right navbar-item ">
                 <li>
@@ -39,7 +38,7 @@
 
                 <li class="userInfo" ng-show="$root.user.userName">
                     <a href="javascript:void(0);" class="userInfo-head">
-                        <img src="{{$root.user.userHead}}" class="res-img"/>
+                        <img ng-src="{{$root.user.userHead}}" class="res-img"/>
                     </a>
                     <a href="javascript:void(0)" class="userInfo-name">
                         {{$root.user.userName}}
@@ -48,7 +47,7 @@
 
 
                 <li>
-                    <a href="#/user/addStory">Show Your Stories</a>
+                    <a href="#/user/addStory">Show Your Stories </a>
                 </li>
             </ul>
 
@@ -69,7 +68,7 @@
 
                 <li class="" ng-show="$root.user.userName" ng-mouseenter="showDiv=true;hov=true;">
                     <a href="javascript:void(0);" class="ib userInfo-head">
-                        <img src="{{$root.user.userHead}}" class="res-img"/>
+                        <img ng-src="{{$root.user.userHead}}" class="res-img"/>
                     </a>
                 </li>
 

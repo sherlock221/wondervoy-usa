@@ -10,8 +10,6 @@ wondervoy
 
 
 
-
-
         var scale = 720/1440;
 
 
@@ -31,18 +29,13 @@ wondervoy
 
 
                 MessageService.getList()
-                    .then(function(result){
+                    .then(function(res){
 
-
-                        $timeout(function(){
-
-                            $scope.posts = $scope.posts.concat(result);
-                            $scope.isShow = false;
-                            console.log($scope.posts);
-
-                        },2000);
-
-
+                        //数据
+                        var data = res.data.users;
+                        $scope.posts = $scope.posts.concat(data);
+                        $scope.isShow = false;
+                        console.log($scope.posts);
 
                     },function(err){
                         $scope.isShow = false;

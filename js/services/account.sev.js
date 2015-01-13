@@ -7,7 +7,7 @@ wondervoy
 
         AccountService.login = function (email, password, source) {
             var defer = $q.defer();
-            $http.post(SERVER.url + "/account/signin.json", {
+            $http.post(SERVER.url + "/account/signin", {
                     email: email,
                     password: password,
                     source: "web"
@@ -21,7 +21,7 @@ wondervoy
 
         AccountService.register = function (firstName,lastName,email,password, source) {
             var defer = $q.defer();
-            $http.post(SERVER.url + "/account/signup.json", {
+            $http.post(SERVER.url + "/account/signup", {
                     firstName : firstName,
                     lastName : lastName,
                     email: email,
@@ -36,6 +36,18 @@ wondervoy
             return defer.promise;
         }
 
+
+        AccountService.getUserInfo = function(){
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/account/userInfo", {
+
+            })
+            .success(function (res) {
+                defer.resolve(res);
+            })
+
+            return defer.promise;
+        }
 
         return  AccountService;
 

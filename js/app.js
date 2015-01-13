@@ -26,6 +26,8 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
         }
     }
 
+
+
     var login ={
         url: "/login",
         templateUrl: "templates/auth/login.html",
@@ -44,6 +46,16 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
         controller: "RegisterCtrl as register"
     }
 
+    var forget = {
+        url: "/forget",
+        views: {
+            'auth@': {
+                templateUrl: "templates/auth/forgetPassWord.html",
+                controller: "ForgetCtrl as forget"
+            }
+        }
+    }
+
     /**
      * 首页
      * url  /home
@@ -54,6 +66,9 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
         controller: "HomeCtrl as home"
     });
 
+
+
+
     /**
      * 验证
      */
@@ -61,6 +76,8 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("home.auth.login",login);
     $stateProvider.state("home.auth.register",register);
     $stateProvider.state("home.auth.registerEmail",registerEmail);
+    $stateProvider.state("home.forget",forget);
+
 
 
     /**
@@ -94,6 +111,8 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
 
 
 
+
+
     //默认情况
     $urlRouterProvider.otherwise("/home");
 });
@@ -111,5 +130,8 @@ wondervoy.config(function($httpProvider){
 
 //常量配置
 wondervoy.constant("SERVER", {
+
     url: "/wondervoy-usa/data"
+    //线上地址
+//    url: "http://123.57.75.45:8080/voy"
 });

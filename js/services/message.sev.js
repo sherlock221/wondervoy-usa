@@ -6,9 +6,12 @@ wondervoy
 
             getList : function(){
                 var defer =  $q.defer();
-                $http.get(SERVER.url+"/list.json",{})
+                $http.post(SERVER.url+"/story/main",
+                    {
+                        index : 1,
+                        size : 10
+                  })
                     .success(function(result){
-
                         defer.resolve(result);
                     })
                     .error(function(err){

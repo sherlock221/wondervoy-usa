@@ -9,7 +9,7 @@
 
 <ol class="breadcrumb">
     <li><a href="#" class="active">Home</a></li>
-    <li>Lin</li>
+    <li>{{userObj.info.lastName}}</li>
 </ol>
 
 <div class="user-content">
@@ -24,14 +24,15 @@
             <!-- 左侧头像 -->
             <div class="col-md-4 ">
                 <div class="ib  info-head">
-                    <img src="img/userinfo.png" class="res-img"/>
+                    <img src="{{userObj.info.icon}}" class="res-img"/>
                 </div>
 
             </div>
 
             <!-- 中部内容 -->
             <div class="col-md-8 user-middle">
-                <h4 class="">Hey,&emsp;I'm&emsp;stephenie!&emsp;&emsp;&emsp;<i class="ib ui-widget woman"></i></h4>
+                <!--<h4 class="">Hey,&emsp;I'm&emsp;stephenie!&emsp;&emsp;&emsp;<i class="ib ui-widget woman"></i></h4>-->
+                <h4 class="" ><span ng-bind-html="userObj.info.intro | to_trusted"></span><i class="ib ui-widget " ng-class="{man:userObj.info.sex == 'M',woman:userObj.info.sex == 'F'}"></i></h4>
 
                 <div class="user-star">
 
@@ -61,14 +62,14 @@
                 </div>
 
                                 <span class="ib user-local">
-                                        Xi'an, Shaanxi, China
+                                       {{userObj.skills.address}}
                                 </span>
 
 
                 <div class="user-base-info">
-                    <span class="ib">25</span>
+                    <span class="ib">{{userObj.skills.driverAge}}</span>
                     <span class="ib">Sagittarius</span>
-                    <span class="ib">Teacher</span>
+                    <span class="ib">{{userObj.skills.job}}</span>
                 </div>
             </div>
 
@@ -82,7 +83,7 @@
 
             <h4>Language</h4>
 
-            <p>English, Mandarin,French, Japanese</p>
+            <p>{{userObj.skills.language}}</p>
 
             <div class="text-center">
                 <span class="ib lineyellow"></span>
@@ -91,12 +92,12 @@
             <ul class="usercard ">
                 <li>
                     <label class="ib ui-widget car"></label>
-                    <span class="ib">&emsp;&emsp;:&emsp;&emsp;&emsp;Available</span>
+                    <span class="ib">&emsp;&emsp;:&emsp;&emsp;&emsp;{{userObj.skills.car}}</span>
                 </li>
 
                 <li>
                     <label class="ib ui-widget card"></label>
-                    <span class="ib">&emsp;&emsp;:&emsp;&emsp;&emsp;5 Years</span>
+                    <span class="ib">&emsp;&emsp;:&emsp;&emsp;&emsp;{{userObj.skills.driverAge}} Years</span>
                 </li>
             </ul>
 
@@ -126,76 +127,23 @@
             <h5 class="user-nav-title">Verifications</h5>
 
             <ul class="user-nav-list">
-                <li>
+                <li ng-repeat=" v  in userObj.verifications">
                     <a class="ib">
-                        <i class="ib ui-widget message02 icon"></i>
+                        <i class="ib ui-widget  icon"  ng-class="{
+                            message02 : v.verificationTerrace == 'email',
+                            weibo02 :  v.verificationTerrace == 'weibo',
+                            twitter02 : v.verificationTerrace == 'twitter',
+                            facebook02 : v.verificationTerrace == 'facebook'
+                        }"></i>
 
                         <div class="ib">
                             <span class="ib title-base ">Email Address</span><br/>
-                            <span class="ib title-content">verified</span>
+                            <span class="ib title-content">{{v.account}}</span>
                         </div>
 
                     </a>
 
                     <div class="br-line"></div>
-                </li>
-
-
-                <li>
-                    <a class="ib">
-                        <i class="ib ui-widget phone icon"></i>
-
-                        <div class="ib">
-                            <span class="ib title-base ">Phone Number</span><br/>
-                            <span class="ib title-content">xxxxxxx1234</span>
-                        </div>
-
-                    </a>
-
-                    <div class="br-line"></div>
-                </li>
-
-
-                <li>
-                    <a class="ib">
-                        <i class="ib ui-widget weibo02 icon"></i>
-
-                        <div class="ib">
-                            <span class="ib title-base ">Weibo</span><br/>
-                            <span class="ib title-content">350 friends</span>
-                        </div>
-
-                    </a>
-
-                    <div class="br-line"></div>
-                </li>
-
-
-                <li>
-                    <a class="ib">
-                        <i class="ib ui-widget twitter02 icon"></i>
-
-                        <div class="ib">
-                            <span class="ib title-base ">Twitter</span><br/>
-                            <span class="ib title-content">350 friends</span>
-                        </div>
-
-                    </a>
-
-                    <div class="br-line"></div>
-                </li>
-
-
-                <li>
-                    <a class="ib">
-                        <i class="ib ui-widget facebook02 icon"></i>
-
-                        <div class="ib">
-                            <span class="ib title-base ">Facebook</span><br/>
-                            <span class="ib title-content">350 friends</span>
-                        </div>
-
-                    </a>
                 </li>
 
 
@@ -312,8 +260,8 @@
 
 
 <section>
-    <!--mask-->
-    <div class="mask"></div>
+
+
     <!-- 弹出部分 -->
     <ui-view></ui-view>
 
