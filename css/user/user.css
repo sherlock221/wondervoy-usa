@@ -252,9 +252,20 @@
   .story-layer .story-body .add-right-story {
     vertical-align: top; }
   .story-layer .story-body .add-story-bg {
+    overflow: hidden;
     position: relative;
     width: 698px;
     height: 360px; }
+    .story-layer .story-body .add-story-bg .add-progress {
+      color: #ffffff;
+      font-size: 60px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%); }
     .story-layer .story-body .add-story-bg.tips {
       height: 156px;
       background: #000000;

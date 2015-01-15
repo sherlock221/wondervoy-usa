@@ -40,7 +40,6 @@
   .story-body{
 
 
-
     .add-left-story{
 
 
@@ -105,9 +104,17 @@
 
     //设置上传图片大小
     .add-story-bg{
+      overflow: hidden;
       position: relative;
       width: 698px;
       height: 360px;
+
+      //上传进度条
+     .add-progress{
+        color: #ffffff;
+        font-size: 60px;
+        @include transCenter();
+     }
 
       //上部分提示
       &.tips{

@@ -1,7 +1,8 @@
 var wondervoy = angular.module("wondervoy", [
     'ui.router',
     'ngAnimate',
-    'mgcrea.ngStrap'
+    'mgcrea.ngStrap',
+    "angularFileUpload"
 ]);
 
 
@@ -95,7 +96,7 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
      */
     $stateProvider.state("user.addStory", {
         url: "/addStory",
-        templateUrl: "templates/user/addStory.html",
+        templateUrl: "templates/story/addStory.html",
         controller: "AddStoryCtrl"
     })
 
@@ -104,13 +105,9 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
      */
     $stateProvider.state("user.showStory", {
         url: "/showStory",
-        templateUrl: "templates/user/showStory.html",
+        templateUrl: "templates/story/showStory.html",
         controller: "ShowStoryCtrl"
     });
-
-
-
-
 
 
     //默认情况

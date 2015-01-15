@@ -1,0 +1,143 @@
+<!--mask-->
+<div class="mask"></div>
+
+        <div class="story-layer">
+
+            <div class="story-header">
+                <h1 class="fm-roman">List Your Story <i class="ui-widget ib closeWd"></i></h1>
+            </div>
+
+
+            <div class="container">
+                    <div class="row">
+                              <div class="story-body">
+
+               <!-- tips -->
+               <div  ng-hide="isFirst"  class="story-tips">
+
+                   <div class="add-left-story ib">
+                       <div>
+                           <span class="ib  add-left-short tips"></span>
+                       </div>
+
+                   </div><div class="add-right-story ib">
+
+                            <section class="add-story-bg tips">
+                                <h4>Tips</h4>
+                                <h4>Drag your photos to change the sequence.</h4>
+                                <h4>Double click the photo to add description</h4>
+                            </section>
+
+                   </div>
+
+               </div>
+
+
+               <!-- 封面 -->
+               <ul ng-if="cover">
+                   <li>
+                       <div class="add-left-story ib">
+                           <div>
+                               <span class="ib  add-left-short"></span>
+                           </div>
+
+                           <div>
+                               <a href="javascript:void(0);" class="ib add-num cover">cover</a><span class="ib add-right-long cover"></span>
+                           </div>
+                           <div>
+                               <span class="ib add-left-long"></span>
+                           </div>
+                       </div><div class="add-right-story ib">
+
+                       <div class="add-story-bg">
+                           <img ng-src="{{cover.url}}" class="full-img" />
+                           <div class="add-story-bg-text">
+
+                               <div class="pos-rel addStory-text-main">
+                                   <div class="addStory-text-opacity"></div>
+                                   <input type="text" class="addStory-text cover"   placeholder="Add a Title"/>
+                               </div>
+
+                               <button class="saveBtn ">Save</button>
+
+                           </div>
+                       </div>
+
+                   </div>
+                   </li>
+               </ul>
+
+
+               <!-- 内容区域 -->
+               <ul>
+                   <li ng-repeat="story in  storys">
+                       <div class="add-left-story ib">
+                           <div>
+                               <span class="ib  add-left-short"></span>
+                           </div>
+
+                           <div>
+                               <a href="javascript:void(0);" class="ib add-num ">{{$index+1}}</a><span class="ib add-right-long "></span>
+                           </div>
+                           <div>
+                               <span class="ib add-left-long "></span>
+                           </div>
+                       </div><div class="add-right-story ib">
+
+                       <div class="add-story-bg">
+                           <img  ng-src="{{story.url}}" class="full-img" />
+                           <div class="add-story-bg-text">
+
+                               <div class="pos-rel addStory-text-main mutil">
+                                   <div class="addStory-text-opacity"></div>
+                                   <textarea class="addStory-text-muitl" placeholder="Add some description for this photo!"></textarea>
+                               </div>
+
+                               <button class="saveBtn ">Save</button>
+
+                           </div>
+                       </div>
+
+                   </div>
+                   </li>
+
+               </ul>
+
+
+               <!-- 添加 -->
+                <ul>
+
+                    <li>
+                        <div class="add-left-story ib">
+                            <div>
+                                <span class="ib  add-left-short"></span>
+                            </div>
+
+                            <div>
+                                <a href="javascript:void(0);" class="ib add-num ">{{storys.length+1}}</a><span class="ib add-right-long "></span>
+                            </div>
+                            <div>
+                                <span class="ib add-left-long "></span>
+                            </div>
+                        </div><div class="add-right-story ib">
+
+                        <div class="add-story-bg" ng-style="{ 'margin-top' : isFirst == true ? '43px' : '0px' }">
+                            <div class="add-story-black">
+                                <span class="ib add-progress" ng-show="isUpload">{{dynamic}}</span>
+                                <button class="btnAddStory"  ng-hide="isUpload"  type="file" ng-file-select="" ng-model="myFiles"  name="file"   ng-file-change="" ><i class="ib ui-widget add addPhoto"></i>Add photos</button>
+                            </div>
+
+                            <button class="publishBtn"><i class="ib ui-widget arrow-right"></i>Publish</button>
+                        </div>
+                    </div>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+                    </div>
+            </div>
+
+        </div>

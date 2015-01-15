@@ -30,13 +30,13 @@ wondervoy
 
                 MessageService.getList()
                     .then(function(res){
-
-                        //数据
-                        var data = res.data.users;
-                        $scope.posts = $scope.posts.concat(data);
-                        $scope.isShow = false;
-                        console.log($scope.posts);
-
+                        if(res.data){
+                            //数据
+                            var data = res.data.users;
+                            $scope.posts = $scope.posts.concat(data);
+                            $scope.isShow = false;
+                            console.log($scope.posts);
+                        }
                     },function(err){
                         $scope.isShow = false;
                         console.log(err);
