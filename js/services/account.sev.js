@@ -15,6 +15,9 @@ wondervoy
             .success(function (res) {
                 defer.resolve(res);
             })
+                .error(function(err){
+                    defer.reject(err);
+                });
 
             return defer.promise;
         }
@@ -32,6 +35,9 @@ wondervoy
                 .success(function (res) {
                     defer.resolve(res);
                 })
+                .error(function(err){
+                    defer.reject(err);
+                });
 
             return defer.promise;
         }
@@ -39,7 +45,7 @@ wondervoy
 
         AccountService.getUserInfo = function(){
             var defer = $q.defer();
-            $http.post(SERVER.url + "/account/userInfo", {
+            $http.post(SERVER.url + "/user/userInfo", {
 
             })
             .success(function (res) {

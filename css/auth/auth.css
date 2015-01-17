@@ -44,7 +44,8 @@
     background: #d32271;
     color: #ffffff;
     font-size: 18px;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .auth-layer .auth-btn.light {
       background: #ec63a0; }
   .auth-layer .auth-content {

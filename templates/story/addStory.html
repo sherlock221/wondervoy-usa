@@ -4,7 +4,7 @@
         <div class="story-layer">
 
             <div class="story-header">
-                <h1 class="fm-roman">List Your Story <i class="ui-widget ib closeWd"></i></h1>
+                <h1 class="fm-roman">List Your Story <i class="ui-widget ib closeWd" ng-click="closeStory();"></i></h1>
             </div>
 
 
@@ -49,17 +49,21 @@
                            </div>
                        </div><div class="add-right-story ib">
 
-                       <div class="add-story-bg">
-                           <img ng-src="{{cover.url}}" class="full-img" />
-                           <div class="add-story-bg-text">
 
+                       <div class="add-story-bg" ng-dblclick="showText(cover);">
+                           <img ng-src="{{cover.pic}}" class="full-img" />
+                           <div class="add-story-bg-text" ng-show="cover.isShow">
                                <div class="pos-rel addStory-text-main">
                                    <div class="addStory-text-opacity"></div>
-                                   <input type="text" class="addStory-text cover"   placeholder="Add a Title"/>
+                                   <input type="text" class="addStory-text cover"  ng-model="cover.coverDesc"   placeholder="Add a Title" />
                                </div>
+                               <button class="saveBtn" ng-click="hideText(cover);">Save</button>
+                           </div>
 
-                               <button class="saveBtn ">Save</button>
-
+                           <div class="add-story-desc add-story-bg-text" ng-hide="cover.isShow">
+                               <div class="pos-rel addStory-text-auto">
+                                   {{cover.coverDesc}}
+                               </div>
                            </div>
                        </div>
 
@@ -75,7 +79,6 @@
                            <div>
                                <span class="ib  add-left-short"></span>
                            </div>
-
                            <div>
                                <a href="javascript:void(0);" class="ib add-num ">{{$index+1}}</a><span class="ib add-right-long "></span>
                            </div>
@@ -84,17 +87,21 @@
                            </div>
                        </div><div class="add-right-story ib">
 
-                       <div class="add-story-bg">
-                           <img  ng-src="{{story.url}}" class="full-img" />
-                           <div class="add-story-bg-text">
+                       <div class="add-story-bg" ng-dblclick="showText(story);">
+                           <img  ng-src="{{story.pic}}" class="full-img" />
+                           <div class="add-story-bg-text" ng-show="story.isShow">
 
                                <div class="pos-rel addStory-text-main mutil">
                                    <div class="addStory-text-opacity"></div>
-                                   <textarea class="addStory-text-muitl" placeholder="Add some description for this photo!"></textarea>
+                                   <textarea class="addStory-text-muitl"  ng-model="story.desc" placeholder="Add some description for this photo!"></textarea>
                                </div>
+                               <button class="saveBtn " ng-click="hideText(story);">Save</button>
+                           </div>
 
-                               <button class="saveBtn ">Save</button>
-
+                           <div class="add-story-desc add-story-bg-text" ng-hide="story.isShow">
+                               <div class="pos-rel addStory-textarea-text">
+                                   {{story.desc}}
+                               </div>
                            </div>
                        </div>
 
@@ -121,14 +128,19 @@
                             </div>
                         </div><div class="add-right-story ib">
 
-                        <div class="add-story-bg" ng-style="{ 'margin-top' : isFirst == true ? '43px' : '0px' }">
+                        <div class="add-story-bg" ng-style="{ 'margin-top' : isFirst == true ? '43px' : '0px','overflow' : ' inherit'}" >
                             <div class="add-story-black">
                                 <span class="ib add-progress" ng-show="isUpload">{{dynamic}}</span>
                                 <button class="btnAddStory"  ng-hide="isUpload"  type="file" ng-file-select="" ng-model="myFiles"  name="file"   ng-file-change="" ><i class="ib ui-widget add addPhoto"></i>Add photos</button>
                             </div>
 
-                            <button class="publishBtn"><i class="ib ui-widget arrow-right"></i>Publish</button>
+                            <div class="publishBtn-bg" ng-hide="isFirst">
+                                <button class="btn publishBtn"  ng-disabled="isPublish"  ng-click="submitStory();">
+                                <i class="ib ui-widget arrow-right" ng-hide="isPublish"></i><i  ng-show="isPublish" class="ib loading"></i>Publish</button>
+                            </div>
                         </div>
+
+
                     </div>
                     </li>
 

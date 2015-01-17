@@ -4,19 +4,24 @@ wondervoy
 
         console.log("login ...");
 
+        $scope.isSubmit = false;
+
+
         $rootScope.authMsg ={
             msg : "Don’T have an account?&nbsp;&nbsp;&nbsp;",
             urlName : "Sign up",
             url  : "jumpRegister();"
         }
 
-        $scope.email = "920825209@qq.com";
-        $scope.password = "dasdasd";
+        $scope.email = "1159745122@qq.com";
+        $scope.password = "123";
 
         //登录
         this.loginUser = function(){
             var email =  $scope.email;
             var password =  $scope.password;
+
+            $scope.isSubmit = true;
 
             AccountService.login(email,password)
                 .then(function(res){
@@ -25,7 +30,7 @@ wondervoy
                         $window.sessionStorage.token = res.data.session;
 
                        var user = {
-                            userName : res.data.userName,
+                            userName : res.data.userInfo.firstName + res.data.userInfo.lastName,
                             userHead : res.data.icon
                         }
 
@@ -43,6 +48,10 @@ wondervoy
                         $rootScope.alertError(res.message);
                     }
 
+                    $scope.isSubmit = false;
+
+                },function(err){
+                    $scope.isSubmit = false;
                 });
         }
 

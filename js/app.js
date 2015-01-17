@@ -28,7 +28,6 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     }
 
 
-
     var login ={
         url: "/login",
         templateUrl: "templates/auth/login.html",
@@ -119,7 +118,6 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
 wondervoy.config(function($httpProvider){
    $httpProvider.interceptors.push("AjaxInterceptors");
 
-
     //设置跨域
     $httpProvider.defaults.withCredentials = true;
 });
@@ -128,7 +126,7 @@ wondervoy.config(function($httpProvider){
 //常量配置
 wondervoy.constant("SERVER", {
 
-    url: "/wondervoy-usa/data"
+//    url: "/wondervoy-usa/data"
     //线上地址
-//    url: "http://123.57.75.45:8080/voy"
+    url: "http://123.57.75.45:8080/voy"
 });

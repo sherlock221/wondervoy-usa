@@ -104,6 +104,18 @@ html,body{
 
 }
 
+//按钮 阴影 边框 去掉
+.btn:hover, .btn:focus, .btn.focus{
+  color: inherit;
+}
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus{
+  outline : 0 none;
+  box-shadow : none;
+  -webkit-box-shadow : none;
+  -ms-box-shadow : none;
+}
+
+
 a:hover{
   text-decoration: none;
 }
@@ -679,6 +691,5 @@ $footer-icon-height : 54px;
 
 
 
-
 /** 手机版本css **/
-@import 'media-phone';
+//@import 'media-phone';

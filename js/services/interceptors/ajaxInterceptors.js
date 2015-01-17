@@ -7,7 +7,21 @@ wondervoy
         return {
             //成功请求
             'request' : function(config ){
-                //设置请求头token
+
+                if(config.method == "POST"){
+                    if(!config.headers['is-form-data']){
+
+                        config.headers['Content-Type'] = "application/x-www-form-urlencoded";
+                        config.transformRequest = function(obj) {
+                            var str = [];
+                            for(var p in obj)
+                                str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+                            return str.join("&");
+                        }
+                    }
+                }
+
+
                 config.headers = config.headers || {};
                 if ($window.sessionStorage.token) {
                     config.headers['voySession'] = $window.sessionStorage.token;

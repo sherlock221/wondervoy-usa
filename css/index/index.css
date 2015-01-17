@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 导入变量 **/
+/** 瀵煎叆鍙橀噺 **/
 /** index 首页 **/
 .content {
   width: 100%;
@@ -127,13 +127,5 @@
     font-size: 30px;
     color: #2d2e36;
     margin: 48px 0; }
-
-.content .bg-banner {
-  background-position: center center !important;
-  height: 504px !important; }
-  .content .bg-banner .container .banner-content .banner-title {
-    font-size: 36px; }
-  .content .bg-banner .container .banner-content .banner-desc {
-    font-size: 18px; }
 
 /*# sourceMappingURL=index.css.map */
