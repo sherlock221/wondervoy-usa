@@ -3,6 +3,7 @@ wondervoy
     .controller("RegisterCtrl", function ($rootScope,$scope,$state,$window,$log,$q,$timeout,AccountService) {
         console.log("register..");
         var baseHome = $scope.currentStateName;
+        $scope.isSubmit = false;
 
         $scope.fm = {
             lastName : "",
@@ -20,6 +21,9 @@ wondervoy
 
 
         this.registerUser = function(){
+
+            $scope.isSubmit= true;
+
             AccountService.register($scope.fm.firstName,$scope.fm.lastName,$scope.fm.email,$scope.fm.password).then(function(res){
                 if(res.state == 0){
                     $rootScope.alertSuccess(res.message);
@@ -28,6 +32,10 @@ wondervoy
                 else{
                     $rootScope.alertError(res.message);
                 }
+
+                $scope.isSubmit= false;
+            },function(err){
+                $scope.isSubmit= false;
             });
 
 

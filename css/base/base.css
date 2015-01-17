@@ -82,7 +82,7 @@ html, body {
   height: inherit;
   background: #ffffff; }
 
-.btn:hover, .btn:focus, .btn.focus {
+.btn:focus, .btn.focus {
   color: inherit; }
 
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
@@ -90,6 +90,13 @@ html, body {
   box-shadow: none;
   -webkit-box-shadow: none;
   -ms-box-shadow: none; }
+
+button.btn:hover {
+  background: #e22378;
+  color: #ffffff; }
+
+a {
+  cursor: pointer; }
 
 a:hover {
   text-decoration: none; }
@@ -379,6 +386,14 @@ footer {
     width: 28px;
     height: 16px;
     background-position: 0 -980px; }
+  .ui-widget.left-side {
+    width: 52px;
+    height: 102px;
+    background-position: -165px -860px; }
+  .ui-widget.right-side {
+    width: 52px;
+    height: 102px;
+    background-position: -227px -860px; }
   .ui-widget.block-bottom {
     background-position: -55px -962px;
     width: 355px;
@@ -442,6 +457,10 @@ footer {
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+.dot-50 {
+  background: url("../../img/dot-50.png");
+  background-repeat: repeat; }
 
 /** 手机版本css **/
 

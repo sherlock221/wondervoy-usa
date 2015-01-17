@@ -105,7 +105,7 @@ html,body{
 }
 
 //按钮 阴影 边框 去掉
-.btn:hover, .btn:focus, .btn.focus{
+.btn:focus, .btn.focus{
   color: inherit;
 }
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus{
@@ -115,7 +115,14 @@ html,body{
   -ms-box-shadow : none;
 }
 
+button.btn:hover{
+  background: #e22378;
+  color: #ffffff;
+}
 
+a{
+  cursor: pointer;
+}
 a:hover{
   text-decoration: none;
 }
@@ -447,7 +454,6 @@ footer{
 
 
 
-
 //button
 
 .changeLag{
@@ -598,6 +604,17 @@ footer{
     background-position:  0 -980px;
   }
 
+  &.left-side{
+    width: 52px;
+    height: 102px;
+    background-position: -165px -860px;
+  }
+
+  &.right-side{
+    width: 52px;
+    height: 102px;
+    background-position: -227px -860px;
+  }
 
   &.block-bottom{
       background-position: -55px -962px;
@@ -688,6 +705,10 @@ $footer-icon-height : 54px;
 }
 
 
+.dot-50{
+  background: url("../../img/dot-50.png");
+  background-repeat: repeat;
+}
 
 
 

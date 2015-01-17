@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .pdhack {
   padding-top: 60px; }
 
@@ -418,11 +419,86 @@
   height: 37px !important;
   background-position: 0 0 !important;
   position: absolute;
-  left: 13px;
+  left: 50%;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%); }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.story-leftside {
+  position: absolute;
+  top: 340px;
+  left: -100px; }
+
+.story-rightside {
+  position: absolute;
+  top: 340px;
+  right: -100px; }
+
+/** 故事详情 **/
+.story-detail .sendBtn {
+  width: 100%;
+  height: 60px;
+  background: #d32271;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  position: relative; }
+.story-detail .story-detail-cover {
+  max-height: 460px;
+  margin-top: 30px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative; }
+  .story-detail .story-detail-cover .story-detail-cover-tt {
+    padding: 11px 16px 32px 60px;
+    position: absolute;
+    left: 0px;
+    bottom: 34px; }
+  .story-detail .story-detail-cover .story-detail-title {
+    font-size: 50px;
+    color: #ffffff; }
+.story-detail .story-detail-content .user-nav {
+  background: #ffffff;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 25px; }
+.story-detail .story-detail-content .story-detail-user {
+  background: #ffffff; }
+  .story-detail .story-detail-content .story-detail-user .story-detail-star {
+    padding: 12px 20px;
+    overflow: hidden; }
+    .story-detail .story-detail-content .story-detail-user .story-detail-star li {
+      float: left;
+      margin-right: 4px; }
+.story-detail .story-detail-content .story-detail-list {
+  margin-right: -15px; }
+  .story-detail .story-detail-content .story-detail-list .story-detail-main {
+    padding: 15px 20px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    z-index: 20; }
+  .story-detail .story-detail-content .story-detail-list .story-detail-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 10; }
+  .story-detail .story-detail-content .story-detail-list .story-detail-text {
+    width: 100%;
+    color: #ffffff; }
+  .story-detail .story-detail-content .story-detail-list ul li {
+    margin-bottom: 25px;
+    position: relative; }
 
 /*# sourceMappingURL=user.css.map */

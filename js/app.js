@@ -103,7 +103,7 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
      * 显示故事
      */
     $stateProvider.state("user.showStory", {
-        url: "/showStory",
+        url: "/showStory:id",
         templateUrl: "templates/story/showStory.html",
         controller: "ShowStoryCtrl"
     });

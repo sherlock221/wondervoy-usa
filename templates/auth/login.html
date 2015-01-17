@@ -33,7 +33,9 @@
             </div>
 
             <div class="form-group">
-                <button type="submit" class="auth-btn  btn" ng-disabled="loginForm.$invalid || isSubmit"><i class="ib loading" ng-show="isSubmit" ></i>Log In</button>
+                <button type="submit" class="auth-btn  btn" ng-disabled="loginForm.$invalid || isSubmit">
+                    <i class="ib loading" ng-show="isSubmit" ></i><span ng-hide="isSubmit">Log In</span>
+                </button>
             </div>
         </form>
 </div>
