@@ -2,6 +2,8 @@
 
 @import "../base/fun";
 
+$height-pic : 293px;
+
 //故事
 .story-layer{
 
@@ -420,8 +422,11 @@
 
       ul{
         li{
+
           margin-bottom: 25px;
           position: relative;
+          max-height: $height-pic;
+          overflow: hidden;
         }
       }
     }

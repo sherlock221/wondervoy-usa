@@ -37,6 +37,42 @@ wondervoy
             return defer.promise;
         }
 
+
+        //查询用户故事
+        StorySev.findUserStorys = function(storyId,size,userId){
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/story/userStory", {
+                storyId: storyId,
+                size: size,
+                userId : userId
+            })
+            .success(function (res) {
+                defer.resolve(res);
+            })
+            .error(function(err){
+                defer.reject(err);
+            });
+
+            return defer.promise;
+        },
+
+        //查询故事详情
+        StorySev.findStoryDetail = function(storyId,commentSize){
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/story/story", {
+                storyId: storyId,
+                commentSize : commentSize
+            })
+                .success(function (res) {
+                    defer.resolve(res);
+                })
+                .error(function(err){
+                    defer.reject(err);
+                });
+
+            return defer.promise;
+        }
+
         return  StorySev;
 
     });

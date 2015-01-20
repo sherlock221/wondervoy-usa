@@ -1,6 +1,5 @@
 $navmg: 32px;
-
-
+$height-pic : 293px;
 
 .pdhack {
   padding-top: 60px;
@@ -289,6 +288,10 @@ $leftHeight: 256px;
     li {
       position: relative;
       margin-bottom: 10px;
+
+      height: $height-pic;
+      overflow: hidden;
+
 
       .list-font {
         position: absolute;

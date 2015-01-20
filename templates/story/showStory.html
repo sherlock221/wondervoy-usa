@@ -19,11 +19,11 @@
 
             <div class="story-body story-detail">
                  <div class="story-detail-cover">
-                        <img src="img/list-01.jpg"  class="full-img" />
+                        <img ng-src="{{story.coverUrl}}"  class="full-img" />
 
 
                          <div class="story-detail-cover-tt ib  dot-50">
-                             <h3 class="ib story-detail-title fm-roman ">Xi'an Tang Dynasty Park</h3>
+                             <h3 class="ib story-detail-title fm-roman ">{{story.coverDes}}</h3>
                          </div>
                  </div>
 
@@ -113,26 +113,18 @@
 
                         <section class="story-detail-list">
                             <ul>
-                                <li>
+                                <li ng-repeat="picStory in story.picStories">
                                     <a class="block">
-                                        <img src="img/list-01.jpg"  class="full-img" />
+                                        <img ng-src="{{picStory.pic}}"  class="full-img" />
 
                                         <div class="story-detail-main">
 
                                             <div class="story-detail-bg"></div>
-                                            <div class="story-detail-text">你们好啊实打实</div>
+                                            <div class="story-detail-text">{{picStory.desc}}</div>
                                         </div>
 
-
                                     </a>
                                 </li>
-
-                                <li>
-                                    <a class="block">
-                                        <img src="img/list-01.jpg"  class="full-img" />
-                                    </a>
-                                </li>
-
                             </ul>
 
 

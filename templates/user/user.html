@@ -208,24 +208,11 @@
             </div>
             <h1 class="user-title"> My Stories</h1>
 
-
-            <ul class="list-story">
+            <ul class="list-story" ng-repeat="story in storys">
                 <li>
-                    <a class="block" href="#/user/showStory:101">
-                        <img src="img/list-01.jpg" class="full-img"/>
-                        <span class="ib list-font">Explore Xi'an</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="block">
-                        <img src="img/list-02.jpg" class="full-img"/>
-                        <span class="ib list-font">Explore Xi'an</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="block">
-                        <img src="img/list-01.jpg" class="full-img"/>
-                        <span class="ib list-font">Explore Xi'an</span>
+                    <a class="block" href="#/user/showStory/{{story.storyId}}">
+                        <img  ng-src="{{story.coverUrl}}" class="full-img"/>
+                        <span class="ib list-font">{{story.coverDes}}</span>
                     </a>
                 </li>
             </ul>
@@ -241,7 +228,7 @@
             <!-- 加载更多 -->
             <section class="more-load text-center" style="margin: 15px 0;">
                 <loading-bar is-show="isShow">
-                    <span ng-click="home.loadMore();" class="ib more-font  fm-thex">MORE&nbsp;&nbsp;<i
+                    <span ng-click="loadMore();" class="ib more-font  fm-thex">MORE&nbsp;&nbsp;<i
                             class="ib dot"></i><i class="ib dot"></i><i class="ib dot"></i></span>
                 </loading-bar>
             </section>

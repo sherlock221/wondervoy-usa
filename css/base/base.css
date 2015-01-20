@@ -36,6 +36,22 @@
   40% {
     transform: scale(1);
     -webkit-transform: scale(1); } }
+.loading-am.ng-hide-add, .loading-am.ng-hide-remove {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  display: block !important; }
+
+.loading-am.ng-hide-add.ng-hide-add-active,
+.loading-am.ng-hide-remove {
+  opacity: 0; }
+
+.loading-am.ng-hide-add,
+.loading-am.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1; }
+
 /*
  *  字体导入
  */

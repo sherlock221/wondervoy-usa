@@ -67,8 +67,6 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     });
 
 
-
-
     /**
      * 验证
      */
@@ -79,14 +77,13 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state("home.forget",forget);
 
 
-
     /**
      * 个人信息
      */
     $stateProvider.state("user", {
         url: "/user",
         templateUrl: "templates/user/user.html",
-        controller: "UserCtrl as user"
+        controller: "UserCtrl as userCl"
     });
 
 
@@ -103,7 +100,7 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
      * 显示故事
      */
     $stateProvider.state("user.showStory", {
-        url: "/showStory:id",
+        url: "/showStory/:id",
         templateUrl: "templates/story/showStory.html",
         controller: "ShowStoryCtrl"
     });
@@ -118,8 +115,7 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
 wondervoy.config(function($httpProvider){
    $httpProvider.interceptors.push("AjaxInterceptors");
 
-    //设置跨域
-    $httpProvider.defaults.withCredentials = true;
+
 });
 
 

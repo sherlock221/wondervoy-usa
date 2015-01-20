@@ -43,10 +43,10 @@ wondervoy
         }
 
 
-        AccountService.getUserInfo = function(){
+        AccountService.getUserInfo = function(userId){
             var defer = $q.defer();
             $http.post(SERVER.url + "/user/userInfo", {
-
+                userId : userId
             })
             .success(function (res) {
                 defer.resolve(res);
