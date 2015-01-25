@@ -46,7 +46,7 @@
   position: absolute;
   top: 103px;
   left: 50%;
-  z-index: 999;
+  z-index: 1050;
   @include px-transform(translateX(-50%));
 
   .auth-btn {

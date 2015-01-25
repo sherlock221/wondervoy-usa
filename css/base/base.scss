@@ -124,6 +124,10 @@ html,body{
 
 }
 
+/** 去掉focus的边框 **/
+*:focus,*{outline: none;}
+
+
 //按钮 阴影 边框 去掉
 .btn:focus, .btn.focus{
   color: inherit;
@@ -153,7 +157,7 @@ a:hover{
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index:  998;
+  z-index:  1030;
   top: 0;
   right: 0;
   left: 0;
@@ -451,6 +455,11 @@ footer{
   vertical-align: middle;
 }
 
+.pd0{
+  padding-left: 0;
+  padding-right: 0;
+}
+
 
 .top-padding{
   padding-top: 75px;
@@ -606,6 +615,13 @@ footer{
     background-position: 0 -860px;
   }
 
+  &.closewBd{
+    width: 54px;
+    height: 53px;
+    background-position: 0 -996px;
+  }
+
+
   &.arrow-right{
     width: 38px;
     height: 35px;
@@ -642,7 +658,24 @@ footer{
       height: 34px;
   }
 
+  &.ck{
+    background-position: 0px  -962px;
+    width: 19px;
+    height: 18px;
 
+    -webkit-appearance:none;
+    appearance:none;
+    -ms-appearance:none;
+
+    cursor: pointer;
+
+  }
+
+  &.ck:checked{
+    background-position: -19px -962px;
+    width: 19px;
+    height: 18px;
+  }
 
 
 }
@@ -716,13 +749,6 @@ $footer-icon-height : 54px;
 }
 
 
-/** 去掉focus的边框 **/
-*:focus,*{outline: none;}
-.form-control:focus{
-  border-color : transparent;
-  -webkit-box-shadow : none;
-  box-shadow : none;
-}
 
 
 .dot-50{
@@ -731,6 +757,69 @@ $footer-icon-height : 54px;
 }
 
 
+.button-01{
+  width: inherit;
+  height: inherit;
+  color: #ffffff;
+  text-align: center;
+  background: #d32271;
+  font-size: 15px;
+  clear: both;
+  border: 0;
+  margin: 0;
+  padding:  0 20px;
+  line-height: 40px;
+}
 
+.hr-black{
+  border: 0;
+  border-top: 1px solid #000000;
+  margin: 0;
+}
+
+
+.layerClose{
+  position: absolute;
+  right: 35px;
+}
+
+.vt{
+  vertical-align: top;
+}
+.vm{
+  vertical-align: middle;
+}
+
+.vb{
+  vertical-align: bottom;
+}
+
+
+.select-small{
+  width: 55px;
+}
+
+.select-large{
+
+}
+
+.select-normal{
+  width: 90px;
+}
+.help-block{
+  text-align: left;
+}
+
+.a-02{
+  color: #fc5f5d;
+  font-size: 14px;
+}
+.a-02:hover{
+  color: #fc5f5d;
+}
+
+.mb25{
+  margin-bottom: 25px;
+ }
 /** 手机版本css **/
 //@import 'media-phone';

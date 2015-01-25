@@ -98,6 +98,10 @@ html, body {
   height: inherit;
   background: #ffffff; }
 
+/** 去掉focus的边框 **/
+*:focus, * {
+  outline: none; }
+
 .btn:focus, .btn.focus {
   color: inherit; }
 
@@ -122,7 +126,7 @@ a:hover {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 998;
+  z-index: 1030;
   top: 0;
   right: 0;
   left: 0;
@@ -300,6 +304,10 @@ footer {
   display: inline-block;
   vertical-align: middle; }
 
+.pd0 {
+  padding-left: 0;
+  padding-right: 0; }
+
 .top-padding {
   padding-top: 75px; }
 
@@ -390,6 +398,10 @@ footer {
     width: 54px;
     height: 53px;
     background-position: 0 -860px; }
+  .ui-widget.closewBd {
+    width: 54px;
+    height: 53px;
+    background-position: 0 -996px; }
   .ui-widget.arrow-right {
     width: 38px;
     height: 35px;
@@ -414,6 +426,18 @@ footer {
     background-position: -55px -962px;
     width: 355px;
     height: 34px; }
+  .ui-widget.ck {
+    background-position: 0px  -962px;
+    width: 19px;
+    height: 18px;
+    -webkit-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    cursor: pointer; }
+  .ui-widget.ck:checked {
+    background-position: -19px -962px;
+    width: 19px;
+    height: 18px; }
 
 .facebook {
   background-position: 0px  0;
@@ -465,18 +489,59 @@ footer {
   width: 62px;
   height: 51px; }
 
-/** 去掉focus的边框 **/
-*:focus, * {
-  outline: none; }
-
-.form-control:focus {
-  border-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
 .dot-50 {
   background: url("../../img/dot-50.png");
   background-repeat: repeat; }
+
+.button-01 {
+  width: inherit;
+  height: inherit;
+  color: #ffffff;
+  text-align: center;
+  background: #d32271;
+  font-size: 15px;
+  clear: both;
+  border: 0;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 40px; }
+
+.hr-black {
+  border: 0;
+  border-top: 1px solid #000000;
+  margin: 0; }
+
+.layerClose {
+  position: absolute;
+  right: 35px; }
+
+.vt {
+  vertical-align: top; }
+
+.vm {
+  vertical-align: middle; }
+
+.vb {
+  vertical-align: bottom; }
+
+.select-small {
+  width: 55px; }
+
+.select-normal {
+  width: 90px; }
+
+.help-block {
+  text-align: left; }
+
+.a-02 {
+  color: #fc5f5d;
+  font-size: 14px; }
+
+.a-02:hover {
+  color: #fc5f5d; }
+
+.mb25 {
+  margin-bottom: 25px; }
 
 /** 手机版本css **/
 

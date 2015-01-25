@@ -505,4 +505,93 @@
     max-height: 293px;
     overflow: hidden; }
 
+/** account **/
+.accountLayer {
+  position: absolute;
+  top: 40px;
+  z-index: 1030;
+  width: 100%; }
+
+.accountNav {
+  position: relative;
+  z-index: 2;
+  padding-right: 50px; }
+  .accountNav li {
+    text-align: center;
+    height: 62px;
+    line-height: 62px;
+    color: #ffffff;
+    background: #d32271;
+    font-size: 18px;
+    margin-bottom: 17px;
+    width: 100%; }
+    .accountNav li.active {
+      background: #403e3e;
+      height: 68px;
+      line-height: 68px;
+      font-size: 50px;
+      font-weight: bold;
+      width: 297px; }
+
+.account-hack {
+  padding-left: 0;
+  margin-left: -39px; }
+
+.account-cloum {
+  background: #ffffff;
+  padding: 1px;
+  margin-bottom: 20px; }
+  .account-cloum .account-cloum-headr {
+    background: #000000;
+    color: #ffffff;
+    height: 88px;
+    line-height: 88px;
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right; }
+  .account-cloum .account-cloum-body {
+    margin-top: 28px;
+    color: #131313; }
+
+.edit-setting {
+  padding-left: 40px;
+  padding-right: 35px; }
+  .edit-setting h4 {
+    margin-bottom: 29px;
+    font-size: 24px;
+    vertical-align: top;
+    margin-top: 0; }
+
+.font-desc {
+  line-height: 24px;
+  font-size: 13px; }
+
+.account-form {
+  color: #696d6f; }
+  .account-form label {
+    margin-right: 12px;
+    font-size: 13px;
+    padding: 0; }
+  .account-form .upassword {
+    margin: 15px 0;
+    margin-right: 15px; }
+  .account-form .hr-black {
+    margin-top: 20px; }
+
+.account-input {
+  height: 38px;
+  line-height: 38px;
+  padding-left: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  width: 221px; }
+
+.account-input.w100 {
+  width: 100%; }
+
+.editProfile {
+  padding-right: 30px; }
+  .editProfile .form-group {
+    margin-bottom: 25px; }
+
 /*# sourceMappingURL=user.css.map */

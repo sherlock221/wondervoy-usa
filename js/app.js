@@ -106,6 +106,27 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     });
 
 
+    /**
+     * 修改个人信息
+     */
+    $stateProvider.state("user.editProfile",{
+        url : "/editProfile",
+        templateUrl: "templates/user/editProfile.html",
+        controller: "EditProfileCtrl"
+    });
+
+    /**
+     * 修改账户信息
+     */
+    $stateProvider.state("user.editAccount",{
+        url : "/editAccount",
+        templateUrl: "templates/user/editAccount.html",
+        controller: "EditAccountCtrl"
+    });
+
+
+
+
     //默认情况
     $urlRouterProvider.otherwise("/home");
 });
@@ -125,4 +146,5 @@ wondervoy.constant("SERVER", {
 //    url: "/wondervoy-usa/data"
     //线上地址
     url: "http://123.57.75.45:8080/voy"
+//    url: "/voy"
 });

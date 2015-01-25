@@ -1,0 +1,104 @@
+<!--mask-->
+<div class="mask"></div>
+
+<div class="accountLayer">
+
+    <a href="javascript:void(0);" class="ib  layerClose" ng-click="close();" >
+        <i class="ui-widget ib closeWd"></i>
+    </a>
+
+    <div class="container">
+        <div class="row pos-rel">
+
+
+
+            <div class="col-md-4">
+                <ul class="accountNav list-unstyled">
+                    <li class="active">
+                        <a href="javascript:void(0)" class="fm-roman">
+                            Account
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0)">
+                            View Profile
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-8 account-hack">
+
+                <div class="account-cloum">
+                    <div class="account-cloum-headr">
+                        Email Settings
+                    </div>
+                    <div class="account-cloum-body edit-setting row">
+                        <div class="ib col-md-5">
+                            <h4 class="ib" >I want to receive: </h4><br/>
+                            <span class="ib" style="margin-bottom: 71px;">You can disable these at any<br/>time.</span>
+                        </div>
+
+                        <div class="ib col-md-7 pd0" >
+                            <div class="font-desc">
+                                    <input type="checkbox" class="ck vt ui-widget">
+                            General promotions, updates, news about Airbnb or general promotions for partner campaigns and services, user surveys, inspiration, and love from Airbnb.
+                            </div>
+                            <div class="font-desc" style="margin-top: 13px;">
+                                <input type="checkbox"  class="ck vt ui-widget"  />
+                                Reservation and review reminders.
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="account-cloum">
+                    <div class="account-cloum-headr">
+                        Change Your Password
+                    </div>
+                    <div class="account-cloum-body">
+
+                        <form  method="post" novalidate name="updatePassWordForm" class=" account-form form-horizontal" ng-submit="updatePass();">
+                            <section  class="text-center">
+                                <div class="form-group ib">
+                                    <label for="" class="ib ">old password</label>
+                                    <div class="ib">
+                                        <input type="password" class="account-input form-control"   ng-model="fm.oldPass" required>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="form-group ib">
+                                    <label for="" class="ib ">new password</label>
+                                    <div class="ib">
+                                        <input type="password"  ng-model="fm.newPass" class="account-input form-control" required />
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="form-group ib">
+                                    <label for="" class="ib ">pssword again</label>
+                                    <div class="ib">
+                                        <input type="password" ng-model="fm.newPassAgain"  class="account-input form-control" required>
+                                    </div>
+                                </div>
+                                <br/>
+                            </section>
+
+                                <hr class="hr-black"/>
+                                <div class="text-right">
+                                        <button class="btn button-01 upassword pos-rel"  ng-disabled="updatePassWordForm.$invalid ||  isSubmit">
+                                            <i ng-show="isSubmit" class="ib loading loading-am ng-hide"></i>
+                                            <span class="loading-am" ng-hide="isSubmit">Update Password</span>
+                                        </button>
+                                </div>
+
+                          </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

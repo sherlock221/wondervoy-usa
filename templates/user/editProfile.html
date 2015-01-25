@@ -1,0 +1,153 @@
+<!--mask-->
+<div class="mask"></div>
+
+<div class="accountLayer">
+
+    <a href="javascript:void(0);" class="ib  layerClose" ng-click="close();" >
+        <i class="ui-widget ib closeWd"></i>
+    </a>
+
+
+    <div class="container">
+        <div class="row pos-rel">
+
+            <a class="close"></a>
+
+            <div class="col-md-4">
+                <ul class="accountNav list-unstyled">
+                    <li class="active">
+                        <a href="javascript:void(0)" class="fm-roman">
+                           Edit Profile
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0)">
+                            View Profile
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-8 account-hack">
+
+
+                <div class="account-cloum">
+                    <div class="account-cloum-headr">
+                        Required
+                    </div>
+                    <div class="account-cloum-body">
+                        <form  method="post" novalidate name="editProfileForm" class=" editProfile account-form form-horizontal" ng-submit="">
+                            <section  class="text-center">
+                                <div class="form-group ">
+                                    <div class="col-md-3 text-right pd0" >
+                                        <label for="" class="ib  control-label " style="margin: 0;">First Name</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" class="account-input form-control w100" id="" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <div class="col-md-3 text-right pd0" >
+                                        <label for="" class="ib  control-label " style="margin: 0;">First Name</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" class="account-input form-control w100" id="" />
+                                        <span class="help-block">This is only shared once you have a confirmed booking with another Airbnb user.</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <div class="col-md-3 text-right pd0" >
+                                        <label for="" class="ib  control-label " style="margin: 0;">I Am</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div>
+                                            <select class="form-control select-normal">
+                                                <option>123</option>
+                                            </select>
+                                        </div>
+                                        <span class="help-block">We use this data for analysis and never share it with other users.</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <div class="col-md-3 text-right pd0" >
+                                        <label for="" class="ib  control-label " style="margin: 0;">Birth Date</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="text-left">
+                                            <select class="form-control select-normal ib">
+                                                <option>123</option>
+                                            </select>
+
+                                            <select class="form-control select-small ib">
+                                                <option>123</option>
+                                            </select>
+
+                                            <select class="form-control select-small ib">
+                                                <option>123</option>
+                                            </select>
+                                        </div>
+                                        <span class="help-block">The magical day you were dropped from the sky by a stork. We use this data
+for analysis and never share it with other users.</span>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="form-group ">
+                                    <div class="col-md-3 text-right pd0" >
+                                        <label for="" class="ib  control-label " style="margin: 0;">Email Address</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="email" class="account-input form-control w100" id="" />
+                                        <span class="help-block">This is only shared once you have a confirmed booking with another Airbnb user.</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-3 text-right pd0" >
+                                        <label for="" class="ib  control-label " style="margin: 0;">Phone Number</label>
+                                    </div>
+                                    <div class="col-md-9" >
+                                        <div class="text-left" style="margin-top: 5px;">
+                                             <span class="ib mb25"><strong>No phone number entered</strong></span>
+
+                                              <a href="javascript:void(0);" class="block a-02 mb25">
+                                                  + Add a phone number
+                                              </a>
+                                            <span class="help-block">This is only shared once you have a confirmed booking with another Airbnb user.
+                                            This is how we can all get in touch.</span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </section>
+
+                            <hr class="hr-black"/>
+                            <div class="text-right">
+                                <button class="btn button-01 upassword" >
+                                    <i ng-show="isPublish" class="ib loading loading-am ng-hide"></i>
+                                    <span class="loading-am" ng-hide="isPublish">Update info</span>
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

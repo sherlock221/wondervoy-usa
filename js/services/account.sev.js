@@ -42,7 +42,6 @@ wondervoy
             return defer.promise;
         }
 
-
         AccountService.getUserInfo = function(userId){
             var defer = $q.defer();
             $http.post(SERVER.url + "/user/userInfo", {
@@ -55,6 +54,42 @@ wondervoy
             return defer.promise;
         }
 
+        //修改密码
+        AccountService.updatePass = function(oldPass,newPass){
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/account/changePasswd", {
+                newpasswd : newPass,
+                oldpasswd : oldPass
+            })
+                .success(function (res) {
+                    defer.resolve(res);
+                })
+            return defer.promise;
+        }
+
+        //修改个人信息
+        AccountService.updateUserInfo  = function(newInfo){
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/user/updateUserInfo", {
+                newInfo : newInfo
+            })
+                .success(function (res) {
+                    defer.resolve(res);
+                })
+            return defer.promise;
+        }
+
+        //修改技能信息
+        AccountService.updateUserSkills  = function(newSkills){
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/user/updateUserSkills", {
+                newSkills : newSkills
+            })
+                .success(function (res) {
+                    defer.resolve(res);
+                })
+            return defer.promise;
+        }
         return  AccountService;
 
     });
