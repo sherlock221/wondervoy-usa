@@ -4,11 +4,11 @@ wondervoy
 
         return {
 
-            getList : function(){
+            getList : function(page){
                 var defer =  $q.defer();
                 $http.post(SERVER.url+"/story/main",
                     {
-                        index : 1,
+                        page : page,
                         size : 10
                   })
                     .success(function(result){

@@ -125,6 +125,12 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     });
 
 
+    $stateProvider.state("user.sendMessage",{
+        url : "/sendMessage",
+        templateUrl: "templates/user/sendMessage.html",
+        controller: "SendMessageCtrl"
+    });
+
 
 
     //默认情况

@@ -8,7 +8,9 @@ wondervoy
         //列表
         $scope.posts = [];
 
+        $scope.page = 1;
 
+        $scope.isLast = false;
 
         var scale = 720/1440;
 
@@ -23,17 +25,26 @@ wondervoy
         //加载更多
         this.loadMore = function(){
 
+            if( $scope.isLast){
+                $rootScope.alertSuccess("已经没有啦!");
+                return;
+            }
             console.log("加载更多...");
-
             $scope.isShow = true;
 
-
-                MessageService.getList()
+            MessageService.getList($scope.page)
                     .then(function(res){
                         if(res.data){
+
                             //数据
-                            var data = res.data.users;
-                            $scope.posts = $scope.posts.concat(data);
+                            var data = res.data;
+                            if(data.hasMore == true){
+                                $scope.page++;
+                            }
+                            else{
+                                $scope.isLast = true;
+                            }
+                            $scope.posts = $scope.posts.concat(data.populers);
                             $scope.isShow = false;
                             console.log($scope.posts);
                         }
@@ -41,7 +52,6 @@ wondervoy
                         $scope.isShow = false;
                         console.log(err);
                     });
-
 
         }
 

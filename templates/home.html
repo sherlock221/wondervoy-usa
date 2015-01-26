@@ -59,7 +59,7 @@
                                     <a href="javascript:void(0)" class="ib head">
                                         <img ng-src="{{item.icon}}"    />
                                     </a>
-                                    <span class=" fm-thex block username">{{item.firstName}}&emsp;{{item.lastName}}</span>
+                                    <span class=" fm-thex block username">{{item.firstName}} {{item.lastName}}</span>
                                 </section>
 
                             </div>
@@ -67,13 +67,12 @@
 
                         <div class="col-md-8">
 
-
                             <!--单图排列-->
                             <div class="desc-bg" ng-if="item.storys.length == 1">
                                 <a storyId="{{obj.storyId}}"  href="javascript:void(0)" class="ib desc" ng-repeat="obj  in item.storys" >
                                     <div class="desc-img">
-                                        <img ng-src="{{obj.coverPic}}" class="full-img" />
-                                        <span class="ib desc-title">{{obj.coverDesc}}</span>
+                                        <img ng-src="{{obj.coverUrl}}!1024" class="full-img " />
+                                        <span class="ib desc-title">{{obj.coverDes}}</span>
                                     </div>
                                 </a>
                             </div>
@@ -85,13 +84,29 @@
                                     <div class="desc-bg">
                                         <a href="javascript:void(0)" class="ib desc">
                                             <div class="desc-img">
-                                                <img ng-src="{{obj.coverPic}}" class="full-img" />
-                                                <span class="ib desc-title">{{obj.coverDesc}}</span>
+                                                <img ng-src="{{obj.coverUrl}}!1024" class="full-img img-w-auto" />
+                                                <span class="ib desc-title">{{obj.coverDes}}</span>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div class="row"  ng-if="item.storys.length == 3" >
+                                <div storyId="{{obj.storyId}}"  class="col-md-4"  ng-repeat="obj  in item.storys"  >
+                                    <div class="desc-bg">
+                                        <a href="javascript:void(0)" class="ib desc">
+                                            <div class="desc-img">
+                                                <img ng-src="{{obj.coverUrl}}!1024" class="full-img img-w-auto" />
+                                                <span class="ib desc-title">{{obj.coverDes}}</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
 
 
                         </div>

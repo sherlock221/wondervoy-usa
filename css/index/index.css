@@ -91,7 +91,8 @@
         color: #5e717b; }
       .content .home-list .home-list-ul li .desc-bg {
         background-color: #ffffff;
-        padding-left: 10px; }
+        padding-left: 10px;
+        text-align: left; }
         .content .home-list .home-list-ul li .desc-bg a {
           width: 100%;
           height: inherit; }

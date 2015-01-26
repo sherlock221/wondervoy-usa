@@ -21,7 +21,6 @@ wondervoy
                     }
                 }
 
-
                 config.headers = config.headers || {};
                 if ($window.sessionStorage.token) {
                     config.headers['voySession'] = $window.sessionStorage.token;

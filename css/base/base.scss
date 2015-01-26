@@ -122,6 +122,8 @@ html,body{
   background: #ffffff;
 
 
+
+
 }
 
 /** 去掉focus的边框 **/
@@ -794,7 +796,13 @@ $footer-icon-height : 54px;
   vertical-align: bottom;
 }
 
+.bold{
+  font-weight: bold;
+}
 
+.space1{
+  letter-spacing: 1px;
+}
 .select-small{
   width: 55px;
 }
@@ -821,5 +829,11 @@ $footer-icon-height : 54px;
 .mb25{
   margin-bottom: 25px;
  }
+
+.img-w-auto{
+  height: 100%;
+  width: auto;
+}
+
 /** 手机版本css **/
 //@import 'media-phone';

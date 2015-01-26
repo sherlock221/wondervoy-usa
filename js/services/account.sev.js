@@ -90,6 +90,20 @@ wondervoy
                 })
             return defer.promise;
         }
+
+
+        //发送消息
+        AccountService.sendMessage  = function(receiverId,content){
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/message/sendMessage", {
+                receiverId : receiverId,
+                content  : content
+            })
+                .success(function (res) {
+                    defer.resolve(res);
+                })
+            return defer.promise;
+        }
         return  AccountService;
 
     });

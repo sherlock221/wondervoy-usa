@@ -49,6 +49,9 @@
   margin-bottom: 20px;
 
    .account-cloum-headr{
+
+
+
       background: #000000;
      color: #ffffff;
      height: 88px;
@@ -56,6 +59,11 @@
      font-size: 14px;
      padding-right: 35px;
      text-align: right;
+
+     &.tl{
+       text-align: left;
+       padding-left: 24px;
+     }
 
    }
 
@@ -129,3 +137,33 @@
     margin-bottom: 25px;
   }
 }
+
+
+.sendMessage{
+  padding: 0px 32px  0 30px;
+  color: #696d6f;
+  .sendMessageTips{
+    font-weight: bold;
+    .cle{
+      width: 8px;
+      height: 8px;
+      background: #696d6f;
+      border-radius: 65px;
+      margin-right: 12px;
+    }
+
+    li{
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .message{
+    height: 184px;
+    margin-top: 22px;
+    margin-bottom: 25px;
+  }
+}
+

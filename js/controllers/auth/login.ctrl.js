@@ -13,8 +13,8 @@ wondervoy
             url  : "jumpRegister();"
         }
 
-        $scope.email = "123@qq.com";
-        $scope.password = "123";
+        $scope.email = "";
+        $scope.password = "";
 
         //登录
         this.loginUser = function(){

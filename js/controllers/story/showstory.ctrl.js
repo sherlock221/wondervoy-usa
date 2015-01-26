@@ -19,6 +19,10 @@ wondervoy
         $scope.story = "";
 
 
+        $scope.sendMessage = function(){
+            $state.go("user.sendMessage");
+        }
+
         var loadList = function(storyId,commentSize,isRef){
             StorySev.findStoryDetail(storyId,commentSize).then(function(res){
                 $scope.story = res.data.story;

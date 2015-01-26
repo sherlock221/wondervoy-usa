@@ -1,0 +1,52 @@
+<!--mask-->
+<div class="mask"></div>
+
+<div class="accountLayer">
+
+    <a href="javascript:void(0);" class="ib  layerClose" ng-click="close();" >
+        <i class="ui-widget ib closeWd"></i>
+    </a>
+
+    <div class="container">
+        <div class="row pos-rel">
+            <div class="col-md-2"></div>
+            <div class="col-md-9 account-hack">
+                <div class="account-cloum">
+                    <div class="account-cloum-headr tl">
+                        Send A Message to <a href="javascript:void(0);" class="color-01">Chongkai</a>
+                    </div>
+                    <div class="account-cloum-body">
+
+                        <form  method="post" novalidate name="sendForm" class=" account-form form-horizontal" ng-submit="send();">
+
+                            <section class="sendMessage space1">
+                                <span class="ib bold" style="margin-bottom: 17px;">Some tips:</span><br/>
+                                <ul class="sendMessageTips">
+                                    <li><i class="ib cle"></i>Tell Chongkai a little about yourself</li>
+                                    <li><i class="ib cle"></i>What brings you to Barcelona ? Who’s coming ?</li>
+                                    <li><i class="ib cle"></i>What do you love about this listing ? Mention it ?</li>
+                                </ul>
+
+                                <textarea class="space1 form-control message"   ng-model="fm.content" required></textarea>
+
+                            </section>
+
+
+                                <hr class="hr-black"/>
+                                <div class="text-right">
+                                        <button class="btn button-01 upassword pos-rel"  ng-disabled="sendForm.$invalid ||  isSubmit">
+                                            <i ng-show="isSubmit" class="ib loading loading-am ng-hide"></i>
+                                            <span class="loading-am" ng-hide="isSubmit">Send</span>
+                                        </button>
+                                </div>
+
+                          </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
