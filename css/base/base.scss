@@ -353,20 +353,22 @@ nav.navbar{
       margin-left: rem(20px);
 
       a{
+        letter-spacing: 1px;
         display: block;
         font-size: rem(18px);
-        padding: 6px 12px;
-        background: transparent;
-
+        padding: 4px 15px;
+        background: $color-pink;
         &:hover{
            text-decoration: none;
         }
 
-        &:hover,&.active{
-
-          background: $color-pink;
-          color: #ffffff;
+        &.trans{
+          background: transparent;
+          border: 1px solid #ffffff;
+          padding-top: 3px;
+          padding-bottom: 3px;
         }
+
       }
 
     }
@@ -453,7 +455,7 @@ footer{
 }
 
 .ib{
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: middle;
 }
 
@@ -833,6 +835,14 @@ $footer-icon-height : 54px;
 .img-w-auto{
   height: 100%;
   width: auto;
+}
+
+
+//input
+.input-base{
+  height: 33px;
+  line-height: 33px;
+  border: 0 none;
 }
 
 /** 手机版本css **/

@@ -249,15 +249,18 @@ nav.navbar .navbar-item {
     float: left;
     margin-left: 20px; }
     nav.navbar .navbar-item li a {
+      letter-spacing: 1px;
       display: block;
       font-size: 18px;
-      padding: 6px 12px;
-      background: transparent; }
+      padding: 4px 15px;
+      background: #d32271; }
       nav.navbar .navbar-item li a:hover {
         text-decoration: none; }
-      nav.navbar .navbar-item li a:hover, nav.navbar .navbar-item li a.active {
-        background: #d32271;
-        color: #ffffff; }
+      nav.navbar .navbar-item li a.trans {
+        background: transparent;
+        border: 1px solid #ffffff;
+        padding-top: 3px;
+        padding-bottom: 3px; }
 
 /** 底部 **/
 footer {
@@ -301,7 +304,7 @@ footer {
   height: 36px; }
 
 .ib {
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: middle; }
 
 .pd0 {
@@ -552,6 +555,11 @@ footer {
 .img-w-auto {
   height: 100%;
   width: auto; }
+
+.input-base {
+  height: 33px;
+  line-height: 33px;
+  border: 0 none; }
 
 /** 手机版本css **/
 

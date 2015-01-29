@@ -30,12 +30,10 @@
             </div>
             <ul class="pull-right navbar-item ">
                 <li>
-                    <a href="#/home/auth/register">Sign up</a>
-                </li>
-                <li>
-                    <a href="#/home/auth/login">Login</a>
-                </li>
 
+                    <input type="text" class=" ib input-base" />
+                    <a href="#/home/auth/register" class="ib">GO</a>
+                </li>
                 <li class="userInfo" ng-show="$root.user.userName">
                     <a href="javascript:void(0);" class="userInfo-head">
                         <img ng-src="{{$root.user.userHead}}" class="res-img"/>
@@ -47,7 +45,11 @@
 
 
                 <li>
-                    <a href="#/home/auth/login">Show Your Stories </a>
+                    <a href="#/home/auth/login" >Show Your Stories </a>
+                </li>
+
+                <li>
+                    <a href="#/home/auth/login" class="trans">Login</a>
                 </li>
             </ul>
 
