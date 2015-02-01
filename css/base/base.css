@@ -247,7 +247,7 @@ nav.navbar .navbar-item {
   padding-top: 31px; }
   nav.navbar .navbar-item li {
     float: left;
-    margin-left: 20px; }
+    margin-left: 5px; }
     nav.navbar .navbar-item li a {
       letter-spacing: 1px;
       display: block;
@@ -559,7 +559,15 @@ footer {
 .input-base {
   height: 33px;
   line-height: 33px;
-  border: 0 none; }
+  border: 0 none;
+  color: #919191;
+  padding: 0 5px; }
+
+.input-border {
+  border-radius: 4px; }
+
+.container {
+  width: 1200px !important; }
 
 /** 手机版本css **/
 

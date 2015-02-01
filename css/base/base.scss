@@ -350,7 +350,7 @@ nav.navbar{
 
     li{
       float: left;
-      margin-left: rem(20px);
+      margin-left: rem(5px);
 
       a{
         letter-spacing: 1px;
@@ -837,13 +837,26 @@ $footer-icon-height : 54px;
   width: auto;
 }
 
-
-//input
+//33input 皮肤
 .input-base{
   height: 33px;
   line-height: 33px;
   border: 0 none;
+  color: #919191;
+  padding: 0 5px;
 }
+
+.input-border{
+  border-radius: 4px;
+}
+
+//当前固定高度
+.container{
+  width: 1200px !important;
+}
+
+
+
 
 /** 手机版本css **/
 //@import 'media-phone';

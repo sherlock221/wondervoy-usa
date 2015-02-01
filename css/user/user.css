@@ -200,12 +200,8 @@
   margin: 20px 0; }
 
 .story-layer {
-  position: absolute;
-  z-index: 1043;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px; }
+  position: relative;
+  background: #ffffff; }
   .story-layer .story-header {
     background: #403e3e;
     height: 69px;
@@ -222,8 +218,8 @@
       line-height: 64px; }
   .story-layer .story-body .add-left-story .add-left-short {
     width: 3px;
-    height: 33px;
-    margin-left: 66px;
+    height: 56px;
+    margin-left: -64px;
     margin-right: 61px;
     background: #403e3e; }
     .story-layer .story-body .add-left-story .add-left-short.tips {
@@ -231,7 +227,7 @@
   .story-layer .story-body .add-left-story .add-left-long {
     width: 3px;
     height: 288px;
-    margin-left: 66px;
+    margin-left: -64px;
     margin-right: 61px;
     background: #403e3e; }
   .story-layer .story-body .add-left-story .add-right-long {
@@ -254,6 +250,8 @@
       margin-left: 0; }
   .story-layer .story-body .add-right-story {
     vertical-align: top; }
+  .story-layer .story-body .add-left-short-tips {
+    margin-left: 129px; }
   .story-layer .story-body .add-story-bg {
     overflow: hidden;
     position: relative;
@@ -270,8 +268,8 @@
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%); }
     .story-layer .story-body .add-story-bg.tips {
-      height: 156px;
-      background: #000000;
+      height: 119px;
+      background: #707070;
       color: #FFFFFF;
       position: relative;
       text-align: left;
@@ -340,8 +338,7 @@
   -ms-transform: translate(-50%, -50%); }
   .addStory-text-main.mutil {
     top: 45%;
-    height: 290px;
-    overflow-y: scroll; }
+    height: 290px; }
   .addStory-text-main .addStory-text {
     background: transparent;
     border: 0;
@@ -374,6 +371,18 @@
     left: 0;
     bottom: 0; }
 
+.save-layer {
+  position: absolute;
+  bottom: 6px;
+  right: 20px;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+  .save-layer .save-tips {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 16px; }
+
 .saveBtn {
   width: 91px;
   height: 41px;
@@ -381,13 +390,10 @@
   font-size: 14px;
   color: #ffffff;
   text-align: center;
-  background: #d32271;
-  position: absolute;
-  bottom: 6px;
-  right: 20px;
-  border: 0;
+  background: #000000;
+  padding: 0;
   margin: 0;
-  padding: 0; }
+  border: 0; }
 
 .publishBtn-bg {
   background: #ffffff;

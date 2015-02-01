@@ -1,10 +1,9 @@
 <!-- 顶部 -->
 <header class="">
-
     <!-- 未登录界面 -->
     <nav class="navbar navbar-fixed-top   navbar-tran" role="navigation" style="position: absolute;"
          ng-hide="$root.user.userName">
-        <div class="container">
+        <div class="container" >
             <div class="navbar-header">
                 <a class="navbar-brand ib" href="#">
                     <i class="ib logo"></i>
@@ -30,8 +29,7 @@
             </div>
             <ul class="pull-right navbar-item ">
                 <li>
-
-                    <input type="text" class=" ib input-base" />
+                    <input  ng-style="{width:'378px'}"  type="text" class=" input-border ib input-base " placeholder="Enter your email to request invitation " />
                     <a href="#/home/auth/register" class="ib">GO</a>
                 </li>
                 <li class="userInfo" ng-show="$root.user.userName">
@@ -106,7 +104,7 @@
                 </li>
 
                 <li>
-                    <a class="showStories ib" href="#/user/addStory">Show Your Stories</a>
+                    <a class="showStories ib" href="#/story/addStory">Show Your Stories</a>
                 </li>
             </ul>
         </div>

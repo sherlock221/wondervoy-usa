@@ -87,10 +87,21 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     });
 
 
+
+    /**
+     * 故事主体
+     */
+    $stateProvider.state("story", {
+        url: "/story",
+        templateUrl: "templates/story/story.html",
+        abstract: true
+    })
+
+
     /**
      * 发表故事
      */
-    $stateProvider.state("user.addStory", {
+    $stateProvider.state("story.addStory", {
         url: "/addStory",
         templateUrl: "templates/story/addStory.html",
         controller: "AddStoryCtrl"
@@ -99,7 +110,7 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     /**
      * 显示故事
      */
-    $stateProvider.state("user.showStory", {
+    $stateProvider.state("story.showStory", {
         url: "/showStory/:id",
         templateUrl: "templates/story/showStory.html",
         controller: "ShowStoryCtrl"

@@ -7,12 +7,9 @@ $height-pic : 293px;
 //故事
 .story-layer{
 
-  position: absolute;
-  z-index: 1043;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  position: relative;
+  background: #ffffff;
+
 
   .story-header{
     background: #403e3e;
@@ -36,7 +33,7 @@ $height-pic : 293px;
 
 
   $line-w  : 3px;
-  $line-mg : 66px;
+  $line-mg :  -64px;
   $line-mg-r : 61px;
 
   .story-body{
@@ -49,7 +46,7 @@ $height-pic : 293px;
         //左侧短边
         .add-left-short{
             width: $line-w;
-            height: 33px;
+            height: 56px;
             margin-left: $line-mg;
             margin-right: $line-mg-r;
             background: #403e3e;
@@ -104,6 +101,10 @@ $height-pic : 293px;
       vertical-align: top;
     }
 
+    .add-left-short-tips{
+      margin-left: 129px;
+    }
+
     //设置上传图片大小
     .add-story-bg{
       overflow: hidden;
@@ -120,8 +121,8 @@ $height-pic : 293px;
 
       //上部分提示
       &.tips{
-        height: 156px;
-        background: #000000;
+        height: 119px;
+        background: #707070;
         color: #FFFFFF;
         position: relative;
         text-align: left;
@@ -200,7 +201,7 @@ $height-pic : 293px;
   &.mutil{
     top: 45%;
     height: 290px;
-    overflow-y: scroll;
+//    overflow-y: scroll;
   }
 
 
@@ -248,6 +249,21 @@ $height-pic : 293px;
 
 }
 
+
+.save-layer{
+  position: absolute;
+  bottom: 6px;
+  right: 20px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  .save-tips{
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 16px;
+  }
+}
 .saveBtn{
   width: 91px;
   height: 41px;
@@ -255,14 +271,10 @@ $height-pic : 293px;
   font-size: 14px;
   color: #ffffff;
   text-align: center;
-  background: #d32271;
-
-  position: absolute;
-  bottom: 6px;
-  right: 20px;
-  border: 0;
-  margin: 0;
+  background: #000000;
   padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 .publishBtn-bg{
