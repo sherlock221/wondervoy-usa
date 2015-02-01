@@ -25,6 +25,28 @@ wondervoy
         $scope.isPublish  = false;
 
 
+        $scope.coverMax = 20;
+        $scope.coverCurrent = 0;
+        $scope.storDescMax = 100;
+
+        //检测封面变化
+        $scope.$watch("cover.coverDesc",function(newVal,oldVal){
+            if(!newVal){
+                $scope.cover.coverDesc = "";
+                $scope.coverCurrent = 0;
+                return;
+            }
+               if(newVal.length  > $scope.coverMax){
+                   $scope.cover.coverDesc = oldVal;
+                   $scope.coverCurrent = oldVal.length;
+                   return;
+               }
+            $scope.coverCurrent = newVal.length;
+        });
+
+
+
+
 
         //上传图片
         $scope.$watch('myFiles', function(mf) {
@@ -78,6 +100,9 @@ wondervoy
 
         $scope.showText = function(obj){
             console.log("show....");
+
+            //添加watch 监听
+
             //显示text
             if(!obj.isShow){
                 obj.isShow = true;
