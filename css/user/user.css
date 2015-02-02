@@ -324,7 +324,9 @@
 
 .addStory-textarea-text {
   padding: 30px;
-  font-size: 18px; }
+  font-size: 18px;
+  text-align: left;
+  word-wrap: break-word; }
 
 .addStory-text-main {
   width: 658px;
@@ -394,6 +396,21 @@
   padding: 0;
   margin: 0;
   border: 0; }
+
+.reloadBtn {
+  width: 91px;
+  height: 41px;
+  line-height: 41px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background: #d32271;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  bottom: 6px;
+  right: 9px; }
 
 .publishBtn-bg {
   background: #ffffff;

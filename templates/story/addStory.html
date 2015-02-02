@@ -42,8 +42,8 @@
                 <div class="add-right-story ib">
 
 
-                    <div class="add-story-bg" ng-dblclick="showText(cover);">
-                        <img ng-src="{{cover.pic}}" class="full-img"/>
+                    <div class="add-story-bg" ng-dblclick="showText(cover,'cover');">
+                        <img ng-src="{{cover.pic}}" class="full-img ntp"/>
 
                         <div class="add-story-bg-text" ng-show="cover.isShow">
                             <div class="pos-rel addStory-text-main">
@@ -56,6 +56,7 @@
 
                                 <input type="text"    class="addStory-text cover" ng-model="cover.coverDesc"
                                        placeholder="Add a Title"  value="{{cv}}"/>
+
                             </div>
 
                         </div>
@@ -65,6 +66,8 @@
                                 {{cover.coverDesc}}
                             </div>
                         </div>
+
+                         <button class="reloadBtn  " ng-click="hideText(cover);">Reload</button>
                     </div>
 
                 </div>
@@ -89,8 +92,8 @@
                 </div>
                 <div class="add-right-story ib">
 
-                    <div class="add-story-bg" ng-dblclick="showText(story);">
-                        <img ng-src="{{story.pic}}" class="full-img"/>
+                    <div class="add-story-bg" ng-dblclick="showText(story,'',$index);">
+                        <img ng-src="{{story.pic}}" class="full-img ntp"/>
 
                         <div class="add-story-bg-text" ng-show="story.isShow">
 
@@ -98,7 +101,7 @@
                                 <div class="addStory-text-opacity"></div>
 
                                 <div class="save-layer">
-                                    <span class="save-tips">{{coverCurrent}}/<span class="color-01">{{coverMax}}</span></span>
+                                    <span class="save-tips">{{story.current}}/<span class="color-01">{{storDescMax}}</span></span>
                                     <button class="saveBtn " ng-click="hideText(story);">Save</button>
                                 </div>
 

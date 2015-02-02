@@ -126,6 +126,11 @@ html,body{
 
 }
 
+.ntp{
+  /* Prevent elements to be highlighted on tap */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 /** 去掉focus的边框 **/
 *:focus,*{outline: none;}
 
