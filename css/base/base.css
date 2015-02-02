@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 瀵煎叆鍙橀噺 **/
+/** 导入变量 **/
 .spinner {
   width: 150px;
   text-align: center; }
@@ -71,7 +71,8 @@
   src: url("../../font/HelveticaNeueLTPro-MdCn.ttf") format("truetype"), url("../../font/HelveticaNeueLTPro-MdCn.woff") format("woff"); }
 @font-face {
   font-family: 'HelveticaNeueLTPro-Lt';
-  src: url("../../font/HelveticaNeueLTPro-Lt.ttf") format("truetype"), url("../../font/HelveticaNeueLTPro-Lt.woff") format("woff"); }
+  src: url("../../font/HelveticaNeueLTPro-Lt.ttf") format("truetype"), url("../../font/HelveticaNeueLTPro-Lt.woff") format("woff");
+  font-weight: 200; }
 .fm-roman {
   font-family: 'HelveticaInseratLTStd-Roman'; }
 
@@ -91,12 +92,13 @@
   color: #d32271; }
 
 html, body {
-  font-family: 'HelveticaNeueLTPro-Lt';
+  font-family: 'Helvetica Neue','HelveticaNeueLTPro-Lt';
   font-size: 14px;
   color: #ffffff;
   width: 100%;
   height: inherit;
-  background: #ffffff; }
+  background: #ffffff;
+  font-weight: 200; }
 
 /** 去掉focus的边框 **/
 *:focus, * {
