@@ -103,9 +103,12 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
      */
     $stateProvider.state("story.addStory", {
         url: "/addStory",
-        templateUrl: "templates/story/addStory.html",
-        controller: "AddStoryCtrl"
+        templateUrl: "templates/story/addStory.html"
+
     })
+
+
+
 
     /**
      * 显示故事

@@ -199,6 +199,15 @@
   background: #ffffff;
   margin: 20px 0; }
 
+.topLayer {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1040;
+  background: transparent !important; }
+
 .story-layer {
   position: relative;
   background: #ffffff; }

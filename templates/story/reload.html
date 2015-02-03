@@ -1,0 +1,47 @@
+
+<section>
+        <!--mask-->
+        <div class="mask"></div>
+
+        <div class="story-layer topLayer" >
+
+            <div class="story-header">
+                <h1 class="fm-roman">Reload  <i class="ui-widget ib closeWd" ng-click="closeReload();"></i></h1>
+            </div>
+
+            <div class="story-body text-center">
+
+                <ul style="margin-top: 100px;">
+                    <li>
+                        <div class="add-right-story ib">
+                            <div class="add-story-bg">
+
+                                <div class="add-story-black">
+                                    <span class="ib add-progress" ng-show="isUpload">{{dynamic}}</span>
+                                    <button class="btnAddStory" ng-hide="isUpload" type="file"  ng-file-select=""
+                                            ng-model="reloadFile" name="file" ng-file-change=""><i
+                                            class="ib ui-widget add addPhoto"></i>Reload photo
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="container">
+                <div class="row pos-rel">
+
+
+                </div>
+            </div>
+
+        </div>
+</section>
