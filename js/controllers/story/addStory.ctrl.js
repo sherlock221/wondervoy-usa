@@ -1,6 +1,6 @@
 wondervoy
 
-    .controller("AddStoryCtrl", function ($rootScope,$state,$scope,StorySev) {
+    .controller("AddStoryCtrl", function ($rootScope,$state,$scope,$timeout,StorySev) {
         console.log("addStory");
 
         var stateName = $state.current.name;
@@ -27,6 +27,8 @@ wondervoy
 
         //上传
         $scope.isReload = false;
+
+        $scope.reloadObj = "";
 
 
         $scope.coverMax = 20;
@@ -68,24 +70,10 @@ wondervoy
                                 $scope.dynamic = "loading..."
                             }
                         }).success(function(res, status, headers, config) {
-//                            if(res.state == "0"){
-//                                var storyObj = {
-//                                    pic : res.data.url,
-//                                    name : "0001"
-//                                };
-//
-//                                if($scope.isFirst){
-//                                    $scope.cover = storyObj;
-//                                }
-//                                else{
-//                                    //添加到数组顶部
-////                                $scope.storys.unshift(storyObj);
-//                                    console.log();
-//                                    $scope.storys.push(storyObj);
-//                                }
-//
-//                                $scope.isFirst = false;
-//                            }
+                            if(res.state == "0"){
+                                $scope.reloadObj.pic =   res.data.url;
+                                $scope.closeReload();
+                            }
 
                             $rootScope.alertSuccess(res.message);
                             $scope.isUpload = false;
@@ -150,14 +138,28 @@ wondervoy
                 }
 
             }
-
-
         });
 
-        $scope.showText = function(obj){
+        $scope.showText = function(obj,isCover,index){
             console.log("show....");
-
             //添加watch 监听
+            if(!isCover){
+                obj.watch = $scope.$watch("storys["+index+"].desc",function(newVal,oldVal){
+                    if(!newVal){
+                        obj.desc = "";
+                        obj.current = 0;
+                        return;
+                    }
+                    if(newVal.length  > $scope.storDescMax){
+                        obj.desc = oldVal;
+                        obj.current = oldVal.length;
+                        return;
+                    }
+                    obj.current = newVal.length;
+                });
+            }
+
+
 
             //显示text
             if(!obj.isShow){
@@ -166,13 +168,16 @@ wondervoy
         }
 
         $scope.hideText = function(obj){
+            if(obj.watch){
+                obj.watch();
+            }
             console.log("hide....");
             //显示text
             obj.isShow = false;
         }
 
-        $scope.reloadFn = function(){
-
+        $scope.reloadFn = function(obj){
+            $scope.reloadObj = obj;
             $scope.isReload  = true;
         }
 
@@ -184,12 +189,9 @@ wondervoy
                 .then(function(res){
                     $rootScope.alertSuccess(res.message);
                     $scope.isPublish = false;
-
-                    //刷新故事
-                    $scope.$parent.refreshUserStorys();
-
-                    //关闭当前窗口
-                  $scope.closeStory();
+                    $timeout(function(){
+                        $state.go("user");
+                    },500);
                 },function(err){
                     $scope.isPublish = false;
                 });

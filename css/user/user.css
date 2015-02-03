@@ -200,11 +200,9 @@
   margin: 20px 0; }
 
 .topLayer {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: fixed !important;
+  top: 50%;
+  margin-top: -265px;
   z-index: 1040;
   background: transparent !important; }
 
@@ -530,7 +528,11 @@
     z-index: 10; }
   .story-detail .story-detail-content .story-detail-list .story-detail-text {
     width: 100%;
-    color: #ffffff; }
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+    word-wrap: break-word;
+    word-break: break-all; }
   .story-detail .story-detail-content .story-detail-list ul li {
     margin-bottom: 25px;
     position: relative;

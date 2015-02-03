@@ -69,7 +69,7 @@
                             </div>
                         </div>
 
-                         <button class="reloadBtn  " ng-click="reloadFn();">Reload</button>
+                         <button class="reloadBtn  " ng-click="reloadFn(cover);">Reupload</button>
                     </div>
 
                 </div>
@@ -118,6 +118,8 @@
                                 {{story.desc}}
                             </div>
                         </div>
+
+                        <button class="reloadBtn  " ng-click="reloadFn(story);">Reupload</button>
                     </div>
 
                 </div>
@@ -195,9 +197,11 @@
 
     <div class="story-layer topLayer" >
 
-        <div class="story-header">
-            <h1 class="fm-roman">Reload  <i class="ui-widget ib closeWd" ng-click="closeReload();"></i></h1>
-        </div>
+        <!--<div class="story-header">-->
+            <!--<h1 class="fm-roman">Reload  </h1>-->
+        <!--</div>-->
+
+        <i class="ui-widget ib closeWd" ng-click="closeReload();"  style="position: absolute;right: 10px;cursor: pointer;top: 37px;"></i>
 
         <div class="story-body text-center">
 
@@ -210,7 +214,7 @@
                                 <span class="ib add-progress" ng-show="isUpload">{{dynamic}}</span>
                                 <button class="btnAddStory" ng-hide="isUpload" type="file"  ng-file-select=""
                                         ng-model="reloadFile" name="file" ng-file-change=""><i
-                                        class="ib ui-widget add addPhoto"></i>Reload photo
+                                        class="ib ui-widget add addPhoto"></i>Reupload photo
                                 </button>
                             </div>
 

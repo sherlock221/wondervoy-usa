@@ -108,8 +108,6 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     })
 
 
-
-
     /**
      * 显示故事
      */
