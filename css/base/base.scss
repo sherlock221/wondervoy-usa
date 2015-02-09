@@ -261,6 +261,9 @@ a:hover{
         top: -16px;
       }
       .userInfoNav{
+
+        text-align: right;
+
         li{
           display: block;
         }
@@ -350,6 +353,8 @@ nav.navbar{
 
     overflow: hidden;
 
+
+
     //设置底部间距
     padding-top: rem(31px);
 
@@ -377,6 +382,14 @@ nav.navbar{
       }
 
     }
+
+
+    .arrow-enter-pos{
+      position: absolute;
+      right: 68px;
+      top: 6px;
+    }
+
   }
 }
 
@@ -520,6 +533,12 @@ footer{
 .ui-widget{
   background-image: url("../../img/ui-widget.png");
 
+
+  &.arrow-enter{
+    width: 26px;
+    height: 22px;
+    background-position: 0 -1000px;
+  }
 
   &.arrow-down{
     width: 19px;

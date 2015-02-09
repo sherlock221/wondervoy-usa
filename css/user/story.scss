@@ -437,36 +437,7 @@ $height-pic : 293px;
     .story-detail-list{
       margin-right: -15px;
 
-      .story-detail-main{
-        padding: 15px 20px;
-        width: 100%;
-        height: auto;
 
-        position: absolute;
-        right: 0;
-        bottom: 0px;
-        z-index: 20;
-      }
-
-      .story-detail-bg{
-        position: absolute;
-        right: 0;
-        bottom: 0px;
-        left: 0;
-        top: 0;
-        background: #000;
-        opacity: 0.5;
-        z-index: 10;
-      }
-
-      .story-detail-text{
-        width: 100%;
-        color: #ffffff;
-        position: relative;
-        z-index: 10;
-        word-wrap: break-word;
-        word-break: break-all;
-      }
 
       ul{
         li{
@@ -481,4 +452,36 @@ $height-pic : 293px;
 
   }
 
+}
+
+
+.story-detail-main{
+  padding: 15px 20px;
+  width: 100%;
+
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  z-index: 20;
+  height: auto !important;
+}
+
+.story-detail-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.story-detail-text{
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+  word-wrap: break-word;
+  word-break: break-all;
 }

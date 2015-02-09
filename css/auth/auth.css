@@ -84,29 +84,30 @@
     height: 72px;
     padding-left: 36px;
     line-height: 72px; }
-  .auth-layer .auth-close {
-    background-position: 0 0;
-    width: 55px;
-    height: 55px;
-    position: absolute;
-    right: -22px;
-    top: -26px; }
-    .auth-layer .auth-close .auth-close-core {
-      background-position: -55px 0px;
-      width: 19px;
-      height: 19px;
-      position: relative;
-      top: 15px;
-      left: 18px;
-      -webkit-transition: all linear 0.3s;
-      transition: all linear 0.3s;
-      -moz-transition: all linear 0.3s;
-      -ms-transition: all linear 0.3s; }
-    .auth-layer .auth-close:hover > .auth-close-core {
-      -webkit-transform: rotateZ(180deg);
-      transform: rotateZ(180deg);
-      -moz-transform: rotateZ(180deg);
-      -ms-transform: rotateZ(180deg); }
+
+.auth-close {
+  background-position: 0 0;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: -22px;
+  top: -26px; }
+  .auth-close .auth-close-core {
+    background-position: -55px 0px;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: 15px;
+    left: 18px;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s; }
+  .auth-close:hover > .auth-close-core {
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg); }
 
 .auth-desc {
   color: #141414;

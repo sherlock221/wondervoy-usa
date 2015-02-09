@@ -1,14 +1,18 @@
 wondervoy
 
-    .controller("UserCtrl", function ($rootScope,$stateParams,$scope,$log,AccountService,StorySev) {
+    .controller("UserCtrl", function ($rootScope,$stateParams,$scope,$log,AccountService,$window,StorySev) {
         var myId  =  $rootScope.user.userId;
         console.log("user...");
+
+        $window.scrollTo(0,0);
 
         $scope.userObj = "";
 
         $scope.pageSize = 10;
 
         $scope.storys = [];
+
+        $scope.isExpand = false;
 
         //控制 loading
         $scope.isShow = false;

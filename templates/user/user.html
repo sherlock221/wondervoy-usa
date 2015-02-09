@@ -7,10 +7,10 @@
 <h4 class="userTitleDesc fm-medium-cond text-center">Travel with local who you prefer</h4>
 
 
-<ol class="breadcrumb">
-    <li><a href="#" class="active">Home</a></li>
-    <li>{{userObj.info.lastName}}</li>
-</ol>
+<!--<ol class="breadcrumb">-->
+    <!--<li><a href="#" class="active">Home</a></li>-->
+    <!--<li>{{userObj.info.lastName}}</li>-->
+<!--</ol>-->
 
 <div class="user-content">
 
@@ -196,15 +196,12 @@
 
             <h1 class="user-title"> Why I am a Unique local? </h1>
 
-            <p class="user-p">
-                I was born in Germany and I live in Barcelona since 2004. Being a healer & artist, my apartment is also
-                my workplace & artgallery at the same time. I love the city, life, art, yoga, feng-shui, design, food,
-                .... and I am looking forward to share the real Barcelona experience with travelers from all over the
-                world!
+            <p class="user-p"  ng-class="{'expand':isExpand}"  ng-bind-html="userObj.info.intro | to_trusted">
+
             </p>
 
             <div>
-                <a class="ib showMore">Show more...</a>
+                <a class="ib showMore" ng-click="isExpand=true;">Show more...</a>
             </div>
             <h1 class="user-title"> My Stories</h1>
 

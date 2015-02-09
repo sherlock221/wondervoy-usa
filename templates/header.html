@@ -28,7 +28,8 @@
 
             </div>
             <ul class="pull-right navbar-item ">
-                <li>
+                <li class="pos-rel">
+                    <i class="ib ui-widget arrow-enter arrow-enter-pos"></i>
                     <input  ng-style="{width:'378px'}"  type="text" class=" input-border ib input-base " placeholder="Enter your email to request invitation " />
                     <a href="#/home/auth/register" class="ib">GO</a>
                 </li>
@@ -67,7 +68,7 @@
             <ul class="pull-right  item-login " ng-init="showDiv=false;hov=false;">
 
                 <li class="" ng-show="$root.user.userName" ng-mouseenter="showDiv=true;hov=true;">
-                    <a href="javascript:void(0);" class="ib userInfo-head">
+                    <a href="#/user" class="ib userInfo-head">
                         <img ng-src="{{$root.user.userHead}}" class="res-img"/>
                     </a>
                 </li>
@@ -90,7 +91,7 @@
                                 <a class="ib" href="#/user/editProfile" ng-click="showDiv=false;">Edit&nbsp;profile</a>
                             </li>
                             <li>
-                                <a class="ib" href="#/user/editAccount"  ng-click="showDiv=false;">Account</a>
+                                <a class="ib" href="#/user/editAccount"  ng-click="showDiv=false;">Invite friends</a>
                             </li>
                             <li>
                                 <a class="ib" ng-click="loginOut();showDiv=false;">Logout</a>

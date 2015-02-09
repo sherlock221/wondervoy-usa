@@ -1,7 +1,9 @@
 wondervoy
 
-    .controller("AddStoryCtrl", function ($rootScope,$state,$scope,$timeout,StorySev) {
+    .controller("AddStoryCtrl", function ($rootScope,$state,$scope,$timeout,$window,StorySev) {
         console.log("addStory");
+
+        $window.scrollTo(0,0);
 
         var stateName = $state.current.name;
         $scope.currentStateName = stateName.split('.')[0];
@@ -31,9 +33,9 @@ wondervoy
         $scope.reloadObj = "";
 
 
-        $scope.coverMax = 20;
+        $scope.coverMax = 50;
         $scope.coverCurrent = 0;
-        $scope.storDescMax = 100;
+        $scope.storDescMax = 300;
 
         //检测封面变化
         $scope.$watch("cover.coverDesc",function(newVal,oldVal){

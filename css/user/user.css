@@ -179,7 +179,15 @@
     line-height: 28px;
     font-size: 18px;
     letter-spacing: 0.1em;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    -webkit-transition: height 0.3s linear;
+    transition: height 0.3s linear;
+    -moz-transition: height 0.3s linear;
+    -ms-transition: height 0.3s linear;
+    overflow: hidden;
+    height: 88px; }
+  .user-desc .user-p.expand {
+    height: 120px; }
   .user-desc .showMore {
     color: #f787b9;
     font-size: 18px;
@@ -509,42 +517,46 @@
       margin-right: 4px; }
 .story-detail .story-detail-content .story-detail-list {
   margin-right: -15px; }
-  .story-detail .story-detail-content .story-detail-list .story-detail-main {
-    padding: 15px 20px;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0px;
-    z-index: 20; }
-  .story-detail .story-detail-content .story-detail-list .story-detail-bg {
-    position: absolute;
-    right: 0;
-    bottom: 0px;
-    left: 0;
-    top: 0;
-    background: #000;
-    opacity: 0.5;
-    z-index: 10; }
-  .story-detail .story-detail-content .story-detail-list .story-detail-text {
-    width: 100%;
-    color: #ffffff;
-    position: relative;
-    z-index: 10;
-    word-wrap: break-word;
-    word-break: break-all; }
   .story-detail .story-detail-content .story-detail-list ul li {
     margin-bottom: 25px;
     position: relative;
     max-height: 293px;
     overflow: hidden; }
 
+.story-detail-main {
+  padding: 15px 20px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  z-index: 20;
+  height: auto !important; }
+
+.story-detail-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 10; }
+
+.story-detail-text {
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+  word-wrap: break-word;
+  word-break: break-all; }
+
 /** account **/
 .accountLayer {
   position: absolute;
   top: 40px;
   z-index: 1030;
-  width: 100%; }
+  width: 100%;
+  left: 0; }
 
 .accountNav {
   position: relative;

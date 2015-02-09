@@ -1,7 +1,7 @@
 wondervoy
-    .controller("ShowStoryCtrl", function ($rootScope,$stateParams,$state,$scope,$log,StorySev) {
+    .controller("ShowStoryCtrl", function ($rootScope,$stateParams,$state,$scope,$log,$window,StorySev) {
         console.log("showStory...");
-
+        $window.scrollTo(0,0);
         var storyId  =  $stateParams.id;
 
         var stateName = $state.current.name;
@@ -20,7 +20,7 @@ wondervoy
 
 
         $scope.sendMessage = function(){
-            $state.go("user.sendMessage");
+            $state.go("story.showStory.sendMessage");
         }
 
         var loadList = function(storyId,commentSize,isRef){

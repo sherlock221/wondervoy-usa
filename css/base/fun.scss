@@ -20,7 +20,6 @@ $scale: 2px;
 
 //transition
 @mixin px-transition ($value){
-
   -webkit-transition : $value;
   transition  : $value;
   -moz-transition : $value;

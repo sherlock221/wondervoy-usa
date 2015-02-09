@@ -143,6 +143,12 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
         controller: "SendMessageCtrl"
     });
 
+    $stateProvider.state("story.showStory.sendMessage",{
+        url : "/sendMessage",
+        templateUrl: "templates/user/sendMessage.html",
+        controller: "SendMessageCtrl"
+    });
+
 
 
     //默认情况

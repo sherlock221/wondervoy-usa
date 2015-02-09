@@ -72,7 +72,11 @@
                                 <a storyId="{{obj.storyId}}"  href="javascript:void(0)" class="ib desc" ng-repeat="obj  in item.storys" >
                                     <div class="desc-img">
                                         <img ng-src="{{obj.coverUrl}}!1024" class="full-img " />
-                                        <span class="ib desc-title">{{obj.coverDes}}</span>
+                                        <!--<span class="ib desc-title">{{obj.coverDes}}</span>-->
+                                        <div class="story-detail-main text-right">
+                                            <div class="story-detail-bg"></div>
+                                            <div class="story-detail-text ng-binding" style="font-size: 24px;">{{obj.coverDes}}</div>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -85,7 +89,12 @@
                                         <a href="javascript:void(0)" class="ib desc">
                                             <div class="desc-img">
                                                 <img ng-src="{{obj.coverUrl}}!1024" class="full-img img-w-auto" />
-                                                <span class="ib desc-title">{{obj.coverDes}}</span>
+
+                                                <div class="story-detail-main">
+                                                    <div class="story-detail-bg"></div>
+                                                    <div class="story-detail-text ng-binding">{{obj.coverDes}}</div>
+                                                </div>
+                                                <!--<span class="ib desc-title">{{obj.coverDes}}</span>-->
                                             </div>
                                         </a>
                                     </div>

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 导入变量 **/
+/** 瀵煎叆鍙橀噺 **/
 .spinner {
   width: 150px;
   text-align: center; }
@@ -197,18 +197,20 @@ a:hover {
         position: absolute;
         right: 27px;
         top: -16px; }
-      .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li {
-        display: block; }
-      .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li > a {
-        padding: 14px 11px 6px 0px;
-        margin: 8px 5px;
-        color: #ffffff;
-        font-size: 14px;
-        display: block;
-        text-align: right;
-        cursor: pointer; }
-      .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li:hover {
-        background: #6b6b6b; }
+      .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav {
+        text-align: right; }
+        .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li {
+          display: block; }
+        .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li > a {
+          padding: 14px 11px 6px 0px;
+          margin: 8px 5px;
+          color: #ffffff;
+          font-size: 14px;
+          display: block;
+          text-align: right;
+          cursor: pointer; }
+        .navbar-login.navbar-fixed-top .item-login .userInfoLayer .userInfoNav li:hover {
+          background: #6b6b6b; }
     .navbar-login.navbar-fixed-top .item-login .opacityBg {
       opacity: 0.9;
       background: #141414;
@@ -267,6 +269,10 @@ nav.navbar .navbar-item {
         border: 1px solid #ffffff;
         padding-top: 3px;
         padding-bottom: 3px; }
+  nav.navbar .navbar-item .arrow-enter-pos {
+    position: absolute;
+    right: 68px;
+    top: 6px; }
 
 /** 底部 **/
 footer {
@@ -347,6 +353,10 @@ footer {
 
 .ui-widget {
   background-image: url("../../img/ui-widget.png"); }
+  .ui-widget.arrow-enter {
+    width: 26px;
+    height: 22px;
+    background-position: 0 -1000px; }
   .ui-widget.arrow-down {
     width: 19px;
     height: 11px;

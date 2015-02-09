@@ -1,18 +1,17 @@
 wondervoy
 
-    .controller("SendMessageCtrl", function ($rootScope,$state,$stateParams,$scope,$log,AccountService,StorySev) {
+    .controller("SendMessageCtrl", function ($rootScope,$window,$state,$stateParams,$scope,$log,AccountService,StorySev) {
 
         var storyId  =  $stateParams.id;
-
+        $window.scrollTo(0,0);
         var stateName = $state.current.name;
         $scope.currentStateName = stateName.split('.')[0];
 
         $scope.isSubmit = false;
 
         $scope.close = function(){
-            $state.go($scope.currentStateName);
+            $state.go("story.showStory");
         }
-
          $scope.fm = {
              content : ""
          }

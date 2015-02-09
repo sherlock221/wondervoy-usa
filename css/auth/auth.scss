@@ -124,33 +124,35 @@
     line-height: 72px;
   }
 
-  .auth-close {
-    background-position: 0 0;
-    width: 55px;
-    height: 55px;
 
-    position: absolute;
-    right: -22px;
-    top: -26px;
+}
 
-    .auth-close-core {
-      background-position: -55px 0px;
-      width: 19px;
-      height: 19px;
+.auth-close {
+  background-position: 0 0;
+  width: 55px;
+  height: 55px;
 
-      position: relative;
-      top: 15px;
-      left: 18px;
+  position: absolute;
+  right: -22px;
+  top: -26px;
 
-      @include px-transition(all linear 0.3s);
+  .auth-close-core {
+    background-position: -55px 0px;
+    width: 19px;
+    height: 19px;
 
-    }
+    position: relative;
+    top: 15px;
+    left: 18px;
 
-    &:hover > .auth-close-core {
-      @include px-transform(rotateZ(180deg));
-    }
+    @include px-transition(all linear 0.3s);
 
   }
+
+  &:hover > .auth-close-core {
+    @include px-transform(rotateZ(180deg));
+  }
+
 }
 
 .auth-desc {
