@@ -169,6 +169,6 @@ wondervoy.constant("SERVER", {
 
 //    url: "/wondervoy-usa/data"
     //线上地址
-    url: "http://123.57.75.45:8080/voy"
-//    url: "/voy"
+//    url: "http://123.57.75.45:8080/voy"
+    url: "/voy"
 });
