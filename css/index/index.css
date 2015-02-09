@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** 瀵煎叆鍙橀噺 **/
+/** 导入变量 **/
 /** index 首页 **/
 .content {
   width: 100%;
@@ -84,7 +84,8 @@
       margin-bottom: 38px; }
       .content .home-list .home-list-ul li .head {
         border: 10px solid #dae8f6;
-        border-radius: 80px; }
+        border-radius: 80px;
+        overflow: hidden; }
       .content .home-list .home-list-ul li .username {
         margin-top: 18px;
         font-size: 36px;
