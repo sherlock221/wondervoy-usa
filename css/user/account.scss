@@ -15,6 +15,8 @@
   position: relative;
   z-index: 2;
 
+
+
     padding-right: 50px;
     li{
         text-align: center;
@@ -24,25 +26,83 @@
         background: #d32271;
         font-size: 18px;
         margin-bottom: 17px;
-        width: 100%;
+        width: 250px;
 
 
-      &.active{
-        background: #403e3e;
-        height: 68px;
-        line-height: 68px;
-        font-size: 50px;
-        font-weight: bold;
-
-        width: 297px;
-      }
+       &.active{
+          width: 280px;
+       }
     }
+
+
+  .basic{
+    background: #403e3e;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 70px;
+  }
+
+  .skill{
+    background: #000000;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 70px;
+  }
+
+  .view{
+    background: #d32271;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 70px;
+  }
 }
+
 
 .account-hack{
   padding-left: 0;
-  margin-left: -39px
+//  margin-left: -39px
 }
+
+.edit-nav{
+
+  clear: both;
+
+  overflow: hidden;
+  border-bottom: 1px solid #ededed;
+  background: #ffffff;
+  li:first-child{
+    margin-left: 30px;
+  }
+  li{
+    text-align: center;
+    float: left;
+    margin-right: 45px;
+
+    a{
+      padding: 10px 10px;
+      font-size: 24px;
+      color: #929292;
+      background: #ffffff;
+    }
+    &.active a{
+      background: #fcfcfc;
+      color: #131313;
+      padding: 5px 10px;
+      font-size: 30px;
+      border-radius: 5px;
+      border-top:1px solid #ededed;
+      border-left:1px solid #ededed;
+      border-right:1px solid #ededed;
+
+      border-bottom: 1px solid #fcfcfc;
+    }
+
+    &.active{
+
+    }
+  }
+}
+
 .account-cloum{
     background: #ffffff;
     padding: 1px;

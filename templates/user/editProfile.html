@@ -1,128 +1,226 @@
-<!--mask-->
-<div class="mask"></div>
-
-<div class="accountLayer">
-
-    <a href="javascript:void(0);" class="ib  layerClose" ng-click="close();" >
-        <i class="ui-widget ib closeWd"></i>
-    </a>
+<div class="container pdhack">
+    <div class="row" style="padding-top: 190px;background: #fff;">
 
 
-    <div class="container">
-        <div class="row pos-rel">
+        <div class="">
 
-            <a class="close"></a>
-
-            <div class="col-md-4">
-                <ul class="accountNav list-unstyled">
-                    <li class="active">
-                        <a href="javascript:void(0)" class="fm-roman">
-                           Edit Profile
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="javascript:void(0)">
-                            View Profile
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="col-md-8 account-hack">
+            <a href="javascript:void(0);" class="ib  layerClose" ng-click="close();" >
+                <i class="ui-widget ib closeWd"></i>
+            </a>
 
 
-                <div class="account-cloum">
-                    <div class="account-cloum-headr">
-                        Required
+            <div class="container bg-gray">
+
+                <div class="row pos-rel">
+                        <ul class="list-unstyled edit-nav">
+                            <li class="fm-medium-cond active">
+                                <a href="" class="block">
+                                    Edit profile
+                                </a>
+                            </li>
+                            <li class="fm-medium-cond">
+                                <a href="" class="block">
+                                    Your stories
+                                </a>
+                            </li>
+                            <li class="fm-medium-cond">
+                                <a href="" class="block">
+                                    Inbox
+                                </a>
+                            </li>
+                        </ul>
+
+
+                </div>
+                <div class="row pos-rel" style="padding-top: 25px;">
+                    <div class="col-md-3 ">
+                        <ul class="accountNav list-unstyled">
+                            <li class="basic active">
+                                <a href="javascript:void(0)" class="fm-roman">
+                                    Basic
+                                </a>
+                            </li>
+                            <li class="skill">
+                                <a href="javascript:void(0)">
+                                    Skills&Interests
+                                </a>
+                            </li>
+
+                            <li class="view">
+                                <a href="javascript:void(0)">
+                                    View Profile
+                                </a>
+                            </li>
+                        </ul>
+
                     </div>
-                    <div class="account-cloum-body">
-                        <form  method="post" novalidate name="editProfileForm" class=" editProfile account-form form-horizontal" ng-submit="">
-                            <section  class="text-center">
-                                <div class="form-group ">
-                                    <div class="col-md-3 text-right pd0" >
-                                        <label for="" class="ib  control-label " style="margin: 0;">First Name</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <input type="text" class="account-input form-control w100" id="" />
-                                    </div>
-                                </div>
+                    <div class="col-md-8   account-hack">
 
-                                <div class="form-group ">
-                                    <div class="col-md-3 text-right pd0" >
-                                        <label for="" class="ib  control-label " style="margin: 0;">First Name</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <input type="text" class="account-input form-control w100" id="" />
-                                        <span class="help-block">This is only shared once you have a confirmed booking with another Airbnb user.</span>
-                                    </div>
-                                </div>
 
-                                <div class="form-group ">
-                                    <div class="col-md-3 text-right pd0" >
-                                        <label for="" class="ib  control-label " style="margin: 0;">I Am</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <div>
-                                            <select class="form-control select-normal">
-                                                <option>123</option>
-                                            </select>
+                        <div class="account-cloum">
+                            <div class="account-cloum-headr">
+                                Required
+                            </div>
+                            <div class="account-cloum-body">
+                                <form  method="post" novalidate name="editProfileForm" class=" editProfile account-form form-horizontal" ng-submit="">
+                                    <section  class="text-center">
+
+                                        <div class="form-group ">
+                                            <div class="col-md-3 text-right pd0" >
+                                                <img src="http://7u2mrq.com1.z0.glb.clouddn.com/default.png"  width="100" height="100"  />
+                                            </div>
+                                            <div class="col-md-9 text-left">
+                                               <p class=" bold" style="color: #000000;">
+                                                   Clear frontal face photos are an important way for hosts and guests to learn about<br/>
+                                                   each other. It's not much fun to host a landscape! Please upload a photo that clearly shows your face.<br/>
+                                               </p>
+                                               <button class="btn  "><span class="ib"></span>Upload the picture</button>
+
+                                            </div>
                                         </div>
-                                        <span class="help-block">We use this data for analysis and never share it with other users.</span>
-                                    </div>
-                                </div>
 
-                                <div class="form-group ">
-                                    <div class="col-md-3 text-right pd0" >
-                                        <label for="" class="ib  control-label " style="margin: 0;">Birth Date</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <div class="text-left">
-                                            <select class="form-control select-normal ib">
-                                                <option>123</option>
-                                            </select>
 
-                                            <select class="form-control select-small ib">
-                                                <option>123</option>
-                                            </select>
-
-                                            <select class="form-control select-small ib">
-                                                <option>123</option>
-                                            </select>
+                                        <div class="form-group ">
+                                            <div class="col-md-3 text-right pd0" >
+                                                <label for="" class="ib  control-label " style="margin: 0;">First Name</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" class="account-input form-control w100" id="" />
+                                            </div>
                                         </div>
+
+                                        <div class="form-group ">
+                                            <div class="col-md-3 text-right pd0" >
+                                                <label for="" class="ib  control-label " style="margin: 0;">First Name</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" class="account-input form-control w100" id="" />
+                                                <span class="help-block">This is only shared once you have a confirmed booking with another Airbnb user.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <div class="col-md-3 text-right pd0" >
+                                                <label for="" class="ib  control-label " style="margin: 0;">I Am</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div>
+                                                    <select class="form-control select-normal">
+                                                        <option>123</option>
+                                                    </select>
+                                                </div>
+                                                <span class="help-block">We use this data for analysis and never share it with other users.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <div class="col-md-3 text-right pd0" >
+                                                <label for="" class="ib  control-label " style="margin: 0;">Birth Date</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="text-left">
+                                                    <select class="form-control select-normal ib">
+                                                        <option>123</option>
+                                                    </select>
+
+                                                    <select class="form-control select-small ib">
+                                                        <option>123</option>
+                                                    </select>
+
+                                                    <select class="form-control select-small ib">
+                                                        <option>123</option>
+                                                    </select>
+                                                </div>
                                         <span class="help-block">The magical day you were dropped from the sky by a stork. We use this data
 for analysis and never share it with other users.</span>
-                                    </div>
+                                            </div>
 
 
 
-                                </div>
+                                        </div>
 
 
-                                <div class="form-group ">
+                                        <div class="form-group ">
+                                            <div class="col-md-3 text-right pd0" >
+                                                <label for="" class="ib  control-label " style="margin: 0;">Email Address</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="email" class="account-input form-control w100" id="" />
+                                                <span class="help-block">This is only shared once you have a confirmed booking with another Airbnb user.</span>
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="form-group ">
+                                            <div class="col-md-3 text-right pd0" >
+                                                <label for="" class="ib  control-label " style="margin: 0;">Where You Live</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="text-left">
+                                                    <select class="form-control select-normal ib">
+                                                        <option>country</option>
+                                                    </select>
+
+                                                    <select class="form-control select-normal ib">
+                                                        <option>city</option>
+                                                    </select>
+
+                                                    <select class="form-control select-normal ib">
+                                                        <option>123</option>
+                                                    </select>
+                                                </div>
+                                        <span class="help-block">The magical day you were dropped from the sky by a stork. We use this data
+for analysis and never share it with other users.</span>
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <div class="col-md-3 text-right pd0" >
+                                                <label for="" class="ib  control-label " style="margin: 0;">Describe Yourself</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <textarea class="form-control" rows="10"></textarea>
+                                            </div>
+                                        </div>
+
+
+
+                                    </section>
+
+
+
+
+
+
+
+
+                                </form>
+
+                            </div>
+
+                            <div class="account-cloum-headr">
+                                Optional
+                            </div>
+
+
+                            <div>
+                                <div class="form-group " style="color: #575b5d;margin-top: 60px;">
                                     <div class="col-md-3 text-right pd0" >
-                                        <label for="" class="ib  control-label " style="margin: 0;">Email Address</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <input type="email" class="account-input form-control w100" id="" />
-                                        <span class="help-block">This is only shared once you have a confirmed booking with another Airbnb user.</span>
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <div class="col-md-3 text-right pd0" >
-                                        <label for="" class="ib  control-label " style="margin: 0;">Phone Number</label>
+                                        <label for="" class="ib  control-label " style="margin: 0;">
+                                            Constellation
+                                        </label>
                                     </div>
                                     <div class="col-md-9" >
                                         <div class="text-left" style="margin-top: 5px;">
-                                             <span class="ib mb25"><strong>No phone number entered</strong></span>
-
-                                              <a href="javascript:void(0);" class="block a-02 mb25">
-                                                  + Add a phone number
-                                              </a>
-                                            <span class="help-block">This is only shared once you have a confirmed booking with another Airbnb user.
-                                            This is how we can all get in touch.</span>
-
+                                            <span class="ib mb25"><strong>No constellation entered</strong></span>
+                                            <a href="javascript:void(0);" class="block a-02 mb25">
+                                                + Add a constellation
+                                            </a>
                                         </div>
 
                                     </div>
@@ -130,24 +228,29 @@ for analysis and never share it with other users.</span>
 
                                 </div>
 
-                            </section>
+                            </div>
 
-                            <hr class="hr-black"/>
+
                             <div class="text-right">
                                 <button class="btn button-01 upassword" >
                                     <i ng-show="isPublish" class="ib loading loading-am ng-hide"></i>
-                                    <span class="loading-am" ng-hide="isPublish">Update info</span>
+                                    <span class="loading-am" ng-hide="isPublish">save</span>
                                 </button>
                             </div>
 
-                        </form>
+                        </div>
 
                     </div>
-                </div>
 
+                </div>
             </div>
 
         </div>
-    </div>
 
+
+    </div>
 </div>
+
+
+
+

@@ -32,10 +32,12 @@
             <!-- 中部内容 -->
             <div class="col-md-8 user-middle">
                 <!--<h4 class="">Hey,&emsp;I'm&emsp;stephenie!&emsp;&emsp;&emsp;<i class="ib ui-widget woman"></i></h4>-->
-                <h4 class="" ><span ng-bind-html="userObj.info.intro | to_trusted"></span><i class="ib ui-widget " ng-class="{man:userObj.info.sex == 'M',woman:userObj.info.sex == 'F'}"></i></h4>
+                <h4 class="" >
+                    <span >Hey, I'm stephenie! &emsp;{{$root.user.userName}}</span>
+                    <i class="ib ui-widget " ng-class="{man:userObj.info.sex == 'M',woman:userObj.info.sex == 'F'}"></i>
+                </h4>
 
                 <div class="user-star">
-
                     <ul class="ib">
                         <li>
                             <a class="ib star ui-widget"></a>
@@ -56,7 +58,7 @@
 
                                     <span class="ib popularity">
                                         <label>Popularity:</label>
-                                        4.5
+                                        {{userObj.storyCount}}
                                     </span>
 
                 </div>
@@ -77,32 +79,25 @@
         </div>
 
 
-        <div class="user-black-layer ib text-left">
-            <div class="block-top"></div>
-            <div class="block-bottom ui-widget"></div>
 
-            <h4>Language</h4>
+        <div class="user-white-layer ib text-left">
+            <div>
+                <h4>Language</h4>
+                <!--<p>English,French</p>-->
+                <p>{{userObj.skills.language}}</p>
 
-            <p>{{userObj.skills.language}}</p>
-
-            <div class="text-center">
-                <span class="ib lineyellow"></span>
             </div>
 
-            <ul class="usercard ">
-                <li>
-                    <label class="ib ui-widget car"></label>
-                    <span class="ib">&emsp;&emsp;:&emsp;&emsp;&emsp;{{userObj.skills.car}}</span>
-                </li>
-
-                <li>
-                    <label class="ib ui-widget card"></label>
-                    <span class="ib">&emsp;&emsp;:&emsp;&emsp;&emsp;{{userObj.skills.driverAge}} Years</span>
-                </li>
-            </ul>
-
+            <div>
+                <h4>Interests:</h4>
+                <p>{{userObj.skills.driverAge}}</p>
+                <!--<p>English,French</p>-->
+            </div>
 
         </div>
+
+
+
 
     </div>
 
@@ -219,9 +214,8 @@
 
     </div>
 
-
-    <section class="col-md-12 bg-more">
-        <div class="col-md-8 col-md-offset-4">
+    <section class="col-md-12 bg-more bg-gray">
+        <div class="col-md-8 col-md-offset-4 bg-w">
             <!-- 加载更多 -->
             <section class="more-load text-center" style="margin: 15px 0;">
                 <loading-bar is-show="isShow">

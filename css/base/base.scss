@@ -151,6 +151,15 @@ button.btn:hover{
   color: #ffffff;
 }
 
+button{
+  background: #d32271;
+  color: #ffffff;
+}
+
+button:active{
+  color: #ffffff;
+}
+
 a{
   cursor: pointer;
 }
@@ -880,6 +889,12 @@ $footer-icon-height : 54px;
 }
 
 
+.bg-gray{
+  background: #fcfcfc;
+}
+.bg-w{
+  background: #ffffff;
+}
 
 
 /** 手机版本css **/

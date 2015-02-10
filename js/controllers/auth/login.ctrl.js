@@ -31,7 +31,7 @@ wondervoy
 
                        var user = {
                             userName : res.data.userInfo.firstName + res.data.userInfo.lastName,
-                            userHead : res.data.icon,
+                            userHead : res.data.userInfo.icon,
                             userId   : res.data.userInfo.userId
                         }
 

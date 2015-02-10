@@ -13,7 +13,6 @@
 .content{
   width: 100%;
   height: inherit;
-  margin-bottom: 98px;
   position: relative;
 
 
@@ -22,6 +21,7 @@
     background-color: $bg;
     height: 115px;
     width: 100%;
+    padding-bottom: 98px;
 
     .blank-bg-seq-black{
       width: 35px;

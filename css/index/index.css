@@ -4,12 +4,12 @@
 .content {
   width: 100%;
   height: inherit;
-  margin-bottom: 98px;
   position: relative; }
   .content .blank-bg {
     background-color: #fcfcfc;
     height: 115px;
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 98px; }
     .content .blank-bg .blank-bg-seq-black {
       width: 35px;
       height: 4px;
