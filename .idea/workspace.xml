@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7883352-3383-463f-b33d-9c82f4a6cd00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/arrow.png" />
+    <list default="true" id="a7883352-3383-463f-b33d-9c82f4a6cd00" name="Default" comment="112321">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inbox-head.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/reply.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/inbox/detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/inbox/inbox.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/inbox/inbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/inbox/inbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/inbox/inbox.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/inbox/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/inbox/review.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/tabs.crtl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/ui-widget.png" afterPath="$PROJECT_DIR$/img/ui-widget.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/ui-widget.psd" afterPath="$PROJECT_DIR$/img/ui-widget.psd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user/account.scss" afterPath="$PROJECT_DIR$/css/user/account.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base/base.css.map" afterPath="$PROJECT_DIR$/css/base/base.css.map" />
@@ -10,15 +23,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base/base.scss" afterPath="$PROJECT_DIR$/css/base/base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/user/editProfile.html" afterPath="$PROJECT_DIR$/templates/user/editProfile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/templates/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index/index.css.map" afterPath="$PROJECT_DIR$/css/index/index.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index/index.css" afterPath="$PROJECT_DIR$/css/index/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index/index.scss" afterPath="$PROJECT_DIR$/css/index/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/auth/login.ctrl.js" afterPath="$PROJECT_DIR$/js/controllers/auth/login.ctrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user/user.css.map" afterPath="$PROJECT_DIR$/css/user/user.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user/user.css" afterPath="$PROJECT_DIR$/css/user/user.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/user/user.html" afterPath="$PROJECT_DIR$/templates/user/user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user/user.scss" afterPath="$PROJECT_DIR$/css/user/user.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,51 +50,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="review.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/inbox/review.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="59" selection-start="3940" selection-end="3940" vertical-scroll-proportion="-2.0285714" vertical-offset="2113" max-vertical-offset="2938">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editProfile.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/user/editProfile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="86" selection-start="3599" selection-end="3599" vertical-scroll-proportion="0.61270237" vertical-offset="1484" max-vertical-offset="6812">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#3;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#4;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#6;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#7;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="account.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/user/account.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="23" selection-start="1302" selection-end="1302" vertical-scroll-proportion="-11.8" vertical-offset="1901" max-vertical-offset="6136">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="story.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/story/story.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="374" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="572">
+            <state line="6" column="16" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2262">
               <folding />
             </state>
           </provider>
@@ -96,28 +62,44 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="37" selection-start="2477" selection-end="2488" vertical-scroll-proportion="0.0" vertical-offset="2971" max-vertical-offset="4680">
+            <state line="166" column="50" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.0" vertical-offset="3984" max-vertical-offset="5330">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/base/base.scss">
+      <file leaf-file-name="inbox.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/inbox/inbox.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="17" selection-start="2777" selection-end="2777" vertical-scroll-proportion="-4.3146067" vertical-offset="3750" max-vertical-offset="23582">
+            <state line="13" column="43" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="1378">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/inbox/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="53" selection-start="3717" selection-end="3717" vertical-scroll-proportion="-13.314607" vertical-offset="1155" max-vertical-offset="3120">
-              <folding>
-                <element signature="n#style#0;n#nav#1;n#header#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="33" column="32" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inbox.ctrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="28" selection-start="426" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="676" max-vertical-offset="1196">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inbox.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/inbox/inbox.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="174" column="0" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.4875817" vertical-offset="4151" max-vertical-offset="4992">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,29 +122,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/controllers/user/sendMessage.ctrl.js" />
-        <option value="$PROJECT_DIR$/css/user/story.scss" />
-        <option value="$PROJECT_DIR$/js/controllers/user/user.ctrl.js" />
-        <option value="$PROJECT_DIR$/css/base/fun.scss" />
-        <option value="$PROJECT_DIR$/js/controllers/story/addStory.ctrl.js" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/css/index/index.scss" />
-        <option value="$PROJECT_DIR$/js/controllers/auth/login.ctrl.js" />
-        <option value="$PROJECT_DIR$/css/user/user.scss" />
-        <option value="$PROJECT_DIR$/templates/user/user.html" />
+        <option value="$PROJECT_DIR$/css/base/widget.scss" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/templates/tabs.html" />
+        <option value="$PROJECT_DIR$/css/user/user.scss" />
         <option value="$PROJECT_DIR$/css/user/account.scss" />
-        <option value="$PROJECT_DIR$/css/base/base.scss" />
         <option value="$PROJECT_DIR$/templates/user/editProfile.html" />
+        <option value="$PROJECT_DIR$/js/controllers/tabs.crtl.js" />
+        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/css/base/base.scss" />
+        <option value="$PROJECT_DIR$/templates/inbox/list.html" />
+        <option value="$PROJECT_DIR$/templates/inbox/review.html" />
+        <option value="$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/templates/inbox/inbox.html" />
+        <option value="$PROJECT_DIR$/templates/inbox/detail.html" />
+        <option value="$PROJECT_DIR$/css/inbox/inbox.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="width" value="1932" />
-    <option name="height" value="1050" />
+    <option name="x" value="196" />
+    <option name="y" value="72" />
+    <option name="width" value="1913" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -271,39 +254,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="story" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="inbox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,11 +300,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wondervoy-usa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wondervoy-usa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -368,24 +345,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,7 +356,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../imzhiliao" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -405,11 +364,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\wondervoy-usa\templates\inbox" />
+      <recent name="C:\work\wondervoy-usa\js\controllers\inbox" />
       <recent name="C:\work\wondervoy-usa\js\controllers\story" />
       <recent name="C:\work\wondervoy-usa\templates\user" />
       <recent name="C:\work\wondervoy-usa\css\user" />
-      <recent name="C:\work\wondervoy-usa\js\controllers\user" />
-      <recent name="C:\work\wondervoy-usa\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\work\wondervoy-usa\templates\story" />
@@ -552,22 +511,26 @@
       <created>1423502400912</created>
       <updated>1423502400912</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="111">
+      <created>1423586088634</created>
+      <updated>1423586088634</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="0" width="1932" height="1050" extended-state="0" />
+    <frame x="196" y="72" width="1913" height="999" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22067364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24457385" sideWeight="0.8081725" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2433155" sideWeight="0.8084337" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19182748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19156626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -589,12 +552,12 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32576618" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32576618" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24457385" sideWeight="0.8081725" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19182748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2433155" sideWeight="0.8084337" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19156626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -617,140 +580,103 @@
     <MESSAGE value="edit" />
     <MESSAGE value="tij" />
     <MESSAGE value="111" />
-    <option name="LAST_COMMIT_MESSAGE" value="111" />
+    <MESSAGE value="添加messagebox 页面4个" />
+    <MESSAGE value="112321" />
+    <option name="LAST_COMMIT_MESSAGE" value="112321" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/controllers/story/addStory.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="641" selection-end="641" vertical-scroll-proportion="0.48883668" vertical-offset="468" max-vertical-offset="5564">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/img/head-02.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index/index.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="838">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/fun.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="414" selection-end="414" vertical-scroll-proportion="0.2990196" vertical-offset="432" max-vertical-offset="1248">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="279" selection-end="279" vertical-scroll-proportion="0.26509187" vertical-offset="396" max-vertical-offset="7150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="24" selection-start="5247" selection-end="5262" vertical-scroll-proportion="0.6276463" vertical-offset="2928" max-vertical-offset="4992">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/user/user.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="4" selection-start="2893" selection-end="2893" vertical-scroll-proportion="0.8293963" vertical-offset="5088" max-vertical-offset="9204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/auth/login.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="25" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.78920954" vertical-offset="593" max-vertical-offset="1664">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="17" selection-start="2681" selection-end="2681" vertical-scroll-proportion="0.19553806" vertical-offset="2009" max-vertical-offset="6526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="53" selection-start="3717" selection-end="3717" vertical-scroll-proportion="-13.314607" vertical-offset="1155" max-vertical-offset="3120">
-          <folding>
-            <element signature="n#style#0;n#nav#1;n#header#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/editAccount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="53" selection-start="353" selection-end="353" vertical-scroll-proportion="-1.0684931" vertical-offset="1248" max-vertical-offset="2860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="59" selection-start="3940" selection-end="3940" vertical-scroll-proportion="-2.0285714" vertical-offset="2113" max-vertical-offset="2938">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/img/list-02.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/user/account.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="23" selection-start="1302" selection-end="1302" vertical-scroll-proportion="-11.8" vertical-offset="1901" max-vertical-offset="6136">
-          <folding />
-        </state>
+        <state line="17" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="-2.0786517" vertical-offset="257" max-vertical-offset="6110" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/story/story.html">
+    <entry file="file://$PROJECT_DIR$/js/controllers/tabs.crtl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="374" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="572">
+        <state line="23" column="38" selection-start="644" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="4187" selection-end="4187" vertical-scroll-proportion="-7.428571" vertical-offset="2262" max-vertical-offset="3250" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/user/user.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="333" column="27" selection-start="4558" selection-end="4558" vertical-scroll-proportion="-2.1685393" vertical-offset="8465" max-vertical-offset="9230" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="835" column="15" selection-start="12002" selection-end="12002" vertical-scroll-proportion="-4.4157305" vertical-offset="21317" max-vertical-offset="25064" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/editProfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="42" selection-start="11153" selection-end="11153" vertical-scroll-proportion="5.2180853" vertical-offset="1406" max-vertical-offset="6292" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/inbox/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="16" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-20.057142" vertical-offset="0" max-vertical-offset="1664" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/reply.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/inbox/review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2262">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="37" selection-start="2477" selection-end="2488" vertical-scroll-proportion="0.0" vertical-offset="2971" max-vertical-offset="4680">
+        <state line="166" column="50" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.0" vertical-offset="3984" max-vertical-offset="5330">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/base.scss">
+    <entry file="file://$PROJECT_DIR$/templates/inbox/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="17" selection-start="2777" selection-end="2777" vertical-scroll-proportion="-4.3146067" vertical-offset="3750" max-vertical-offset="23582">
+        <state line="33" column="32" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/editProfile.html">
+    <entry file="file://$PROJECT_DIR$/templates/inbox/inbox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="86" selection-start="3599" selection-end="3599" vertical-scroll-proportion="0.61270237" vertical-offset="1484" max-vertical-offset="6812">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#3;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#4;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#6;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#7;n#section#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="13" column="43" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="1378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="28" selection-start="426" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/inbox/inbox.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="0" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.4875817" vertical-offset="4151" max-vertical-offset="4992">
+          <folding />
         </state>
       </provider>
     </entry>

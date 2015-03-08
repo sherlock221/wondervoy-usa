@@ -1,0 +1,47 @@
+<div class="container pdhack" style="width: 1100px!important;">
+    <div class="row" style="padding-top: 190px;background: #fff;">
+
+        <div class="">
+            <a href="javascript:void(0);" class="ib  layerClose" ng-click="close();" >
+                <i class="ui-widget ib closeWd"></i>
+            </a>
+
+            <div class="container bg-gray" style="width: 1100px!important;">
+
+            <ng-include src="'templates/tabs.html'" ng-controller="TabsCtrl" ></ng-include>
+
+            <div class="row pos-rel" style="padding-top: 25px;">
+                    <div class="col-md-3 ">
+                        <ul class="accountNav list-unstyled">
+                            <li class="skill" ng-class="{'active':$root.navName === 'review'}" >
+                                <a href="#inbox/review">
+                                    Reviews
+                                </a>
+                            </li>
+                            <li class="basic " ng-class="{'active':$root.navName === 'message'}">
+                                <a href="#/inbox/list" class="fm-roman">
+                                    All Messages
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-9   account-hack">
+
+                        <ui-view></ui-view>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+

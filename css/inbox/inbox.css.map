@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;EACT,QAAQ,EAAE,MAAM",
+"sources": ["inbox.scss"],
+"names": [],
+"file": "inbox.css"
+}

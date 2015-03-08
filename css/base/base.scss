@@ -543,6 +543,39 @@ footer{
   background-image: url("../../img/ui-widget.png");
 
 
+  &.inbox{
+    width: 34px;
+    height: 22px;
+    background-position: 0 -996px;
+    position: relative;
+
+    &.active{
+      background-position: 0 -1017px;
+    }
+
+    .circle{
+      position: absolute;
+      right: -11px;
+      top: -12px;
+      width: 24px;
+      height: 24px;
+      border-radius: 65px;
+      border: 2px solid #060001;
+      background: #d32271;
+      font-size: 14px;
+      color: #060001;
+      text-align: center;
+    }
+  }
+
+
+
+   &.inbox-right{
+     width: 28px;
+     height: 19px;
+     background-position: 0 -1039px;
+   }
+
   &.arrow-enter{
     width: 26px;
     height: 22px;
@@ -800,7 +833,7 @@ $footer-icon-height : 54px;
   color: #ffffff;
   text-align: center;
   background: #d32271;
-  font-size: 15px;
+  font-size: 16px;
   clear: both;
   border: 0;
   margin: 0;
@@ -896,6 +929,30 @@ $footer-icon-height : 54px;
   background: #ffffff;
 }
 
+
+//table布局
+.db{
+  display: table;
+  height: inherit;
+  width: 100%;
+}
+.db-row{
+  display: table-row;
+}
+.db-cell{
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.vm{
+  vertical-align: middle;
+}
+.vt{
+  vertical-align: top;
+}
+.vb{
+  vertical-align: bottom;
+}
 
 /** 手机版本css **/
 //@import 'media-phone';

@@ -150,6 +150,31 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
     });
 
 
+    //inbox
+    $stateProvider.state("inbox",{
+        url : "/inbox",
+        templateUrl: "templates/inbox/inbox.html",
+        controller: "InBoxCtrl"
+    });
+
+    $stateProvider.state("inbox.list",{
+        url : "/list",
+        templateUrl: "templates/inbox/list.html",
+        controller: "MessageCtrl"
+    });
+    $stateProvider.state("inbox.detail",{
+        url : "/detail",
+        templateUrl: "templates/inbox/detail.html"
+    });
+
+    $stateProvider.state("inbox.review",{
+        url : "/review",
+        templateUrl: "templates/inbox/review.html",
+        controller: "ReviewCtrl"
+
+
+
+    });
 
     //默认情况
     $urlRouterProvider.otherwise("/home");

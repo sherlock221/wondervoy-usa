@@ -1,4 +1,4 @@
-<div class="container pdhack">
+<div class="container pdhack"  style="width: 1100px!important;">
     <div class="row" style="padding-top: 190px;background: #fff;">
 
 
@@ -8,30 +8,10 @@
                 <i class="ui-widget ib closeWd"></i>
             </a>
 
+            <div class="container bg-gray" style="width: 1100px!important;">
 
-            <div class="container bg-gray">
+            <ng-include src="'templates/tabs.html'" ng-controller="TabsCtrl" ></ng-include>
 
-                <div class="row pos-rel">
-                        <ul class="list-unstyled edit-nav">
-                            <li class="fm-medium-cond active">
-                                <a href="" class="block">
-                                    Edit profile
-                                </a>
-                            </li>
-                            <li class="fm-medium-cond">
-                                <a href="" class="block">
-                                    Your stories
-                                </a>
-                            </li>
-                            <li class="fm-medium-cond">
-                                <a href="" class="block">
-                                    Inbox
-                                </a>
-                            </li>
-                        </ul>
-
-
-                </div>
                 <div class="row pos-rel" style="padding-top: 25px;">
                     <div class="col-md-3 ">
                         <ul class="accountNav list-unstyled">
@@ -54,7 +34,7 @@
                         </ul>
 
                     </div>
-                    <div class="col-md-8   account-hack">
+                    <div class="col-md-9   account-hack">
 
 
                         <div class="account-cloum">
