@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7883352-3383-463f-b33d-9c82f4a6cd00" name="Default" comment="112321">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/inbox-head.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/reply.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/inbox/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/inbox/inbox.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/inbox/inbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/inbox/inbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/inbox/inbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/inbox/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/inbox/review.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/tabs.crtl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/tabs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/ui-widget.png" afterPath="$PROJECT_DIR$/img/ui-widget.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/ui-widget.psd" afterPath="$PROJECT_DIR$/img/ui-widget.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user/account.scss" afterPath="$PROJECT_DIR$/css/user/account.scss" />
+    <list default="true" id="a7883352-3383-463f-b33d-9c82f4a6cd00" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base/base.css.map" afterPath="$PROJECT_DIR$/css/base/base.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base/base.css" afterPath="$PROJECT_DIR$/css/base/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base/base.scss" afterPath="$PROJECT_DIR$/css/base/base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/user/editProfile.html" afterPath="$PROJECT_DIR$/templates/user/editProfile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/inbox/detail.html" afterPath="$PROJECT_DIR$/templates/inbox/detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/templates/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js" afterPath="$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/inbox/inbox.scss" afterPath="$PROJECT_DIR$/css/inbox/inbox.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/inbox/list.html" afterPath="$PROJECT_DIR$/templates/inbox/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/main.ctrl.js" afterPath="$PROJECT_DIR$/js/controllers/main.ctrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services/message.sev.js" afterPath="$PROJECT_DIR$/js/services/message.sev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/inbox/review.html" afterPath="$PROJECT_DIR$/templates/inbox/review.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/user/sendMessage.ctrl.js" afterPath="$PROJECT_DIR$/js/controllers/user/sendMessage.ctrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services/story.sev.js" afterPath="$PROJECT_DIR$/js/services/story.sev.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user/user.css.map" afterPath="$PROJECT_DIR$/css/user/user.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user/user.css" afterPath="$PROJECT_DIR$/css/user/user.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user/user.scss" afterPath="$PROJECT_DIR$/css/user/user.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wondervoy.iws" />
@@ -50,37 +38,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="review.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/inbox/review.html">
+      <file leaf-file-name="message.sev.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/services/message.sev.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2262">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="50" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.0" vertical-offset="3984" max-vertical-offset="5330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inbox.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/inbox/inbox.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="43" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="1378">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/inbox/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="32" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1846">
+            <state line="19" column="23" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="2314">
               <folding />
             </state>
           </provider>
@@ -89,17 +50,21 @@
       <file leaf-file-name="inbox.ctrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="426" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="676" max-vertical-offset="1196">
+            <state line="95" column="28" selection-start="2578" selection-end="2589" vertical-scroll-proportion="-12.518518" vertical-offset="1794" max-vertical-offset="2782">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inbox.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/inbox/inbox.scss">
+      <file leaf-file-name="list.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/inbox/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="0" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.4875817" vertical-offset="4151" max-vertical-offset="4992">
-              <folding />
+            <state line="10" column="89" selection-start="441" selection-end="441" vertical-scroll-proportion="0.34574467" vertical-offset="0" max-vertical-offset="1144">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,29 +87,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/base/widget.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/templates/tabs.html" />
-        <option value="$PROJECT_DIR$/css/user/user.scss" />
         <option value="$PROJECT_DIR$/css/user/account.scss" />
         <option value="$PROJECT_DIR$/templates/user/editProfile.html" />
         <option value="$PROJECT_DIR$/js/controllers/tabs.crtl.js" />
-        <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/css/base/base.scss" />
-        <option value="$PROJECT_DIR$/templates/inbox/list.html" />
-        <option value="$PROJECT_DIR$/templates/inbox/review.html" />
-        <option value="$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/templates/inbox/inbox.html" />
-        <option value="$PROJECT_DIR$/templates/inbox/detail.html" />
         <option value="$PROJECT_DIR$/css/inbox/inbox.scss" />
+        <option value="$PROJECT_DIR$/templates/inbox/review.html" />
+        <option value="$PROJECT_DIR$/js/services/message.sev.js" />
+        <option value="$PROJECT_DIR$/templates/inbox/detail.html" />
+        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/controllers/main.ctrl.js" />
+        <option value="$PROJECT_DIR$/js/services/story.sev.js" />
+        <option value="$PROJECT_DIR$/js/controllers/user/sendMessage.ctrl.js" />
+        <option value="$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js" />
+        <option value="$PROJECT_DIR$/templates/inbox/list.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="196" />
-    <option name="y" value="72" />
-    <option name="width" value="1913" />
+    <option name="x" value="19" />
+    <option name="y" value="9" />
+    <option name="width" value="1827" />
     <option name="height" value="999" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -189,7 +154,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,24 +200,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="inbox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -286,51 +232,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wondervoy-usa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,17 +252,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../imzhiliao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -376,6 +279,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -384,14 +295,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -515,18 +418,22 @@
       <created>1423586088634</created>
       <updated>1423586088634</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="112321">
+      <created>1425821466958</created>
+      <updated>1425821466958</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="196" y="72" width="1913" height="999" extended-state="0" />
+    <frame x="19" y="9" width="1827" height="999" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22067364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2433155" sideWeight="0.8084337" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25504485" sideWeight="0.8084337" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -557,9 +464,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2433155" sideWeight="0.8084337" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19156626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19156626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -588,95 +495,133 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/head-02.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/list-02.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/user/account.scss">
+    <entry file="file://$PROJECT_DIR$/css/inbox/inbox.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="-2.0786517" vertical-offset="257" max-vertical-offset="6110" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/tabs.crtl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="644" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="0" selection-start="4187" selection-end="4187" vertical-scroll-proportion="-7.428571" vertical-offset="2262" max-vertical-offset="3250" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/user/user.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="333" column="27" selection-start="4558" selection-end="4558" vertical-scroll-proportion="-2.1685393" vertical-offset="8465" max-vertical-offset="9230" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="835" column="15" selection-start="12002" selection-end="12002" vertical-scroll-proportion="-4.4157305" vertical-offset="21317" max-vertical-offset="25064" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/editProfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="42" selection-start="11153" selection-end="11153" vertical-scroll-proportion="5.2180853" vertical-offset="1406" max-vertical-offset="6292" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inbox/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-20.057142" vertical-offset="0" max-vertical-offset="1664" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/reply.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inbox/review.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2262">
+        <state line="64" column="0" selection-start="930" selection-end="930" vertical-scroll-proportion="14.382023" vertical-offset="2944" max-vertical-offset="5070">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="50" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.0" vertical-offset="3984" max-vertical-offset="5330">
+        <state line="16" column="33" selection-start="602" selection-end="602" vertical-scroll-proportion="0.5437909" vertical-offset="0" max-vertical-offset="2990">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/user/user.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/user/user.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="750" column="23" selection-start="17077" selection-end="17077" vertical-scroll-proportion="0.1316129" vertical-offset="19398" max-vertical-offset="22776">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/inbox/review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="58" selection-start="869" selection-end="869" vertical-scroll-proportion="-7.428571" vertical-offset="156" max-vertical-offset="2262">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/inbox/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="32" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1846">
+        <state line="68" column="31" selection-start="4161" selection-end="4161" vertical-scroll-proportion="-5.1714287" vertical-offset="1535" max-vertical-offset="2262">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="37" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.5437909" vertical-offset="936" max-vertical-offset="1976">
+          <folding>
+            <element signature="tag#nav#0;tag#header#0" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#nav#1;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="0" selection-start="3874" selection-end="3874" vertical-scroll-proportion="2.1375" vertical-offset="2892" max-vertical-offset="5330">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inbox/inbox.html">
+    <entry file="file://$PROJECT_DIR$/js/controllers/story/addStory.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="1378">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/story/showstory.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="157" selection-end="183" vertical-scroll-proportion="0.0325" vertical-offset="52" max-vertical-offset="1066">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/user/sendMessage.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="35" selection-start="817" selection-end="817" vertical-scroll-proportion="0.34852546" vertical-offset="390" max-vertical-offset="1222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/main.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="38" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2678">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/services/story.sev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2591" selection-end="2591" vertical-scroll-proportion="0.49514562" vertical-offset="1541" max-vertical-offset="3068">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/services/message.sev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="23" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="2314">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/inbox/inbox.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="426" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1196">
+        <state line="95" column="28" selection-start="2578" selection-end="2589" vertical-scroll-proportion="-12.518518" vertical-offset="1794" max-vertical-offset="2782">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/inbox/inbox.scss">
+    <entry file="file://$PROJECT_DIR$/templates/inbox/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="0" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.4875817" vertical-offset="4151" max-vertical-offset="4992">
-          <folding />
+        <state line="10" column="89" selection-start="441" selection-end="441" vertical-scroll-proportion="0.34574467" vertical-offset="0" max-vertical-offset="1144">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

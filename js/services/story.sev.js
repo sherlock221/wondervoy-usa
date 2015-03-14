@@ -37,6 +37,40 @@ wondervoy
             return defer.promise;
         }
 
+        //评论
+        StorySev.comment = function (obj) {
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/story/comment", {
+                storyId: obj.storyId,
+                comment: obj.comment,
+                star: obj.star
+            })
+                .success(function (res) {
+                    defer.resolve(res);
+                })
+                .error(function(err){
+                    defer.reject(err);
+                });
+
+            return defer.promise;
+        }
+
+        StorySev.reply = function (obj) {
+            var defer = $q.defer();
+            $http.post(SERVER.url + "/story/reply", {
+                commentId: obj.commentId,
+                comment: obj.comment
+            })
+                .success(function (res) {
+                    defer.resolve(res);
+                })
+                .error(function(err){
+                    defer.reject(err);
+                });
+
+            return defer.promise;
+        }
+
 
         //查询用户故事
         StorySev.findUserStorys = function(storyId,size,userId){

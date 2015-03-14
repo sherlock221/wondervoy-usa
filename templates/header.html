@@ -102,8 +102,9 @@
                 </li>
                 <li  class="pos-rel">
                     <!-- message box -->
-                    <a class="ib ui-widget inbox active" href="#/inbox/list" style="margin-left: 34px;margin-right: -22px;">
-                        <span class="ib circle">3</span>
+
+                    <a  ng-class="{'active':$root.messageCount != 0 }" class="ib ui-widget inbox " href="#/inbox/list" style="margin-left: 34px;margin-right: -22px;">
+                        <span class="ib circle" ng-show="$root.messageCount != 0">{{$root.messageCount}}</span>
                     </a>
 
                 </li>

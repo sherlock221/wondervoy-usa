@@ -761,6 +761,8 @@
   .inbox-detail li {
     margin: 6px;
     padding: 0 25px; }
+  .inbox-detail .index-detail {
+    width: 644px; }
   .inbox-detail .index-detail-content {
     padding: 17px 0px;
     padding-left: 16px;

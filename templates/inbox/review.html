@@ -4,21 +4,21 @@
 
     <div class="account-cloum-body">
         <ul class="inbox-list">
-            <li>
+            <li ng-repeat="post in posts">
                 <a href="javascript:void(0);" class="db">
 
                     <div class="db-cell img-cell vt">
                         <img src="img/inbox-head.png"  width="86" height="86" />
-                        <p class="inbox-uname" style="margin-top: 17px;">Johnny Depp</p>
+                        <p class="inbox-uname" style="margin-top: 17px;">{{post.comment.firstName}}&nbsp;{{post.comment.lastName}}</p>
                     </div>
-                    <div class="db-cell" style="padding-right: 43px;">
-                        <p class="inbox-desc">I was born in Germany and I live in Barcelona since 2004.live in Barcelona since 2004live in Barcelona since 2004live in Barcelona since 2004 Being a healer & artist,my apartment is also my workplace & artgallery at the same time. </p>
+                    <div class="db-cell" style="width:100%;padding-right: 43px;" >
+                        <p class="inbox-desc">{{post.comment.comment}}</p>
                         <div class="review-title">
-                            Your Story:”Story title”
+                            Your Story:”{{post.story.coverDes}}”
                         </div>
                         <div>
-                            <span class="ib inbox-time review-time">20:16   23rd, August  </span>
-                            <button class="reply-btn" type="button" style="float: right;position: relative;top: 15px;">reply</button>
+                            <span class="ib inbox-time review-time">{{post.comment.time | date : 'yyyy-MM-dd hh:mm:ss'}} </span>
+                            <button class="reply-btn" type="button"  ng-click="post.reply=1;" style="float: right;position: relative;top: 15px;">reply</button>
                         </div>
 
 
@@ -37,10 +37,10 @@
                             </li>
                         </ul>
 
-                        <div class="reply-ct text-right">
+                        <div class="reply-ct text-right" ng-show="post.reply== 1">
 
                             <textarea class="control reply-text"> </textarea>
-                            <button class="reply-btn" type="button" >Send</button>
+                            <button class="reply-btn" type="button"  ng-click="post.reply=0;">Send</button>
                         </div>
 
                     </div>

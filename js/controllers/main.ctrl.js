@@ -1,8 +1,8 @@
 wondervoy
 
-    .controller("MainCtrl", function ($rootScope, $state,$window,$scope, $alert,$sce,Util) {
+    .controller("MainCtrl", function ($rootScope, $state,$window,$scope, $alert,$sce,Util,MessageService) {
 
-
+        $rootScope.messageCount = 0;
 
         //全局用户
         $rootScope.user =  Util.getSgObj("user");
@@ -12,6 +12,17 @@ wondervoy
 //            $scope.isShowUserInfo = true;
 //            console.log("mosue enter");
 //        }
+
+        $rootScope.$on('$stateChangeStart',
+            function(event, toState, toParams, fromState, fromParams){
+                //console.log("ch");
+                $rootScope.getCount();
+            })
+        $rootScope.getCount= function(){
+           MessageService.getMessageCount().then(function(res){
+               $rootScope.messageCount = res.data.count;
+           });
+        }
 
         //全局提示框
         $rootScope.$watch("httpError",function(temp){

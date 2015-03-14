@@ -4,49 +4,29 @@
     </div>
     <div class="account-cloum-body">
         <ul class="inbox-list">
-            <li>
-                <a href="#/inbox/detail" class="db">
+            <li ng-repeat="post in posts">
+                <a  ng-click="goDetail(post)"  class="db">
 
                     <div class="db-cell img-cell">
                         <img src="img/inbox-head.png"  class="res-img" width="86" height="86" />
                     </div>
                     <div class="db-cell" style="width: 475px;">
-                        <p class="inbox-uname">Johnny Depp</p>
-                        <p class="inbox-desc">I was born in Germany and I live in Barcelona since 2004. </p>
-                        <div class=inbox-ck">
-                            / From Johnny Depp’s Story : ”Story title”/
+                        <p class="inbox-uname">{{post.latest.sender.firstName}}&nbsp;{{post.latest.sender.lastName}}<span class="ib inbox-num" ng-show="post.unReadCount > 0">{{post.unReadCount}}</span></p>
+                        <p class="inbox-desc">{{post.latest.content}} </p>
+                        <div class="inbox-ck" ng-if="post.latest.story ">
+                            / From {{post.latest.sender.firstName}}&nbsp;{{post.latest.sender.lastName}}’s Story : <span style="color:#54e5ff">”{{post.latest.story.coverDes}}”</span> /
                         </div>
+
                     </div>
                     <div class="db-cell vt">
-                        <span class="ib inbox-time">20:16   23rd, August  </span>
+                        <!--<span class="ib inbox-time">20:16   23rd, August  </span>-->
+                        <span class="ib inbox-time">{{post.latest.chatTime | date : 'yyyy-MM-dd hh:mm:ss'}}  </span>
                     </div>
 
                     <div class="inbox-line"></div>
                 </a>
-            </li>
+            </li >
 
-            <li>
-                <a href="#/inbox/detail" class="db">
-
-                    <div class="db-cell img-cell">
-                        <img src="img/inbox-head.png"  class="res-img" width="86" height="86" />
-                    </div>
-                    <div class="db-cell"  style="width: 475px;">
-                        <p class="inbox-uname">Johnny Depp<span class="ib inbox-num">1</span></p>
-                        <p class="inbox-desc">I was born in Germany and I live in Barcelona since 2004. </p>
-                        <div class="inbox-ck">
-                            / From Johnny Depp’s Story : <span style="color:#54e5ff">”Story title”</span> /
-                        </div>
-                    </div>
-                    <div class="db-cell vt">
-                        <span class="ib inbox-time">20:16   23rd, August  </span>
-                    </div>
-
-                    <div class="inbox-line"></div>
-                </a>
-
-
-            </li>
 
 
         </ul>

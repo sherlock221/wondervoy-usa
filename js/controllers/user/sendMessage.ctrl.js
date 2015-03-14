@@ -21,7 +21,10 @@ wondervoy
             var receiverId = 1;
             AccountService.sendMessage(receiverId,$scope.fm.content).then(function(res){
                 if(res.state == "0"){
+
                     $rootScope.alertSuccess(res.message);
+                    $scope.close();
+
                 }
                 else{
                     $rootScope.alertError(res.message);

@@ -163,15 +163,15 @@ wondervoy.config(function ($stateProvider, $urlRouterProvider) {
         controller: "MessageCtrl"
     });
     $stateProvider.state("inbox.detail",{
-        url : "/detail",
-        templateUrl: "templates/inbox/detail.html"
+        url : "/detail/:sessionId/:userName",
+        templateUrl: "templates/inbox/detail.html",
+        controller: "MessageDetailCtrl"
     });
 
     $stateProvider.state("inbox.review",{
         url : "/review",
         templateUrl: "templates/inbox/review.html",
         controller: "ReviewCtrl"
-
 
 
     });
